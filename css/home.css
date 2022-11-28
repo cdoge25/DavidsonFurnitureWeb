@@ -1,0 +1,452 @@
+*{box-sizing: border-box; -webkit-box-sizing: border-box; }
+
+.CSSgal {
+	position: relative;
+	overflow: hidden;
+	height: 100%; /* Or set a fixed height */
+}
+
+/* ===========================================================SLIDER===========================================================*/
+
+.CSSgal .slider {
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	transition: 0.8s;
+}
+
+/* SLIDES */
+
+.CSSgal .slider > * {
+	font-size: 1rem;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	background: none 50% no-repeat;
+	background-size: cover;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.CSSgal .prevNext {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	width: 100%;
+	height: 0;
+}
+
+.CSSgal .prevNext > div+div {
+	visibility: hidden; /* Hide all but first P/N container */
+}
+
+.CSSgal .prevNext a {
+	background: #fff;
+	position: absolute;
+	width:       60px;
+	height:      60px;
+	line-height: 60px; /* If you want to place numbers */
+	text-align: center;
+	opacity: 0.7;
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+	-webkit-transform: translateY(-50%);
+					transform: translateY(-50%);
+	left: 0;
+}
+.CSSgal .prevNext a:hover {
+	opacity: 1;
+}
+.CSSgal .prevNext a+a {
+	left: auto;
+	right: 0;
+}
+
+/* NAVIGATION */
+
+.CSSgal .bullets {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	padding: 10px 0;
+	width: 100%;
+	text-align: center;
+}
+.CSSgal .bullets > a {
+	display: inline-block;
+	width:       30px;
+	height:      30px;
+	line-height: 30px;
+	text-decoration: none;
+	text-align: center;
+	background: rgba(255, 255, 255, 1);
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+}
+.CSSgal .bullets > a+a {
+	background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+}
+.CSSgal .bullets > a:hover {
+	background: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+/* ACTIVE */
+#s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+#s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+#s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+#s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+/* ACTIVE: */
+#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+
+
+/*CUSTOM STYLES / OVERRIDES HERE: */
+
+.CSSgal{
+	color: #ff6600;	
+	text-align: center;
+}
+.CSSgal .slider h2 {
+	margin-top: 40vh;
+	font-weight: 200;
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 3em;
+}
+.CSSgal a {
+	border-radius: 50%;
+	margin: 0 3px;
+	color: #ff6600;
+	text-decoration: none;
+}
+
+section{
+    width: 100%;
+    position: relative;
+}
+
+#container{
+    width: 100%;
+    background-color: var(--background);
+}
+
+/* Radio navigation */
+#review .wrapper .indicator{position: relative; width: 100px; margin: 0 auto;}
+#review .indicator button{
+    font-size: 2rem;
+    color: white;
+    margin-right: 12px;
+    font-weight: 700;
+    margin-top: -8px;
+    background: none;
+}
+
+#review .indicator button:hover{color: var(--primary-color); cursor: pointer;}
+
+@media (max-width:428px){
+    #review .wrapper .slider-wrapper .slider-post{width: 400%;}
+}
+
+
+/* ======================================================START HIGHTLIGHT========================================================== */
+
+#hightlight{height: 780px;}
+
+#hightlight .summary{
+    width: 80%;
+    height: 88px;
+    position: absolute;
+    top: -44px;
+    left: 10%;
+    background-color: var(--item-2);
+    border-radius: 10px;
+    border-color: var(--primary-color);
+    border-width: 1.5px;
+    border-style: dashed;
+    border-spacing: 1px;
+}
+
+#hightlight .summary .wrapper{
+    width: 100%;
+    height: 88px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#hightlight .summary .wrapper .item{width: 23%;}
+#hightlight .summary .wrapper .item .iconify{
+    height: 100%;
+    float: left;
+    font-size: 2.8rem;
+    margin-right: 8px;
+    color: var(--primary-color);
+}
+
+#hightlight .summary .wrapper .item .description{font-size: 1.4rem;}
+
+/* Hightlight box */
+#hightlight .hl-box{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 80px;
+}
+
+#hightlight .hl-box .wrapper{
+    width: 88%;
+    margin: 40px auto;
+    position: relative;
+    z-index: 1;
+}
+
+#hightlight .hl-box .wrapper .content-box{width: 60%; float: left;}
+
+#hightlight .hl-box .wrapper .content-box .logo{
+    width: 50%;
+}
+#hightlight .hl-box .wrapper .content-box .logo .image{width: 25%;opacity: 0.5;}
+#hightlight .hl-box .wrapper .content-box .logo hr{
+    width:75%;opacity: 0.5;
+    border: 1px solid var(--primary-color);
+    margin-left: 12.5%; margin-top: -6px;
+}
+
+#hightlight .hl-box .wrapper .content-box .content{
+    padding: 32px 40px 32px 0;
+    margin: 40px 0;
+}
+
+#hightlight .hl-box .wrapper .content-box .content h3{
+    font-size: 3.4rem;
+    line-height: 3.8rem;
+    margin-bottom: 18px;
+    color: var(--primary-color);
+}
+
+#hightlight .hl-box .wrapper .content-box .content .description{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin: 20px 0;
+    text-align: justify;
+}
+#hightlight .hl-box .wrapper .content-box .content .more{font-size: 1.6rem;}
+
+#hightlight .hl-box .wrapper .content-box .content .more .iconify{
+    vertical-align: middle;
+    margin-left: 8px;
+    font-size: 1.4rem;
+}
+
+#hightlight .hl-box .wrapper .image-box{
+    width: 40%;
+    float: right;
+    padding-left: 80px;
+}
+
+#hightlight .hl-box .wrapper .image-box img{border-radius: 10px;}
+#hightlight .floating-buble{
+    margin-left: -100px;
+}
+
+#hightlight .floating-buble img{transform: rotate(90deg);}
+
+@media (min-width: 769px) and (max-width: 1200px){#hightlight{height: 640px;}}
+@media (max-width: 428px){
+    #hightlight{height: 900px;}
+    #hightlight .summary{height: 120px;
+        width: 90%;
+        left: 5%;
+        top: -55px;}
+    #hightlight .summary .wrapper{padding: 4px;}
+    #hightlight .summary .wrapper .item{width: 50%;}
+    #hightlight .floating-buble{width: 300px;}
+    #hightlight .hl-box .wrapper .content-box{width: 100%;}
+    #hightlight .hl-box .wrapper .content-box .content{margin: 0;padding: 32px 0;}
+    #hightlight .hl-box .wrapper .content-box .content h3{font-size: 2.8rem;line-height: 3rem;}
+    #hightlight .hl-box .wrapper .image-box{padding: 0;
+        float: none;
+        width: 60%;
+        margin: 0 auto;}
+}
+
+@media (min-width: 429px) and (max-width: 768px){
+    #hightlight{height: 680px;}
+    #hightlight .hl-box .wrapper .content-box .content{margin: 0;}
+    #hightlight .hl-box .wrapper .image-box{padding: 0;}
+}
+
+/* =====================================================================START OFFER=============================================== */
+#offer{
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+#offer .wrapper{
+    width: 88%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+#offer .wrapper .item{
+    width: 50%;
+    float: left;
+    padding: 0 40px;
+    text-align: center;
+}
+
+#offer .wrapper .item .container{
+    width: 100%;
+    height: 650px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+#offer .wrapper .item .container .content .combo,
+#offer .wrapper .item .container .content .name{
+    font-size: 2.4rem;
+    margin: 20px 0;
+}
+
+#offer .wrapper .item .container .content .price{
+    font-size: 2rem;
+    margin: 28px 0;
+    color: var(--primary-color);
+}
+
+#offer .wrapper .item .container .content .price b{
+    font-size: 2.2rem;
+}
+#offer .wrapper .item .left{
+    margin-top: 20px;
+    background-image: url(https://product.hstatic.net/1000280685/product/2_b8599b1b2e9b4511aba570437a3b85b8.jpg);
+}
+
+#offer .wrapper .item .right{
+    background-image: url(https://product.hstatic.net/1000280685/product/khach_1__8d748c916cc640fea86647d074005894.jpg);
+}
+
+#offer .wrapper .item .right .content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#offer .wrapper .item .right .pad{
+    width: 100%;
+    height: 650px;
+    opacity: 0.8;
+    position: relative;
+    background: linear-gradient(#ff6600), #ffffff), rgba(255, 255, 255, 0.3));
+}
+
+@media (max-width:428px){
+    #offer .wrapper .item{width: 100%; margin-bottom: 20px;}
+}
+
+@media (min-width:429px) and (max-width:768px){
+    #offer .wrapper .item{padding: 0 10px;}
+}
+
+
+/* =========================================================START ORDER========================================================= */
+#order{
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+#order .wrapper{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    text-align:right;
+    z-index: 1;
+}
+
+#order .wrapper .title{margin-right: 100px;margin-bottom: 40px;}
+
+#order .wrapper .left{
+    width: 35%;
+    border-radius: 16px;
+    float: left;
+    overflow: hidden;
+}
+
+#order .wrapper .center{
+    width: 20%;
+    padding-left: 40px;
+    float: left;
+    text-align: center;
+}
+
+#order .wrapper .center .icon{
+    font-size: 4.5rem;
+    color: var(--primary-color);
+}
+
+#order .wrapper .center .dash-line-ver{
+    width: 50%;
+    border-right: 2px dashed var(--primary-color);
+    height: 14rem;
+    
+}
+
+#order .wrapper .right{
+    width: 45%;
+    text-align: left;
+    float: right;
+    margin-top: 10px;
+}
+
+#order .wrapper .right .step{width: 100%; height: 18.5rem;}
+#order .wrapper .right .step .action{
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+#order .wrapper .right .step .description{
+    font-size: 1.7rem;
+    text-align: justify;
+    line-height: 2.2rem;
+}
+
+@media (min-width:429px) and (max-width:768px){
+    #order .wrapper .center{padding: 0; width: 15%;}
+    #order .wrapper .left{width: 45%;}
+    #order .wrapper .right{width: 40%;}
+}
+
+@media (max-width:428px){
+    #order .wrapper .title{margin: 20px 0; text-align: center;}
+    #order .wrapper .left{width: 100%; float: none;}
+    #order .wrapper .center{float: left; width: 18%; padding: 0; margin-top: 20px;}
+    #order .wrapper .center .icon{font-size: 4rem;}
+    #order .wrapper .right{float: right; width: 80%; margin-top: 20px;}
+}
