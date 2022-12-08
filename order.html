@@ -16,7 +16,90 @@
     <link rel="stylesheet" href="./css/order.css">
 </head>
 <body>
-    <div id="container">
+    <div class="app">
+        <!-- =====================================================Start Header============================================================= -->
+        <header>
+            <nav >
+                <div id="menu-icon"><span class="iconify" data-icon="bx:bx-menu-alt-left"></span></div>
+                <!-- Logo Davidson -->
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a>
+                </div>
+                <!-- Menu -->
+                <ul class="menu">
+                    <li><a href="index.html" class="item">Home</a></li>
+                    <li id="menu"><a href="category.html" class="item">Danh mục</a>
+                        <div class="child-1">
+                            <ul>
+                                <li><a href="filter.html#bestseller" class="sub-item-1">Phổ biến</a></li>
+                                <li><a href="filter.html#new" class="sub-item-1">Sản phẩm mới</a></li>
+                                <li><a href="filter.html#promotion" class="sub-item-1">Khuyến mãi</a></li>
+                                <li><a href="filter.html#offer" class="sub-item-1">Đề xuất</a></li>
+                                <li><a href="filter.html#ban" class="sub-item-1">Phân loại</a>
+                                    <div class="child-2">
+                                        <ul>
+                                            <li><a href="filter.html#ban" class="sub-item-2">Bàn</a></li>
+                                            <li><a href="filter.html#ghe" class="sub-item-2">Ghế</a></li>
+                                            <li><a href="filter.html#sofa" class="sub-item-2">Sofa</a></li>
+                                            <li><a href="filter.html#giuong" class="sub-item-2">Giường</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="consult.html" class="item" >Tư vấn</a></li>
+                    <li><a href="blog.html" class="item">Blog</a></li>
+                    <li><a href="aboutus.html" class="item">About us</a></li>
+                    <div class="logo-menu"><a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a></div>
+                    <div class="close-btn"><span class="iconify" data-icon="ci:close-big"></span></div>
+                </ul>
+                <!-- Search, account, cart icons -->
+                <div class="group-icons">
+                    <!-- Search icon and input -->
+                    <input type="search" id="search-input" name="furnitures" list="furnitures" placeholder="Bạn cần tìm gì?...">
+                    <datalist id="furnitures">
+                        <option value="Bàn">
+                        <option value="Ghế">
+                        <option value="Gương">
+                        <option value="Đèn">
+                    </datalist>
+                    <button id="find-btn">Tìm</button>
+                    <button id="search-icon"><span class="iconify" data-icon="mdi:magnify"></span></button>
+                    <!-- Cart icon and status -->
+                    <div id="cart">
+                        <a class="cart-icon" href="cart.html">
+                            <p class="item-count"></p>
+                            <span class="iconify" data-icon="mdi:cart-outline"></span>
+                        </a>
+                        <div class="cart-box">
+                            <div class="empty-cart">
+                                <img src="https://mydigitech.in/ecommerce/img/Frontend/empty-cart%20%282%29.jpg" alt="empty cart">
+                            </div>
+                            <!-- Cart has items -->
+                            <div class="non-empty">
+                                <header>Sản phẩm mới thêm</header>
+                                <div class="wrapper"></div>
+                                <div class="view-cart"><a href="cart.html" class="btn btn-primary"> Xem tất cả</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Account icon -->
+                    <a href="#" id="account-icon">
+                        <div class="acc-photo">
+                            <img class="user-photo" src="https://" alt="">
+                            <p class="temp-user"><span class="iconify" data-icon="mdi:account-circle-outline"></span></p>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+
+        </header>
+
+        <!-- =========================================================CODE HERE========================================================== -->
+ 
+
+        <div id="container">
         <section id="logo">
             <div class="logo">
                 <a class="home" href="index.html" >
@@ -234,52 +317,52 @@
             </div>
             <div class="clear"></div>
         </div>
-    </div>
-    <!-- ===========Start Footer============ -->
-    <footer>
-        <div class="wrapper">
-            <div class="big-logo">
-                <a href="index.html" class="logo"><img src="./images/logo/Logo-whitebg-round.png" alt="logo Davidson"></a>
-                <a href="index.html">Davidson Furniture</a>
-            </div>
-            <div class="links">
-                <div class="aboutus">
-                    <h3>Về chúng tôi</h3>
-                    <a href="aboutus.html" class="item">Về chúng tôi</a>
-                    <a href="policy.html" class="item">Chính sách</a>
-                    <a href="contact.html" class="item">Liên hệ</a>
+        </div>
+        <!-- =========================================================Start Footer======================================================= -->
+        <footer>
+            <div class="wrapper">
+                <div class="big-logo">
+                    <a href="index.html" class="logo"><img src="./images/logo/Logo-whitebg-round.png" alt="logo"></a>
+                    <a href="index.html">Davidson <br> Furniture</a>
                 </div>
-                <div class="contact">
-                    <h3>Liên Hệ</h3>
-                    <ul>
-                        <li>
-                            <div class="icon"><span class="iconify" data-icon="carbon:location-filled"></span></div>
-                            <a href="#">Số 669 Quốc lộ 1K, Khu phố 3, Phường Linh Xuân, Thủ Đức, TP. HCM</a></li>
-                        <li>
-                            <div class="icon"><span class="iconify" data-icon="fluent:mail-48-filled"></span></div>
-                            <a href="mailto:furniture.davidson@gmail.com">furniture.davidson@gmail.com</a></li>
-                        <li>
-                            <div class="icon"><span class="iconify" data-icon="carbon:phone-voice-filled"></span></div>
-                            <a href="tel:02837244555">(028) 3 7244 555</a></li>
-                    </ul>
-                </div>
-                <div class="follow">
-                    <h3>Theo dõi chúng tôi</h3>
-                    <div class="media">
-                        <a href="https://www.facebook.com/furniture.davidson"><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
-                        <a href="https://www.instagram.com/davidson_furniture/"><span class="iconify" data-icon="ant-design:instagram-filled"></span></a>
-                        <a href="https://www.tiktok.com/@davidson_furniture"><span class="iconify" data-icon="fa-brands:tiktok"></span></a>
+                <div class="links">
+                    <div class="aboutus">
+                        <h3>Về chúng tôi</h3>
+                        <a href="aboutus.html" class="item">Về chúng tôi</a>
+                        <a href="policy.html" class="item">Chính sách</a>
+                        <a href="contact.html" class="item">Liên hệ</a>
+                    </div>
+                    <div class="contact">
+                        <h3>Liên Hệ</h3>
+                        <ul>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="carbon:location-filled"></span></div>
+                                <a href="#">Số 669 Quốc lộ 1K, Khu phố 3, Phường Linh Xuân, Thủ Đức, TP. HCM</a></li>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="fluent:mail-48-filled"></span></div>
+                                <a href="mailto:furniture.davidson@gmail.com">furniture.davidson@gmail.com</a></li>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="carbon:phone-voice-filled"></span></div>
+                                <a href="tel:0334109638">(033) 4 109 638</a></li>
+                        </ul>
+                    </div>
+                    <div class="follow">
+                        <h3>Theo dõi chúng tôi</h3>
+                        <div class="media">
+                            <a href="https://www.facebook.com/furniture.davidson"><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
+                            <a href="https://www.instagram.com/davidson_furniture"><span class="iconify" data-icon="ant-design:instagram-filled"></span></a>
+                            <a href="https://www.tiktok.com/@davidson_furniture"><span class="iconify" data-icon="iconoir:tiktok"></span></a>
+                        </div>
                     </div>
                 </div>
+                <div class="clear"></div>
+                <hr>
+                <p class="copyright">&copy; 2022 Davidson Furniture. Tất cả các quyền được bảo lưu.</p>
             </div>
-            <div class="clear"></div>
-            <hr>
-            <p class="copyright">&copy; 2022 Davidson Furniture. Tất cả các quyền được bảo lưu.</p>
-        </div>
-    </footer>
+        </footer>
     <!-- Script -->
     <script src="./js/order.js"></script>
     <script src="./js/product.js"></script>
-
+</div>
 </body>
 </html>
