@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Davidson Furniture</title>
+        <!-- Mandatory links -->
+        <!-- Logo on Tabs -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="./images/favicons/site.webmanifest">
+        <!-- CSS base source, Header - Footer and Icons for all HTML files -->
+        <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+        <link rel="stylesheet" href="./css/base.css">
+        <link rel="stylesheet" href="./css/header-footer.css">
+        <!-- Custom file -->
+        <link rel="stylesheet" href="./css/policy.css">
+    
+    </head>
+
+<body>
+    <div class="app">
+<!-- =====================================================Start Header============================================================= -->
+        <header>
+            <nav >
+                <div id="menu-icon"><span class="iconify" data-icon="bx:bx-menu-alt-left"></span></div>
+                <!-- Logo Yams -->
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Yams logo"></a>
+                </div>
+                <!-- Menu -->
+                <ul class="menu">
+                    <li><a href="index.html" class="item">Home</a></li>
+                    <li id="menu"><a href="category.html" class="item">Danh mục</a>
+                        <div class="child-1">
+                            <ul>
+                                <li><a href="filter.html#bestseller" class="sub-item-1">Phổ biến</a></li>
+                                <li><a href="filter.html#new" class="sub-item-1">Sản phẩm mới</a></li>
+                                <li><a href="filter.html#table" class="sub-item-1">Phân loại</a>
+                                    <div class="child-2">
+                                        <ul>
+                                            <li><a href="filter.html#table" class="sub-item-2">Bàn</a></li>
+                                            <li><a href="filter.html#chair" class="sub-item-2">Ghế</a></li>
+                                            <li><a href="filter.html#sofa" class="sub-item-2">Sofa</a></li>
+                                            <li><a href="filter.html#mirror" class="sub-item-2">Gương</a></li>
+                                            <li><a href="filter.html#lamp" class="sub-item-2">Đèn</a></li>
+                                            <li><a href="filter.html#bed" class="sub-item-2">Giường</a></li>
+                                            <li><a href="filter.html#wardrobe" class="sub-item-2">Kệ, tủ</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="consult.html" class="item" >Tư vấn</a></li>
+                    <li><a href="blog.html" class="item">Blog</a></li>
+                    <li><a href="aboutus.html" class="item">About us</a></li>
+                    <div class="logo-menu"><a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a></div>
+                    <div class="close-btn"><span class="iconify" data-icon="ci:close-big"></span></div>
+                </ul>
+                <!-- Search, account, cart icons -->
+                <div class="group-icons">
+                    <!-- Search icon and input -->
+                    <input type="search" id="search-input" name="furnitures" list="furnitures" placeholder="Bạn cần tìm gì?...">
+                    <datalist id="furnitures">
+                        <option value="Bàn">
+                        <option value="Ghế">
+                        <option value="Gương">
+                        <option value="Đèn">
+                    </datalist>
+                    <button id="find-btn">Tìm</button>
+                    <button id="search-icon"><span class="iconify" data-icon="mdi:magnify"></span></button>
+                    <!-- Cart icon and status -->
+                    <div id="cart">
+                        <a class="cart-icon" href="cart.html">
+                            <p class="item-count"></p>
+                            <span class="iconify" data-icon="mdi:cart-outline"></span>
+                        </a>
+                        <div class="cart-box">
+                            <div class="empty-cart">
+                                <img src="https://mydigitech.in/ecommerce/img/Frontend/empty-cart%20%282%29.jpg" alt="empty cart">
+                            </div>
+                            <!-- Cart has items -->
+                            <div class="non-empty">
+                                <header>Sản phẩm mới thêm</header>
+                                <div class="wrapper"></div>
+                                <div class="view-cart"><a href="cart.html" class="btn btn-primary"> Xem tất cả</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Account icon -->
+                    <a href="#" id="account-icon">
+                        <div class="acc-photo">
+                            <img class="user-photo" src="https://" alt="">
+                            <p class="temp-user"><span class="iconify" data-icon="mdi:account-circle-outline"></span></p>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+
+        </header>
+
+<!-- =========================================================CODE HERE========================================================== -->
+<div id="container">
+    <h1>CHÍNH SÁCH VÀ CÁC QUY ĐỊNH</h1>
+    <hr class="policy">
+    <div class="sub-title"><h3> I. CHÍNH SÁCH BÁN HÀNG</h3></div>
+    <p class="content"> - Giá bán niêm yết (Website hoặc Fanpage) và tại các cửa hàng có địa chỉ trên đây là giá bán chưa bao gồm thuế GTGT. Giá bán thống nhất 1 giá duy nhất trên toàn hệ thống. Các hàng bán ra được xuất hoá đơn tài chính thuế GTGT (VAT) khi khách hàng yêu cầu và khách phải đóng thêm 8% thuế GTGT cho đơn hàng. Thời gian xuất hoá đơn là 2 tuần sau khi khách hàng thanh toán cho công ty (quý khách cung cấp đầy đủ thông tin xuất hoá đơn cho doanh nghiệp).
+    <br><br>
+    - Giá bán tại cửa hàng và website chưa bao gồm phí vận chuyển và lắp ráp tận nơi, các đơn hàng sẽ phải chi trả thêm phí vận chuyển tuỳ từng khu vực.
+    <br><br>
+    Thanh toán bằng tiền mặt hoặc các loại thẻ tín dụng có đăng ký niêm yết áp dụng tại cửa hàng và website.
+    <br><br>
+    - Quý khách vui lòng thanh toán tối thiểu 50% giá trị đơn hàng trong vòng 24h để được giữ đơn hàng và xử lý lịch giao hàng. Sau 24h, nếu chưa thanh toán, quý khách sẽ phải tiến hành đặt hàng và hẹn lịch giao hàng lại từ đầu.Trường hợp quý khách hủy đơn hàng khi đã thanh toán, Make My Home sẽ chỉ hoàn trả 50% giá trị đặt cọc.
+    <br><br>
+    - Đối với các mặt hàng phải đặt hàng, thời gian giao hàng từ 7-14 ngày làm việc tuỳ vào tình trạng hàng hoá, khách hàng đặt cọc 50% giá trị hàng hoá đặt hàng. Hàng đặt hàng không được đổi trả và hoàn tiền bởi bất cứ lí do gì.
+    </p>
+
+    <div class="sub-title"><h3> II. CHÍNH SÁCH GIỮ VÀ LƯU KHO</h3></div>
+    <p class="content">
+
+        - Make My Home nhận giữ hàng và lưu kho miễn phí trong vòng 15 ngày. Khi khách hàng có nhu cầu giữ hàng lâu hơn thời gian giao hàng quy định, quý khách phải thanh toán 100% đơn hàng và Make My Home sẽ tính phí lưu kho là 3% giá trị đơn hàng mỗi tuần - được tính là ngày đầu tiên của mỗi 7 ngày tiếp theo sau thời hạn 15 ngày miễn phí lưu kho.<br><br>
+
+        - Trường hợp quý khách hủy đơn hàng khi Make My home chưa giao hàng, quý khách vẫn phải thanh toán phí lưu kho nếu quá thời hạn 15 ngày lưu kho miễn phí. <br><br>
+
+        - Sau thời hạn 45 ngày, Make My Home sẽ tiến hành hủy đơn hàng và chỉ hoàn trả 50% giá trị đơn hàng.<br><br>
+    </p>
+
+    <div class="sub-title"><h3>III. CHÍNH SÁCH GIAO HÀNG</h3></div>
+    <p class="content"> 
+
+    <b>1. Phạm vi giao hàng</b> <br><br>
+    Davidson Furniture phục vụ giao hàng cho Khách hàng tại các địa điểm như sau: <br><br>
+
+    <b>1.1 Khu vực TP Hồ Chí Minh:</b> <br><br>
+
+    - Đơn hàng sẽ được giao đến địa điểm khách hàng yêu cầu, đối với hàng hoá cần phải lắp đặt, bộ phận giao nhận sẽ lắp ráp hoàn thiện cho khách hàng. Ngoại trừ các trường hợp hạn chế như khu vực văn phòng, chung cư cao tầng có quy định hạn chế ra vào, các khu cao tầng không có khu vực gửi xe, khách hàng vui lòng gọi hotline để được hỗ trợ 0898 191 893<br><br>
+
+    - Trường hợp quý khách không sử dụng dịch vụ lắp đặt đã bao gồm trong phí giao hàng, Davidson sẽ không chịu trách nhiệm dịch vụ lắp đặt về sau.<br><br>
+
+    Quý khách vui lòng trả tất cả các loại phí phát sinh theo quy định của Ban Quản lý nơi minh sinh sống liên quan đến việc giao hàng, sử dụng thang máy, lắp đặt …<br><br>
+
+    <b>1.2 Các tỉnh thành khác trong nước:</b><br><br>
+    - Davidson Furniture chỉ giao hàng đến những tỉnh thành khác những sản phẩm theo quy định vì lí do tính chất dễ vỡ của sản phẩm trong lúc vận chuyển (vd: gương, thuỷ tinh,...)<br><br>
+
+    - Có 2 hình thức giao hàng: <br><br>
+    + Hình thức 1: Davidson Furniture sẽ giao hàng bằng dịch vụ Viettel Post tận nơi cho khách hàng theo địa chỉ mà khách hàng cung cấp.<br>
+    + Hình thức 2: Đơn hàng sẽ được giao tới kho bãi các đơn vị vận chuyển trung gian theo chỉ định của khách hàng trong khu vực nội thành thành phố Hô Chí Minh như bến xe, nhà xe chuyên chở, ga xe lửa, ga hàng không, các đơn vị chuyển phát,... Make My Home không chịu trách nhiệm vận chuyển đến tận nơi cho quý khách hàng trong trường hợp này, khách hàng liên hệ với đơn vị vận chuyển trung gian để nhận hàng. <br><br>
+
+    <b>2. Thời gian giao hàng</b> <br><br>
+    - Thời gian xử lí giao hàng vào 2 khung giờ: 9h -12h và 14h-17h từ thứ 2 đến thứ 7 (trừ ngày lễ, tết). Trường hợp giao hàng ngoài giờ hành chính sẽ có phụ phí.<br><br>
+
+    - Đơn hàng sẽ được xử lý và giao hàng trong vòng 3 ngày từ ngày xác nhận đơn hàng đối với sản phẩm có sẵn và 7-14 ngày đối với sản phẩm đặt hàng.<br><br>
+
+    - Quý khách vui lòng sắp xếp thời gian hoặc sắp xếp người nhận hàng theo lịch giao hàng đã thống nhất.<br><br>
+
+    - Trường hợp quý khách có thay đổi về thời gian giao hàng, hủy đơn hàng hoặc có bất cứ thay đổi nào về đơn hàng, quý khách vui lòng liên hệ đến đường dây nóng của Davidson trước 24h đối với đơn hàng tại tp. Hồ Chí Minh và 48h đối với đơn hàng tại các tỉnh khác. Trường hợp hủy đơn hàng muộn, Quý khách vui lỏng thanh toán phí giao hàng theo đơn hàng của quý khách.<br><br>
+
+    <b>3. Phí giao hàng</b> <br><br>
+    <b>3.1 Khu vực Tp. Hồ Chí Minh</b><br><br>
+
+    - Đối với hàng hoá có kích thước nhỏ và trọng lượng nhẹ: (kích thước cạnh dài nhất là 40cm và dưới 10kg), Phí giao hàng sẽ được tính theo phí dịch vụ Grab, lalamove, Ahamove áp dụng mức giá hiện hành không bao gồm mã khuyến mãi.<br><br>
+    - Đối với hàng hoá cồng kềnh, cần lắp đặt, Phí giao hàng của đơn hàng được tính theo biểu phí. <br><br>
+    - Phí giao hàng đã bao gồm phí dịch vụ lắp ráp sản phẩm. <br><br>
+
+    - Trường hợp giao hàng ngoài giờ hành chính, quý khách vui lòng thanh toán thêm 30% phí giao hàng theo quy định và tối thiểu là 50.000đ. <br><br>
+    
+    - Phụ thu khi khuân sofa lên lầu: 100.000đ/lầu. <br><br>
+    
+    - Giao hàng từ Kho hàng của Davidson, địa chỉ: Phường Linh Trung, Quận Thủ Đức, Thành phố Hồ Chí Minh. <br><br>
+    
+    Lưu ý: Davidson Furniture là đơn vị quyết định phương thức vận chuyển cuối cùng để đảm bảo an toàn cho hàng hoá cách tốt nhất. <br><br>
+
+    <b>3.2 Các tỉnh thành khác trong nước:</b><br><br>
+    - Phí giao hàng đến đơn vị vận chuyển trung gian bằng Phí giao hàng hoá cồng kềnh tại khu vực HCM.<br><br>
+
+    - Phí giao từ đơn vị trung gian đến địa chỉ của quý khách hàng, Davidson sẽ báo cho quý khách phí giao hàng bằng dịch vụ giao hàng Viettel Post hoặc đơn vị khác sau khi nhận được đơn đặt hàng từ quý khách.<br><br>
+    </p>
+
+    <div class="sub-title"><h3>IV. CHÍNH SÁCH BẢO HÀNH - HOÀN TRẢ</h3></div>
+    <p class="content">
+        <b>1. Điều kiện bảo hành - hoàn trả sản phẩm</b><br><br>
+    Thông tin cá nhân của thành viên trên yams.vn được yams.vn cam kết bảo mật tuyệt đối theo chính sách bảo vệ thông tin cá nhân của yams.vn. Việc thu thập và sử dụng thông tin của mỗi thành viên chỉ được thực hiện khi có sự đồng ý của khách hàng đó trừ những trường hợp pháp luật có quy định khác.<br><br>
+
+    - Quý khách còn giữ xác nhận về việc đã mua hàng Davidson (hóa đơn mua hàng, biên nhận giao hàng, sao kê của ngân hàng.... ).<br><br>
+
+    - Sản phẩm không nằm trong danh mục hạn chế đổi trả.
+    <br><br>
+    - Sản phẩm phải còn nguyên tem, mác, nguyên đai kiện ban đầu (trừ trường hợp sản phẩm bị lỗi hoặc hư hại trong quá trình vận chuyển) và quà tặng kèm (nếu có).<br><br>
+        <b>2. Quy trình thực hiện đổi trả hàng</b><br><br>
+
+        - Quý khách vui lòng kiểm tra kỹ sản phẩm trước khi ký nhận hàng và báo ngay cho nhân viên giao hàng nếu có phát hiện lỗi sản phẩm hoặc liên hệ ngay với bộ phận chăm sóc khách hàng.<br><br>
+        
+
+        - Bộ phận Kỹ Thuật sẽ liên hệ ngay với quý khách để xác nhận yêu cầu và lý do đổi trả, thống nhất giao dịch đổi trả cho sản phẩm.<br><br>
+        
+        
+        - Đối với hàng hoá nhỏ và đơn hàng các tỉnh thành khác: quý khách vui lòng mang tới/vận chuyển tới cửa hàng hoặc kho hàng gần nhất để đổi trả.<br><br>
+        
+        
+        - Đối với hàng hoá cồng kềnh đã lắp ráp: Davidson sẽ bảo hành tận nơi tại TP HCM cho quý khách.<br><br>
+        
+        
+        - Quý khách hàng vui lòng kiểm tra kỹ sản phẩm một lần nữa trước khi ký nhận đổi trả hàng.<br><br>
+        
+    
+    </p>
+</div>
+      
+<!-- =========================================================Start Footer======================================================= -->
+        <footer>
+            <div class="wrapper">
+                <div class="big-logo">
+                    <a href="index.html" class="logo"><img src="./images/logo/Logo-whitebg-round.png" alt="logo"></a>
+                    <a href="index.html">Davidson <br> Furniture</a>
+                </div>
+                <div class="links">
+                    <div class="aboutus">
+                        <h3>Về chúng tôi</h3>
+                        <a href="aboutus.html" class="item">Về chúng tôi</a>
+                        <a href="policy.html" class="item">Chính sách</a>
+                        <a href="contact.html" class="item">Liên hệ</a>
+                    </div>
+                    <div class="contact">
+                        <h3>Liên Hệ</h3>
+                        <ul>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="carbon:location-filled"></span></div>
+                                <a href="#">Số 669 Quốc lộ 1K, Khu phố 3, Phường Linh Xuân, Thủ Đức, TP. HCM</a></li>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="fluent:mail-48-filled"></span></div>
+                                <a href="mailto:furniture.davidson@gmail.com">furniture.davidson@gmail.com</a></li>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="carbon:phone-voice-filled"></span></div>
+                                <a href="tel:0334109638">(033) 4 109 638</a></li>
+                        </ul>
+                    </div>
+                    <div class="follow">
+                        <h3>Theo dõi chúng tôi</h3>
+                        <div class="media">
+                            <a href="https://www.facebook.com/furniture.davidson"><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
+                            <a href="https://www.instagram.com/davidson_furniture"><span class="iconify" data-icon="ant-design:instagram-filled"></span></a>
+                            <a href="https://www.tiktok.com/@davidson_furniture"><span class="iconify" data-icon="iconoir:tiktok"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <hr>
+                <p class="copyright">&copy; 2022 Davidson Furniture. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </footer>
+        <!-- ========== Start scripts ============-->
+        <!-- Compulsory -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="/js/header-footer.js"></script>
+        <!-- Customize your script here -->
+        <script src="./js/product.js"></script>
+        <script src="./js/index.js"></script>
+    </div>
+</body>
+</html>
