@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/header-footer.css">
     <!-- Custom file -->
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/category.css">
 </head>
 
 <body>
@@ -102,7 +102,117 @@
 
 <!-- =========================================================CODE HERE========================================================== -->
 
+        <div id="container">
+            <!-- Banner -->
+            <section id="banners">
+                <div class="slide-wrapper">
+                    <div class="slider-item"></div>
+                </div>
+                <div class="banner-text">
+                    <h1 class="font-xxl main-title">Sản phẩm</h1>
+                    <br>
+                    <h3 class="description">Đa dạng mẫu mã, giá cả phải chăng</h3>
+                </div>
+            </section>
+            <!-- Start Best Sellers -->
+            <section id="bestseller">
+                <div class="wrapper">
+                    <h2 class="title font-xl">Best sellers</h2>
+                    <a href="filter.html#bestseller" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #ff6600;" data-width="34"></span></a>
+                    <div class="container"></div>
+                </div>
+            </section>
+            <!-- Start new product -->
+            <section id="new">
+                <h2 class="title font-xl">Sản phẩm mới</h2> 
+                <div class="content">
+                    <table with="100">
+                        <tr>
+                            <td>
+                                <div class="text">
+                                    <h3 class="name">SOFA HIRO</h3>
+                                    <p class="description">Sản phẩm mới trong bộ sưu tập QUADA</p>
+                                    <input class="btn btn-second" type="button" value="ĐẶT MUA NGAY">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-content">
+                                    <img class="product-image" src="https://product.hstatic.net/1000280685/product/a091_02_b65d1788de78466ea94eaaf3e566bc65_master.jpg" alt="">
+                                    <div class="new-product">
+                                        <p><span>HIRO</span></p>
+                                        <p>Sofa băng</p>
+                                        <p><b>10.500.000 <u>đ</u></b></p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <!-- Start Bàn -->
+            <section id="ban">
+                <div class="wrapper">
+                    <h2 class="title font-xl">Bàn</h2>
+                    <a href="filter.html#ban" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #fa4e88;" data-width="34"></span></a>
+                    <div class="container"></div>
+                </div>
+            </section>
+            <!-- Start Ghế -->
+            <section id="ghe">
+                <div class="wrapper">
+                    <h2 class="title font-xl">Ghế</h2>
+                    <a href="filter.html#ghe" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #fa4e88;" data-width="34"></span></a>
+                    <div class="container"></div>
+                </div>
+            </section>
+            <!-- Start Sofa -->
+            <section id="sofa">
+                <div class="wrapper">
+                    <h2 class="title font-xl">Sofa</h2>
+                    <a href="filter.html#sofa" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #fa4e88;" data-width="34"></span></a>
+                    <div class="container"></div>
+                </div>
+            </section>
+            <!-- Start Giường -->
+            <section id="giuong">
+                <div class="wrapper">
+                    <h2 class="title font-xl">Giường</h2>
+                    <a href="filter.html#giuong" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #fa4e88;" data-width="34"></span></a>
+                    <div class="container"></div>
+                </div>
+            </section>
+        </div>
 
+        <!-- Messenger Chat Plugin Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your Chat Plugin code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+
+        <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "104829868153851");
+        chatbox.setAttribute("attribution", "biz_inbox");
+        </script>
+
+        <!-- Your SDK code -->
+        <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+            xfbml            : true,
+            version          : 'v12.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
 
 
 
