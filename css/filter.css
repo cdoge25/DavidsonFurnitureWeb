@@ -92,16 +92,22 @@ header nav .menu > li:nth-child(2) > a{
 .banners .slide-wrapper .new{
     background-image: url(https://i.ibb.co/BsK7yjH/new.png);
 }
-.banners .slide-wrapper .macaron{
+.banners .slide-wrapper .sale{
+    background-image: url(https://i.ibb.co/G5Wwywh/sale.jpg);
+}
+.banners .slide-wrapper .offer{
+    background-image: url(https://i.ibb.co/2Myf0WF/offer.png);
+}
+.banners .slide-wrapper .ban{
     background-image: url(https://i.ibb.co/1d0hT3j/macaron.png);
 }
-.banners .slide-wrapper .cheesecake{
+.banners .slide-wrapper .ghe{
     background-image: url(https://i.ibb.co/hZp9s31/White-chocolate-cheesecake.jpg);
 }
-.banners .slide-wrapper .pudding{
+.banners .slide-wrapper .sofa{
     background-image: url(https://i.ibb.co/2Fh3Mvf/pudidng.png);
 }
-.banners .slide-wrapper .tiramisu{
+.banners .slide-wrapper .giuong{
     background-image: url(https://i.ibb.co/BZZrHGB/Fruit-tiramisu.jpg);
 }
   
@@ -553,7 +559,7 @@ header nav .menu > li:nth-child(2) > a{
     #combo .wrapper .item{padding: 0 10px;}
 }
 
-/* macaron box */
+/* ban box */
 #box{
     height: fit-content;
 }
@@ -629,7 +635,7 @@ header nav .menu > li:nth-child(2) > a{
     }
 }
 
-/* macaron infor */
+/* ban infor */
 #infor{
     height: fit-content;
 }

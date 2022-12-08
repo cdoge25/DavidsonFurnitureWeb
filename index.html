@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yams | Home</title>
+    <title>Davidson | Home</title>
     <!-- Mandatory links -->
     <!-- Logo on Tabs -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
@@ -24,9 +24,9 @@
         <header>
             <nav >
                 <div id="menu-icon"><span class="iconify" data-icon="bx:bx-menu-alt-left"></span></div>
-                <!-- Logo Yams -->
+                <!-- Davidson Logo -->
                 <div class="logo">
-                    <a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Yams logo"></a>
+                    <a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a>
                 </div>
                 <!-- Menu -->
                 <ul class="menu">
@@ -36,6 +36,8 @@
                             <ul>
                                 <li><a href="filter.html#bestseller" class="sub-item-1">Phổ biến</a></li>
                                 <li><a href="filter.html#new" class="sub-item-1">Sản phẩm mới</a></li>
+                                <li><a href="filter.html#promotion" class="sub-item-1">Khuyến mãi</a></li>
+                                <li><a href="filter.html#offer" class="sub-item-1">Đề xuất</a></li>
                                 <li><a href="filter.html#ban" class="sub-item-1">Phân loại</a>
                                     <div class="child-2">
                                         <ul>
@@ -43,9 +45,6 @@
                                             <li><a href="filter.html#ghe" class="sub-item-2">Ghế</a></li>
                                             <li><a href="filter.html#sofa" class="sub-item-2">Sofa</a></li>
                                             <li><a href="filter.html#giuong" class="sub-item-2">Giường</a></li>
-                                            <li><a href="filter.html#den" class="sub-item-2">Đèn</a></li>
-                                            <li><a href="filter.html#guong" class="sub-item-2">Gương</a></li>
-                                            <li><a href="filter.html#ketu" class="sub-item-2">Kệ, tủ</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -63,10 +62,10 @@
                     <!-- Search icon and input -->
                     <input type="search" id="search-input" name="furnitures" list="furnitures" placeholder="Bạn cần tìm gì?...">
                     <datalist id="furnitures">
-                        <option value="Bàn">
-                        <option value="Ghế">
-                        <option value="Gương">
-                        <option value="Đèn">
+                        <option value="ban">
+                        <option value="ghe">
+                        <option value="sofa">
+                        <option value="giuong">
                     </datalist>
                     <button id="find-btn">Tìm</button>
                     <button id="search-icon"><span class="iconify" data-icon="mdi:magnify"></span></button>
@@ -147,9 +146,7 @@
                     </div>
                     <div class="content">
                         <h3>Hack your space - Hack your life</h3>
-                        <p class="description">“Less is More" là một ngụ ý trong tư duy và thiết kế về sự đúng đắn trong việc tối giản hoá mọi thứ. Triết lý này trở nên nổi tiếng và lan toả mạnh mẽ vào những năm đầu thế kỷ 20, khi song hành cùng vị kiến trúc sư huyền thoại Ludwig Mies Van Der Rohe của trường phái Minimalism – Chủ nghĩa tối giản.                               
-                            
-                            <br><br>
+                        <p class="description">
                             “Ít tức là nhiều", nhưng mỗi chi tiết xuất hiện trên thiết kế đều là một sự chăm chút kỹ lưỡng và hoàn hảo. Và đó cũng chính là tôn chỉ hoạt động của Davidson Furniture. Với tinh thần cầu tiến luôn cố gắng hết mình để cung cấp những sản phẩm chất lượng cộng với dịch vụ thân thiện cho khách hàng, chúng tôi hy vọng có thể chia sẻ một niềm tin cố hữu với tất cả mọi người: “Cuộc sống sẽ trở nên tốt đẹp hơn khi không gian sống được quan tâm và đầu tư đúng mực.”
                             <br><br>
 
@@ -165,7 +162,14 @@
     </section>
 
 
-    
+    <!-- Start Best Sellers -->
+    <section id="bestseller">
+        <div class="wrapper">
+            <h2 class="title font-xl">Best sellers</h2>
+            <div class="container"></div>
+        </div>
+    </section>
+
     <!-- Start offer -->
     <section id="offer">
         <div class="wrapper">
@@ -173,6 +177,7 @@
                 <h2 class="title font-xl">Đề xuất</h2>
                 <!-- 1 Item -->
                 <div class="container left">
+                    <div class="pad"></div>
                     <div class="content">
                         <h3 class="combo"><u>Combo</u></h3>
                         <h4 class="name">Độc lập Concept - Gói cơ bản</h4>
@@ -193,7 +198,195 @@
                     </div>
                 </div>
             </div>
-            <div class="clear"></div>
+        </div>
+    </section>
+
+    <!-- Start review session -->
+    <section id="review">
+        <div class="wrapper">
+            <h2 class="title font-xl">Review của khách hàng</h2>
+            <div class="slider-wrapper">
+                <div class="slider-post">
+                    <!-- 1 post -->
+                    <div id="firstClone" class="post">
+                        <div class="detail">
+                            <h2 class="open-quote"><span class="iconify" data-icon="bx:bxs-quote-alt-left"></span></h2>
+                            <p class="content">
+                                Bánh nhiều loại để lựa chọn, thời gian giao hàng cũng nhanh, 
+                                và có thể đặt trước nữa.
+                            </p>
+                            <h2 class="close-quote"><span class="iconify" data-icon="bx:bxs-quote-alt-right"></span></h2>
+                            
+                        </div>
+                        <div class="author">
+                            <div class="photo"><img src="https://i.ibb.co/2vyNrMs/NQ.png" alt=""></div>
+                            <div class="name-star">
+                                <h5 class="name">Quynh Quynh</h5>
+                                <div class="star">
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-half"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 post -->
+                    <div class="post">
+                        <div class="detail">
+                            <h2 class="open-quote"><span class="iconify" data-icon="bx:bxs-quote-alt-left"></span></h2>
+                            <p class="content">
+                                Bánh nhiều loại để lựa chọn, thời gian giao hàng cũng nhanh, 
+                                và có thể đặt trước nữa.
+                            </p>
+                            <h2 class="close-quote"><span class="iconify" data-icon="bx:bxs-quote-alt-right"></span></h2>
+                            
+                        </div>
+                        <div class="author">
+                            <div class="photo"><img src="https://i.ibb.co/K96NQxq/UN.png" alt=""></div>
+                            <div class="name-star">
+                                <h5 class="name">Nhi</h5>
+                                <div class="star">
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-half"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 post -->
+                    <div class="post">
+                        <div class="detail">
+                            <h2 class="open-quote"><span class="iconify" data-icon="bx:bxs-quote-alt-left"></span></h2>
+                            <p class="content">
+                                Bánh nhiều loại để lựa chọn, thời gian giao hàng cũng nhanh, 
+                                và có thể đặt trước nữa.
+                            </p>
+                            <h2 class="close-quote"><span class="iconify" data-icon="bx:bxs-quote-alt-right"></span></h2>
+                            
+                        </div>
+                        <div class="author">
+                            <div class="photo"><img src="https://i.ibb.co/SVsFWdt/MT.png" alt=""></div>
+                            <div class="name-star">
+                                <h5 class="name">Trang</h5>
+                                <div class="star">
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-half"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 post -->
+                    <div class="post">
+                        <div class="detail">
+                            <h2 class="open-quote"><span class="iconify" data-icon="bx:bxs-quote-alt-left"></span></h2>
+                            <p class="content">
+                                Bánh sinh nhật ở Yams đặc biệt ngon luôn á mọi người. Trang trí cũng đẹp nữa. Lại được chọn thời gian giao hàng. Tuyệt!
+                            </p>
+                            <h2 class="close-quote"><span class="iconify" data-icon="bx:bxs-quote-alt-right"></span></h2>
+                            
+                        </div>
+                        <div class="author">
+                            <div class="photo"><img src="https://i.ibb.co/bNdym7d/MX.png" alt=""></div>
+                            <div class="name-star">
+                                <h5 class="name">Minh Xuan</h5>
+                                <div class="star">
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-half"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 post -->
+                    <div class="post">
+                        <div class="detail">
+                            <h2 class="open-quote"><span class="iconify" data-icon="bx:bxs-quote-alt-left"></span></h2>
+                            <p class="content">
+                                Bánh nhiều loại để lựa chọn, thời gian giao hàng cũng nhanh, 
+                                và có thể đặt trước nữa.
+                            </p>
+                            <h2 class="close-quote"><span class="iconify" data-icon="bx:bxs-quote-alt-right"></span></h2>
+                            
+                        </div>
+                        <div class="author">
+                            <div class="photo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMUeTJH_GPVrC7f_4j-zt87-rcymJGZHAgoQ&usqp=CAU" alt=""></div>
+                            <div class="name-star">
+                                <h5 class="name">FIS-UEL</h5>
+                                <div class="star">
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-half"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 post -->
+                    <div class="post">
+                        <div class="detail">
+                            <h2 class="open-quote"><span class="iconify" data-icon="bx:bxs-quote-alt-left"></span></h2>
+                            <p class="content">
+                                Bánh nhiều loại để lựa chọn, thời gian giao hàng cũng nhanh, 
+                                và có thể đặt trước nữa.
+                            </p>
+                            <h2 class="close-quote"><span class="iconify" data-icon="bx:bxs-quote-alt-right"></span></h2>
+                            
+                        </div>
+                        <div class="author">
+                            <div class="photo"><img src="https://cdn.nhanlucnganhluat.vn/uploads/images/39A07AE6/logo/2018-09/logo.jpg" alt=""></div>
+                            <div class="name-star">
+                                <h5 class="name">UEL</h5>
+                                <div class="star">
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-half"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 post -->
+                    <div id="lastClone" class="post">
+                        <div class="detail">
+                            <h2 class="open-quote"><span class="iconify" data-icon="bx:bxs-quote-alt-left"></span></h2>
+                            <p class="content">
+                                Bánh nhiều loại để lựa chọn, thời gian giao hàng cũng nhanh, 
+                                và có thể đặt trước nữa.
+                            </p>
+                            <h2 class="close-quote"><span class="iconify" data-icon="bx:bxs-quote-alt-right"></span></h2>
+                            
+                        </div>
+                        <div class="author">
+                            <div class="photo"><img src="https://i.ibb.co/XxMb74k/jennie.jpg" alt=""></div>
+                            <div class="name-star">
+                                <h5 class="name">Jenny</h5>
+                                <div class="star">
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-fill"></span>
+                                    <span class="iconify" data-icon="bi:star-half"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="indicator">
+                    <button class="prev"><span class="iconify" data-icon="akar-icons:chevron-left"></span></button>
+                    <button class="next"><span class="iconify" data-icon="akar-icons:chevron-right"></span></button>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -285,7 +478,7 @@
         <!-- ========== Start scripts ============-->
         <!-- Compulsory -->
         <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="/js/header-footer.js"></script>
+        <script src="./js/header-footer.js"></script>
         <!-- Customize your script here -->
         <script src="./js/product.js"></script>
         <script src="./js/index.js"></script>
