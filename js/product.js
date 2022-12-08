@@ -72,7 +72,7 @@ function cartQuantityChange(item_id, e){
 function loadPurchasingList(){
   var carts = loadCart();
   var subTotal = 0;
-  var deliFee = 30000;
+  var deliFee = 150000;
 
   carts.forEach(item => subTotal += item.product.price * item.quantity);
   var cartWarpper = carts.map(function(item){
@@ -94,7 +94,7 @@ function loadPurchasingList(){
   // Calculate with delivery fee
   calcInvoice(deliFee, subTotal);
   $('#deli').onclick = function(){
-    deliFee = 30000;
+    deliFee = 150000;
     calcInvoice(deliFee, subTotal);
   }
   $('#pickup').onclick = function(){

@@ -7,21 +7,18 @@
     <title>Davidson | Home</title>
     <!-- Mandatory links -->
     <!-- Logo on Tabs -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="./images/favicons/site.webmanifest">
     <!-- CSS base source, Header - Footer and Icons for all HTML files -->
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-    <link rel="stylesheet" href="./css/cart.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/header-footer.css">
     <!-- Custom file -->
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/cart.css">
 </head>
 
 <body>
     <div class="app">
-<!-- =====================================================Start Header============================================================= -->
+        <!-- =====================================================Start Header============================================================= -->
         <header>
             <nav >
                 <div id="menu-icon"><span class="iconify" data-icon="bx:bx-menu-alt-left"></span></div>
@@ -37,6 +34,8 @@
                             <ul>
                                 <li><a href="filter.html#bestseller" class="sub-item-1">Phổ biến</a></li>
                                 <li><a href="filter.html#new" class="sub-item-1">Sản phẩm mới</a></li>
+                                <li><a href="filter.html#promotion" class="sub-item-1">Khuyến mãi</a></li>
+                                <li><a href="filter.html#offer" class="sub-item-1">Đề xuất</a></li>
                                 <li><a href="filter.html#ban" class="sub-item-1">Phân loại</a>
                                     <div class="child-2">
                                         <ul>
@@ -44,9 +43,6 @@
                                             <li><a href="filter.html#ghe" class="sub-item-2">Ghế</a></li>
                                             <li><a href="filter.html#sofa" class="sub-item-2">Sofa</a></li>
                                             <li><a href="filter.html#giuong" class="sub-item-2">Giường</a></li>
-                                            <li><a href="filter.html#den" class="sub-item-2">Đèn</a></li>
-                                            <li><a href="filter.html#guong" class="sub-item-2">Gương</a></li>
-                                            <li><a href="filter.html#ketu" class="sub-item-2">Kệ, tủ</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -101,15 +97,15 @@
 
         </header>
 
-<!-- =========================================================CODE HERE========================================================== -->
-    <div class="container_cart">
-        <section id="banners">
-            <div class="banner-text">
-                <h1 class="main-title">Giỏ hàng</h1>
-                <h3 class="description">"Tối giản - Hiện Đại - Giá cả phải chăng"</h3>
+        <!-- =========================================================CODE HERE========================================================== -->
+            <div class="container_cart">
+                <section id="banners">
+                    <div class="banner-text">
+                        <h1 class="main-title">Giỏ hàng</h1>
+                        <h3 class="description">"Tối giản - Hiện Đại - Giá cả phải chăng"</h3>
+                    </div>
+                </section>
             </div>
-        </section>
-    </div>
 
         <section class="content">
             <table class="cart">
@@ -184,10 +180,22 @@
         <!-- ========== Start scripts ============-->
         <!-- Compulsory -->
         <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="/js/header-footer.js"></script>
+        <script src="./js/header-footer.js"></script>
         <!-- Customize your script here -->
         <script src="./js/product.js"></script>
-        <script src="./js/index.js"></script>
+        <script>
+            (function ScrollEvent(){
+                ScrollReveal({
+                    reset:true,
+                    distance: '60px',
+                    duration: 2500, 
+                    delay:400
+                })
+                ScrollReveal().reveal('.main-title', { delay: 400, origin:'left' });
+                ScrollReveal().reveal('#banners .description', { delay: 500, origin:'right' });
+            
+            })()
+        </script>
     </div>
 </body>
 </html>

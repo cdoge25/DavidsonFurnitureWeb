@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davidson</title>
+    <!-- Mandatory links -->
+    <!-- Logo on Tabs -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicons/site.webmanifest">
+    <!-- CSS base source, Header - Footer and Icons for all HTML files -->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <!-- Custom file -->
+    <link rel="stylesheet" href="./css/product-detail.css">
+</head>
+
+<body>
+    <div class="app">
+
+<!-- =====================================================Start Header============================================================= -->
+<header>
+    <nav >
+        <div id="menu-icon"><span class="iconify" data-icon="bx:bx-menu-alt-left"></span></div>
+        <!-- Davidson Logo -->
+        <div class="logo">
+            <a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a>
+        </div>
+        <!-- Menu -->
+        <ul class="menu">
+            <li><a href="index.html" class="item">Home</a></li>
+            <li id="menu"><a href="category.html" class="item">Danh mục</a>
+                <div class="child-1">
+                    <ul>
+                        <li><a href="filter.html#bestseller" class="sub-item-1">Phổ biến</a></li>
+                        <li><a href="filter.html#new" class="sub-item-1">Sản phẩm mới</a></li>
+                        <li><a href="filter.html#promotion" class="sub-item-1">Khuyến mãi</a></li>
+                        <li><a href="filter.html#offer" class="sub-item-1">Đề xuất</a></li>
+                        <li><a href="filter.html#ban" class="sub-item-1">Phân loại</a>
+                            <div class="child-2">
+                                <ul>
+                                    <li><a href="filter.html#ban" class="sub-item-2">Bàn</a></li>
+                                    <li><a href="filter.html#ghe" class="sub-item-2">Ghế</a></li>
+                                    <li><a href="filter.html#sofa" class="sub-item-2">Sofa</a></li>
+                                    <li><a href="filter.html#giuong" class="sub-item-2">Giường</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="consult.html" class="item" >Tư vấn</a></li>
+            <li><a href="blog.html" class="item">Blog</a></li>
+            <li><a href="aboutus.html" class="item">About us</a></li>
+            <div class="logo-menu"><a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a></div>
+            <div class="close-btn"><span class="iconify" data-icon="ci:close-big"></span></div>
+        </ul>
+        <!-- Search, account, cart icons -->
+        <div class="group-icons">
+            <!-- Search icon and input -->
+            <input type="search" id="search-input" name="furnitures" list="furnitures" placeholder="Bạn cần tìm gì?...">
+            <datalist id="furnitures">
+                <option value="ban">
+                <option value="ghe">
+                <option value="sofa">
+                <option value="giuong">
+            </datalist>
+            <button id="find-btn">Tìm</button>
+            <button id="search-icon"><span class="iconify" data-icon="mdi:magnify"></span></button>
+            <!-- Cart icon and status -->
+            <div id="cart">
+                <a class="cart-icon" href="cart.html">
+                    <p class="item-count"></p>
+                    <span class="iconify" data-icon="mdi:cart-outline"></span>
+                </a>
+                <div class="cart-box">
+                    <div class="empty-cart">
+                        <img src="https://mydigitech.in/ecommerce/img/Frontend/empty-cart%20%282%29.jpg" alt="empty cart">
+                    </div>
+                    <!-- Cart has items -->
+                    <div class="non-empty">
+                        <header>Sản phẩm mới thêm</header>
+                        <div class="wrapper"></div>
+                        <div class="view-cart"><a href="cart.html" class="btn btn-primary"> Xem tất cả</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Account icon -->
+            <a href="#" id="account-icon">
+                <div class="acc-photo">
+                    <img class="user-photo" src="https://" alt="">
+                    <p class="temp-user"><span class="iconify" data-icon="mdi:account-circle-outline"></span></p>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+</header>
+
+<!-- =========================================================CODE HERE========================================================== -->
+        <!-- ==========Start layout container============= -->
+        <div id="container">
+            <!-- Product detail -->
+            <section id="product-detail">
+                <!-- Left side: Current Product detail-->
+                <div class="product-wrapper">
+                    <div class="thumbnail">
+                        <img src="" alt="">
+                    </div>
+                    <div class="detail">
+                        <h3 class="name"></h3>
+                        <p class="price"></p>
+                        <h4>Nguyên liệu</h4>
+                        <p class="material"></p>
+                        <div class="choose">
+                            <input type="number" id="quantity" class="btn btn-second" name="quantity" min="1" max="100" value="1">
+                            <button id="add-cart" class="btn btn-second">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="description">
+                        <h3 class="title">Mô tả</h3>
+                        <p class="content"></p>
+                    </div>
+                </div>
+                <!-- Right side: Cart -->
+                <div class="cart-wrapper">
+                    <h3 class="title">GIỎ HÀNG</h3>
+                    <div class="item-list">
+                    </div>
+                    <p>(Một số sản phẩm có thể bị ẩn bớt do danh sách quá dài)</p>
+                    <!-- End list -->
+                    <hr>
+                    <!-- Total of bill -->
+                    <div class="total">
+                        <h3>Tổng cộng</h3>
+                        <p class="total-bill"></p>
+                    </div>
+                    <!-- Buttons check list -->
+                    <div class="btn-group">
+                        <a href="cart.html" class="btn btn-primary to-cart">Xem giỏ hàng</a>
+                        <a href="order.html" class="btn btn-primary pay">Thanh toán</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </section>
+            <!-- Relevant products -->
+            <section id="relevant">
+                <h3 class="font-xl title">Sản phẩm liên quan</h3>
+                <div class="wrapper"></div>
+            </section>
+            <!-- Evaluation -->
+            <section id="evaluate">
+                <h3 class="font-xl">Đánh giá</h3>
+                <div class="container">
+                    <div class="item">
+                        <div class="avatar"><img src="https://i.ibb.co/QY1k00Z/image.png" alt=""></div>
+                        <div class="content">
+                            <h3 class="name">Ed Sheeran</h3>
+                            <div class="star">
+                                <span class="iconify" data-icon="bi:star-fill"></span>
+                                <span class="iconify" data-icon="bi:star-fill"></span>
+                                <span class="iconify" data-icon="bi:star-fill"></span>
+                                <span class="iconify" data-icon="bi:star-fill"></span>
+                                <span class="iconify" data-icon="bi:star-half"></span>
+                            </div>
+                            <p class="comment">Bánh nhiều loại để lựa chọn, thời gian giao hàng cũng nhanh, 
+                                và có thể đặt trước nữa.</p>
+                            <div class="image">
+                                <img src="" alt="">
+                            </div>
+                            <p class="time">23:59, 31-12-2021</p>
+                        </div>
+                    </div>
+                    <div class="item cus-comment"></div>
+                </div>
+            </section>
+            <!-- Your evaluation -->
+            <section id="cus-evaluate">
+                <h3 class="font-xl">Viết đánh giá</h3>
+                <div class="container">
+                    <div class="rating">Rating: 
+                        <div class="star">
+                            <span class="iconify" data-icon="bi:star-fill"></span>
+                            <span class="iconify" data-icon="bi:star-fill"></span>
+                            <span class="iconify" data-icon="bi:star-fill"></span>
+                            <span class="iconify" data-icon="bi:star-fill"></span>
+                            <span class="iconify" data-icon="bi:star-fill"></span>
+                        </div>
+                    </div>
+                    <div class="comment">Viết đánh giá:
+                        <textarea class="text" rows="4" placeholder="Đánh giá của bạn"></textarea>
+                    </div>
+                    <div class="upload-photo">Tải ảnh lên: 
+                        <label for="myfile" class="btn btn-third">Chọn ảnh</label>
+                        <input type="file" id="myfile" name="myfile" accept="image/png, image/jpeg" multiple>
+                    </div>
+                    <div class="image"></div>
+                    <button href="#" class="btn btn-primary submit">Đánh giá</button>
+                </div>
+            </section>
+        </div>
+        <!-- ===========End Container=========== -->
+        <!-- Messenger Chat Plugin Code -->
+
+              
+<!-- =========================================================Start Footer======================================================= -->
+        <footer>
+            <div class="wrapper">
+                <div class="big-logo">
+                    <a href="index.html" class="logo"><img src="./images/logo/Logo-whitebg-round.png" alt="logo"></a>
+                    <a href="index.html">Davidson <br> Furniture</a>
+                </div>
+                <div class="links">
+                    <div class="aboutus">
+                        <h3>Về chúng tôi</h3>
+                        <a href="aboutus.html" class="item">Về chúng tôi</a>
+                        <a href="policy.html" class="item">Chính sách</a>
+                        <a href="contact.html" class="item">Liên hệ</a>
+                    </div>
+                    <div class="contact">
+                        <h3>Liên Hệ</h3>
+                        <ul>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="carbon:location-filled"></span></div>
+                                <a href="#">Số 669 Quốc lộ 1K, Khu phố 3, Phường Linh Xuân, Thủ Đức, TP. HCM</a></li>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="fluent:mail-48-filled"></span></div>
+                                <a href="mailto:furniture.davidson@gmail.com">furniture.davidson@gmail.com</a></li>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="carbon:phone-voice-filled"></span></div>
+                                <a href="tel:0334109638">(033) 4 109 638</a></li>
+                        </ul>
+                    </div>
+                    <div class="follow">
+                        <h3>Theo dõi chúng tôi</h3>
+                        <div class="media">
+                            <a href="https://www.facebook.com/furniture.davidson"><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
+                            <a href="https://www.instagram.com/davidson_furniture"><span class="iconify" data-icon="ant-design:instagram-filled"></span></a>
+                            <a href="https://www.tiktok.com/@davidson_furniture"><span class="iconify" data-icon="iconoir:tiktok"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <hr>
+                <p class="copyright">&copy; 2022 Davidson Furniture. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </footer>
+        <!-- ========== Start scripts ============-->
+        <!-- Compulsory -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="./js/header-footer.js"></script>
+        <!-- Customize your script here -->
+        <script src="./js/product.js"></script>
+        <script src="./js/product-detail.js"></script>
+    </div>
+</body>
+</html>
