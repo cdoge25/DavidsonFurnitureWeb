@@ -53,7 +53,7 @@ section{
     display: none;
 }
   
-#banners .slide-wrapper .slider-item:first-child{background-image: url(../images/banners/category.png); display: block;}
+#banners .slide-wrapper .slider-item:first-child{background-image: url(../images/banners/hero_menu.jpg); display: block;}
   
   
 #banners .banner-text{
@@ -152,6 +152,13 @@ header nav .group-icons .cart-box .non-empty .wrapper{
 
 #bestseller .wrapper .container .item:nth-child(2) .product-item{background-color: var(--item-3);}
 
+#bestseller .floating-buble{
+    position: absolute;
+    top: 200px;
+    margin-left: -60px;
+}
+
+#bestseller .floating-buble img{transform: rotate(10deg);}
 
 
 @media (min-width: 429px) and (max-width: 768px){
@@ -167,7 +174,7 @@ header nav .group-icons .cart-box .non-empty .wrapper{
 }
 
 
-/* new product */
+/* new flavour */
 #new{
     margin-top: 5%;
     height: fit-content;
@@ -197,36 +204,35 @@ header nav .group-icons .cart-box .non-empty .wrapper{
     line-height: 40px;
 }
 
-#new .content .product-content{
+#new .content .flavour-content{
     position: relative;
     right: -24%;
     top: 0;
 }
-#new .content .product-content .product-image{
-    width: 800px;
-    height: 800px;
+#new .content .flavour-content .flavour-image{
+    
     margin: 0;
 }
-#new .content .product-content .new-product{
+#new .content .flavour-content .new-flavour{
     position: absolute;
     top: 4%;
     right: 10%;
     text-align: right;
     line-height: 40px;
 }
-#new .content .product-content .new-product span{
+#new .content .flavour-content .new-flavour span{
     background-color: var(--primary-color);
     padding: 6px;
     color: white;
 }
 
-#new .content .product-content .new-product p:nth-child(2){
+#new .content .flavour-content .new-flavour p:nth-child(2){
     
-    width: 100%;
+    width: 60%;
     margin: 20px 0 10px auto;
 }
 
-#new .content .product-content .new-product p:last-child{
+#new .content .flavour-content .new-flavour p:last-child{
     color: var(--primary-color);
 }
 
@@ -240,14 +246,14 @@ header nav .group-icons .cart-box .non-empty .wrapper{
         line-height: 2.8rem;
         font-size: 1.7rem;
     }
-    #new .content .product-content p{
+    #new .content .flavour-content p{
         padding: 2px;
         line-height: 1.7rem;
         font-size: 1.7rem;
     }
 }
 
-@media (width: 100%){
+@media (max-width: 428px){
     
     #new .content .name{
         font-size: 2rem;
@@ -263,13 +269,151 @@ header nav .group-icons .cart-box .non-empty .wrapper{
     #new .content input{
         font-size: 0.8rem;
     }
-    #new .content .product-content p{
+    #new .content .flavour-content p{
         padding: 1px;
         line-height: 1rem;
         font-size: 1rem;
     }
-    #new .content .product-content .new-product p:last-child{
+    #new .content .flavour-content .new-flavour p:last-child{
         color: var(--background);
+    }
+}
+
+/* sale */
+#sale{
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+#sale .wrapper .container .tag{
+    font-size: 1.2rem;
+}
+
+#sale .wrapper .container .item:first-child .product-item{background-color: var(--item-4);} 
+#sale .wrapper .container .item:last-child .product-item{background-color: var(--item-1);}
+
+#sale .wrapper .container .item:nth-child(2) .product-item{background-color: var(--item-2);}
+
+#sale .floating-buble{
+    position: absolute;
+    top: 0px;
+    right: -80px;
+    margin-right: -100px;
+}
+
+#sale .floating-buble img{transform: rotate(120deg);}
+
+/* offer */
+#offer{
+    margin-top: 3%;
+    height: fit-content;
+}
+
+#offer .content{
+    position: relative;
+    width: 84%;
+    height: fit-content;
+    padding: 60px 0;
+    margin: 0 auto;
+}
+#offer .content .flavour-content{
+    position: relative;
+    left: -26%;
+}
+#new .content .flavour-content .flavour-image{
+    width: 100%;
+    margin: 0;
+}
+#offer .content .flavour-content .offer-flavour{
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    text-align: left;
+    line-height: 40px;
+}
+#offer .content .flavour-content .offer-flavour span{
+    background-color: var(--primary-color);
+    padding: 6px;
+    color: white;
+}
+
+#offer .content .flavour-content .offer-flavour p:nth-child(2){
+    
+    width: 60%;
+    margin: 20px auto 10px 0;
+}
+
+#offer .content .flavour-content .offer-flavour p:last-child{
+    color: var(--primary-color);  
+}
+#offer .content .text{
+    vertical-align: top;
+    padding-left: 3%;
+}
+
+#offer .content .text .title{
+    margin-bottom: 8%;
+    margin-left: 0px;
+}
+
+#offer .content .text .name{
+    font-size: 4.2rem;
+    margin-bottom: 10%;
+}
+
+#offer .content .text img{
+    width: 85px;
+    float: left;
+    margin-right: 5%;
+}
+#offer .content .text .description{
+    margin-bottom: 10%;
+    line-height: 40px;
+}
+
+#offer .content .text input{
+    margin-bottom: 10%;
+}
+
+@media (min-width: 429px) and (max-width: 768px){
+    #offer .content .text .name{
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+    }
+    #offer .content  .flavour-content p{
+        line-height: 2rem;
+        font-size: 1.7rem;
+    }
+    #offer .content .text .description{
+        line-height: 2.2rem;
+        font-size: 1.7rem;
+        margin-right: -5%;
+    }
+    #offer .content .text img{
+        width: 60px;
+    }
+}
+
+@media (max-width: 428px){
+    
+    #offer .content .text .name{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    #offer .content  .flavour-content p{
+        line-height: 1.2rem;
+        font-size: 1rem;
+    }
+    #offer .content .text .description{
+        line-height: 1.2rem;
+        font-size: 1rem;
+        margin-right: -5%;
+    }
+    #offer .content .text img{
+        width: 40px;
+    }
+    #offer .content .text input{
+        font-size: 0.8rem;
     }
 }
 
@@ -308,6 +452,13 @@ header nav .group-icons .cart-box .non-empty .wrapper{
 
 #ghe .wrapper .container .item:nth-child(2) .product-item{background-color: var(--item-2);}
 
+#ghe .floating-buble{
+    position: absolute;
+    top: -150px;
+    margin-left: -60px;
+}
+
+#ghe .floating-buble img{transform: rotate(10deg);}
 
 /* sofa */
 #sofa{
@@ -329,5 +480,16 @@ header nav .group-icons .cart-box .non-empty .wrapper{
 #giuong .wrapper .container .item:last-child .product-item{background-color: var(--item-4);}
 
 #giuong .wrapper .container .item:nth-child(2) .product-item{background-color: var(--item-1);}
+
+#giuong .floating-buble{
+    position: absolute;
+    top: -200px;
+    margin-left: -80px;
+}
+
+#giuong .floating-buble img{transform: rotate(120deg);}
+
+
+
 
 

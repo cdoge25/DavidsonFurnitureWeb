@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yams | Home</title>
+    <title>Yams</title>
     <!-- Mandatory links -->
     <!-- Logo on Tabs -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
     <link rel="manifest" href="./images/favicons/site.webmanifest">
     <!-- CSS base source, Header - Footer and Icons for all HTML files -->
@@ -16,17 +15,17 @@
     <link rel="stylesheet" href="./css/header-footer.css">
     <!-- Custom file -->
     <link rel="stylesheet" href="./css/category.css">
+    
 </head>
-
 <body>
     <div class="app">
-<!-- =====================================================Start Header============================================================= -->
+        <!-- ================================================Start Header======================================================== -->
         <header>
             <nav >
                 <div id="menu-icon"><span class="iconify" data-icon="bx:bx-menu-alt-left"></span></div>
-                <!-- Logo Yams -->
+                <!-- Logo Davidson -->
                 <div class="logo">
-                    <a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Yams logo"></a>
+                    <a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a>
                 </div>
                 <!-- Menu -->
                 <ul class="menu">
@@ -36,23 +35,22 @@
                             <ul>
                                 <li><a href="filter.html#bestseller" class="sub-item-1">Phổ biến</a></li>
                                 <li><a href="filter.html#new" class="sub-item-1">Sản phẩm mới</a></li>
-                                <li><a href="filter.html#table" class="sub-item-1">Phân loại</a>
+                                <li><a href="filter.html#promotion" class="sub-item-1">Khuyến mãi</a></li>
+                                <li><a href="filter.html#offer" class="sub-item-1">Đề xuất</a></li>
+                                <li><a href="filter.html#ban" class="sub-item-1">Phân loại</a>
                                     <div class="child-2">
                                         <ul>
-                                            <li><a href="filter.html#table" class="sub-item-2">Bàn</a></li>
-                                            <li><a href="filter.html#chair" class="sub-item-2">Ghế</a></li>
+                                            <li><a href="filter.html#ban" class="sub-item-2">Bàn</a></li>
+                                            <li><a href="filter.html#ghe" class="sub-item-2">Ghế</a></li>
                                             <li><a href="filter.html#sofa" class="sub-item-2">Sofa</a></li>
-                                            <li><a href="filter.html#mirror" class="sub-item-2">Gương</a></li>
-                                            <li><a href="filter.html#lamp" class="sub-item-2">Đèn</a></li>
-                                            <li><a href="filter.html#bed" class="sub-item-2">Giường</a></li>
-                                            <li><a href="filter.html#wardrobe" class="sub-item-2">Kệ, tủ</a></li>
+                                            <li><a href="filter.html#giuong" class="sub-item-2">Giường</a></li>
                                         </ul>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="consult.html" class="item" >Tư vấn</a></li>
+                    <li><a href="consult.html" class="item">Tư vấn</a></li>
                     <li><a href="blog.html" class="item">Blog</a></li>
                     <li><a href="aboutus.html" class="item">About us</a></li>
                     <div class="logo-menu"><a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a></div>
@@ -61,12 +59,12 @@
                 <!-- Search, account, cart icons -->
                 <div class="group-icons">
                     <!-- Search icon and input -->
-                    <input type="search" id="search-input" name="furnitures" list="furnitures" placeholder="Bạn cần tìm gì?...">
-                    <datalist id="furnitures">
-                        <option value="Bàn">
-                        <option value="Ghế">
-                        <option value="Gương">
-                        <option value="Đèn">
+                    <input type="search" id="search-input" name="cakes" list="cakes" placeholder="Bạn cần tìm gì?...">
+                    <datalist id="cakes">
+                        <option value="ban">
+                        <option value="ghe">
+                        <option value="sofa">
+                        <option value="giuong">
                     </datalist>
                     <button id="find-btn">Tìm</button>
                     <button id="search-icon"><span class="iconify" data-icon="mdi:magnify"></span></button>
@@ -100,8 +98,8 @@
 
         </header>
 
-<!-- =========================================================CODE HERE========================================================== -->
-
+        <!-- =====================================================CODE HERE===================================================== -->
+        <!-- ==========Start layout container============= -->
         <div id="container">
             <!-- Banner -->
             <section id="banners">
@@ -109,9 +107,8 @@
                     <div class="slider-item"></div>
                 </div>
                 <div class="banner-text">
-                    <h1 class="font-xxl main-title">Sản phẩm</h1>
-                    <br>
-                    <h3 class="description">Đa dạng mẫu mã, giá cả phải chăng</h3>
+                    <h1 class="font-xxl main-title">Danh mục</h1>
+                    <h3 class="description">Đa dạng mẫu mã, hiện đại, tối giản</p>
                 </div>
             </section>
             <!-- Start Best Sellers -->
@@ -122,7 +119,7 @@
                     <div class="container"></div>
                 </div>
             </section>
-            <!-- Start new product -->
+            <!-- Start new flavour -->
             <section id="new">
                 <h2 class="title font-xl">Sản phẩm mới</h2> 
                 <div class="content">
@@ -130,18 +127,18 @@
                         <tr>
                             <td>
                                 <div class="text">
-                                    <h3 class="name">SOFA HIRO</h3>
-                                    <p class="description">Sản phẩm mới trong bộ sưu tập QUADA</p>
+                                    <h3 class="name">HIRO</h3>
+                                    <p class="description">Sofa cao cấp làm từ gỗ dầu đỏ sấy và nệm D40 phủ gòn</p>
                                     <input class="btn btn-second" type="button" value="ĐẶT MUA NGAY">
                                 </div>
                             </td>
                             <td>
-                                <div class="product-content">
-                                    <img class="product-image" src="https://product.hstatic.net/1000280685/product/a091_02_b65d1788de78466ea94eaaf3e566bc65_master.jpg" alt="">
-                                    <div class="new-product">
-                                        <p><span>HIRO</span></p>
-                                        <p>Sofa băng</p>
-                                        <p><b>10.500.000 <u>đ</u></b></p>
+                                <div class="flavour-content">
+                                    <img class="flavour-image" src="https://product.hstatic.net/1000280685/product/a091_32__1600x1200__3aef5708a4144778b4ad13c5dbcbd793_master.jpg" alt="">
+                                    <div class="new-flavour">
+                                        <p><span>NEW PRODUCT</span></p>
+                                        <p>HIRO</p>
+                                        <p><b>13.450.000 <u>đ</u></b></p>
                                     </div>
                                 </div>
                             </td>
@@ -149,79 +146,75 @@
                     </table>
                 </div>
             </section>
-            <!-- Start Bàn -->
+            <!-- Start Sale -->
+            <section id="sale">
+                <div class="wrapper">
+                    <h2 class="title font-xl">Khuyến mãi</h2>
+                    <a href="filter.html#promotion" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #ff6600;" data-width="34"></span></a>
+                    <div class="container"></div>
+                </div>
+            </section>
+            <!-- Start offer -->
+            <section id="offer">
+                <table class="content" >
+                    <tr>
+                        <td class="left">
+                            <div class="flavour-content">
+                                <img class="flavour-image" src="https://eatsy.bold-themes.com/cupcakes/wp-content/uploads/sites/3/2021/03/hero_image_03.png" alt="">
+                                <div class="offer-flavour">
+                                    <p><span>WEEKLY OFFER</span></p>
+                                    <p>Tropical Fruits</p>
+                                    <p><b>35.000 <u>đ</u></b></p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text">
+                            <h2 class="title font-xl">Đề xuất</h2> 
+                            <h3 class="name">Tropical Fruits Pack</h3>
+                            <div>
+                                <img src="https://eatsy.bold-themes.com/cupcakes/wp-content/uploads/sites/3/2021/03/image_logo_01.png" alt="">
+                                <p class="description">Gluten Free là xu hướng nói không với Gluten – hỗn hợp của hai loại protein là glutenin và gliadin.</p>
+                            </div>
+                            <input class="btn btn-second" type="button" value="ĐẶT MUA NGAY">
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <!-- Start ban -->
             <section id="ban">
                 <div class="wrapper">
-                    <h2 class="title font-xl">Bàn</h2>
-                    <a href="filter.html#ban" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #fa4e88;" data-width="34"></span></a>
+                    <h2 class="title font-xl">ban</h2>
+                    <a href="filter.html#ban" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #ff6600;" data-width="34"></span></a>
                     <div class="container"></div>
                 </div>
             </section>
-            <!-- Start Ghế -->
+            <!-- Start Cheese cake -->
             <section id="ghe">
                 <div class="wrapper">
-                    <h2 class="title font-xl">Ghế</h2>
-                    <a href="filter.html#ghe" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #fa4e88;" data-width="34"></span></a>
+                    <h2 class="title font-xl">Cheese cake</h2>
+                    <a href="filter.html#ghe" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #ff6600;" data-width="34"></span></a>
                     <div class="container"></div>
                 </div>
             </section>
-            <!-- Start Sofa -->
+            <!-- Start sofa -->
             <section id="sofa">
                 <div class="wrapper">
-                    <h2 class="title font-xl">Sofa</h2>
-                    <a href="filter.html#sofa" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #fa4e88;" data-width="34"></span></a>
+                    <h2 class="title font-xl">sofa</h2>
+                    <a href="filter.html#sofa" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #ff6600;" data-width="34"></span></a>
                     <div class="container"></div>
                 </div>
             </section>
-            <!-- Start Giường -->
+            <!-- Start giuong -->
             <section id="giuong">
                 <div class="wrapper">
-                    <h2 class="title font-xl">Giường</h2>
-                    <a href="filter.html#giuong" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #fa4e88;" data-width="34"></span></a>
+                    <h2 class="title font-xl">giuong</h2>
+                    <a href="filter.html#giuong" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #ff6600;" data-width="34"></span></a>
                     <div class="container"></div>
                 </div>
             </section>
         </div>
 
-        <!-- Messenger Chat Plugin Code -->
-        <div id="fb-root"></div>
-
-        <!-- Your Chat Plugin code -->
-        <div id="fb-customer-chat" class="fb-customerchat">
-        </div>
-
-        <script>
-        var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "104829868153851");
-        chatbox.setAttribute("attribution", "biz_inbox");
-        </script>
-
-        <!-- Your SDK code -->
-        <script>
-        window.fbAsyncInit = function() {
-            FB.init({
-            xfbml            : true,
-            version          : 'v12.0'
-            });
-        };
-
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-        </script>
-
-
-
-
-
-
-        
-      
-<!-- =========================================================Start Footer======================================================= -->
+        <!-- ============================================Start Footer========================================================= -->
         <footer>
             <div class="wrapper">
                 <div class="big-logo">
@@ -266,10 +259,26 @@
         <!-- ========== Start scripts ============-->
         <!-- Compulsory -->
         <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="/js/header-footer.js"></script>
+        <script src="./js/header-footer.js"></script>
         <!-- Customize your script here -->
         <script src="./js/product.js"></script>
-        <script src="./js/index.js"></script>
+        <script>
+            (function ScrollEvent(){
+                ScrollReveal({
+                    reset: false,
+                    distance: '80px',
+                    duration: 2500, 
+                    delay: 200
+                })
+                ScrollReveal().reveal('#banners .main-title, #offer .left', { delay: 300, origin:'left' });
+                ScrollReveal().reveal('#banners .description, #offer .right', { delay: 300, origin:'right' });
+                ScrollReveal().reveal('.container .item', { delay: 400, origin:'bottom', interval: 200});
+                ScrollReveal().reveal('.hl-box .content-box, #new .text, #offer .flavour-content', { delay: 200, origin:'left'});
+                ScrollReveal().reveal('.hl-box .image-box, #order .center, #new .flavour-content, #offer .text, #view-all, #offer .title', { delay: 400, origin:'right' });
+                ScrollReveal().reveal('#ban .title, #ghe .title, #sofa .title, #giuong .title', { delay: 500, origin:'bottom'});
+                
+            })()
+        </script>
     </div>
 </body>
 </html>
