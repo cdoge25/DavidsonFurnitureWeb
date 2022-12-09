@@ -1,4 +1,4 @@
-var url = 'https://thanhdatnt.github.io/database-web/products.json'
+var url = 'https://raw.githubusercontent.com/cdoge25/DFdatabase/main/products.json'
 const getProducts = async () => {
   try {
     const results = await fetch(url);
@@ -164,13 +164,13 @@ async function showPromotion(){
 	});
   var product = item.join('');
   $('#sale .container').innerHTML = product;
-  showban(products);
-  showghe(products);
-  showsofa(products);
-  showgiuong(products);
+  showBan(products);
+  showGhe(products);
+  showSofa(products);
+  showGiuong(products);
 }
 
-function showban(products){
+function showBan(products){
   let bans = products.filter((product) => {
     return product.category == '6'
   });
@@ -192,7 +192,7 @@ function showban(products){
   $('#ban .container').innerHTML = product;
 }
 
-function showghe(products){
+function showGhe(products){
   let chessCake = products.filter((product) => {
     return product.category == '2'
   });
@@ -214,7 +214,7 @@ function showghe(products){
   $('#ghe .container').innerHTML = product;
 }
 
-function showsofa(products){
+function showSofa(products){
   let sofa = products.filter((product) => {
     return product.category == '7'
   });
@@ -236,7 +236,7 @@ function showsofa(products){
   $('#sofa .container').innerHTML = product;
 }
 
-function showgiuong(products){
+function showGiuong(products){
   let giuong = products.filter((product) => {
     return product.category == '8'
   });
@@ -285,19 +285,19 @@ function navigateFilter(){
       break;
     case '#ban':
       $('#ban').classList.add('active');
-      showbanFilter();
+      showBanFilter();
       break;
     case '#ghe':
-      $('#cheese-cake').classList.add('active');
-      showgheFilter();
+      $('#ghe').classList.add('active');
+      showGheFilter();
       break;
     case '#sofa':
       $('#sofa').classList.add('active');
-      showsofaFilter();
+      showSofaFilter();
       break;
     case '#giuong':
       $('#giuong').classList.add('active');
-      showgiuongFilter();
+      showGiuongFilter();
       break;
   }
   $('.loading').style.display = 'none';
@@ -391,7 +391,7 @@ async function showPromoFilter(){
   $('#promotion .container').innerHTML = product;
 }
 
-async function showbanFilter(){
+async function showBanFilter(){
   const products = await getProducts();
   let bans = products.filter((product) => {
     return product.category == '6'
@@ -413,7 +413,7 @@ async function showbanFilter(){
   $('#ban .container').innerHTML = product;
 }
 
-async function showgheFilter(){
+async function showGheFilter(){
   const products = await getProducts();
   let chessCake = products.filter((product) => {
     return product.category == '2'
@@ -432,10 +432,10 @@ async function showgheFilter(){
             </div>`
 	});
   var product = item.join('');
-  $('#cheese-cake .container').innerHTML = product;
+  $('#ghe .container').innerHTML = product;
 }
 
-async function showsofaFilter(){
+async function showSofaFilter(){
   const products = await getProducts();
   let sofa = products.filter((product) => {
     return product.category == '7'
@@ -457,7 +457,7 @@ async function showsofaFilter(){
   $('#sofa .container').innerHTML = product;
 }
 
-async function showgiuongFilter(){
+async function showGiuongFilter(){
   const products = await getProducts();
   let giuong = products.filter((product) => {
     return product.category == '8'
@@ -497,12 +497,12 @@ async function showProductDetail(){
     $('.product-wrapper .detail .name').innerText = p.name;
     $('.product-wrapper .detail .price').innerHTML = `${p.currentPrice} <u>đ</u>`;
     $('.product-wrapper .detail .material').innerText = p.ingredient;
-    $('.product-wrapper .description .content').innerText = p.description;
+    $('.product-wrapper .detail .description .content').innerText = p.description;
   })
   // Click on the "Add to cart button"
   $('#add-cart').onclick = function () {
     var cart = loadCart() || [];
-    var count = $('.product-wrapper .detail #quantity').value
+    var count = $('.product-wrapper #quantity').value
     let item = {
       id: '',
       name: '',
