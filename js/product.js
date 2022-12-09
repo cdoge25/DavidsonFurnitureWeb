@@ -193,11 +193,11 @@ function showBan(products){
 }
 
 function showGhe(products){
-  let chessCake = products.filter((product) => {
+  let ghe = products.filter((product) => {
     return product.category == '2'
   });
-  chessCake = chessCake.slice(0, 3);
-	var item = chessCake.map(item => {
+  ghe = ghe.slice(0, 3);
+	var item = ghe.map(item => {
 			return `<div class="item">
             <div class="product-item">
                  <div class="tag" style="display: none;">${item.tag}</div>
