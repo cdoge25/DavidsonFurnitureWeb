@@ -496,8 +496,8 @@ async function showProductDetail(){
     $('#evaluate .item .image img').setAttribute('src', p.image);
     $('.product-wrapper .detail .name').innerText = p.name;
     $('.product-wrapper .detail .price').innerHTML = `${p.currentPrice} <u>đ</u>`;
-    $('.product-wrapper .detail .material').innerText = p.ingredient;
-    $('.product-wrapper .detail .description .content').innerText = p.description;
+    $('.product-wrapper .detail .size').innerText = p.size;
+    $('.product-wrapper .detail .material .content').innerText = p.material;
   })
   // Click on the "Add to cart button"
   $('#add-cart').onclick = function () {
