@@ -9,8 +9,8 @@ function ScrollEvent(){
     ScrollReveal().reveal('.banners .main-title, #combo .left', { delay: 200, origin:'left' });
     ScrollReveal().reveal('.banners .description, #combo .right', { delay: 200, origin:'right' });
     ScrollReveal().reveal('.all-product .container .item', { delay: 200, origin:'bottom', interval: 200});
-    ScrollReveal().reveal('#new .text, #offer-pro .product-content', { delay: 200, origin:'left'});
-    ScrollReveal().reveal('#new .product-content, #offer-pro .text, #offer-pro .title, #box .text', { delay: 100, origin:'right' });
+    ScrollReveal().reveal('#new .text, #offer-pro .flavour-content', { delay: 200, origin:'left'});
+    ScrollReveal().reveal('#new .flavour-content, #offer-pro .text, #offer-pro .title, #box .text', { delay: 100, origin:'right' });
     ScrollReveal().reveal('#ban .title, #ghe .title, #sofa .title, #giuong .title', { delay: 100, origin:'bottom'});
 }
 

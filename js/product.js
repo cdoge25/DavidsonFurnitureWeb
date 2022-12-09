@@ -72,7 +72,7 @@ function cartQuantityChange(item_id, e){
 function loadPurchasingList(){
   var carts = loadCart();
   var subTotal = 0;
-  var deliFee = 30000;
+  var deliFee = 150000;
 
   carts.forEach(item => subTotal += item.product.price * item.quantity);
   var cartWarpper = carts.map(function(item){
@@ -94,7 +94,7 @@ function loadPurchasingList(){
   // Calculate with delivery fee
   calcInvoice(deliFee, subTotal);
   $('#deli').onclick = function(){
-    deliFee = 30000;
+    deliFee = 150000;
     calcInvoice(deliFee, subTotal);
   }
   $('#pickup').onclick = function(){
@@ -140,7 +140,7 @@ async function showBestSeller(){
   $('#bestseller .container').innerHTML = product;
 }
 
-// ======= MENU PAGE =========
+// ======= category PAGE =========
 // Promotion session
 
 async function showPromotion(){
@@ -164,18 +164,18 @@ async function showPromotion(){
 	});
   var product = item.join('');
   $('#sale .container').innerHTML = product;
-  showMacaron(products);
-  showCheeseCake(products);
-  showPudding(products);
-  showTiramisu(products);
+  showban(products);
+  showghe(products);
+  showsofa(products);
+  showgiuong(products);
 }
 
-function showMacaron(products){
-  let macarons = products.filter((product) => {
+function showban(products){
+  let bans = products.filter((product) => {
     return product.category == '6'
   });
-  macarons = macarons.slice(0, 3);
-	var item = macarons.map(item => {
+  bans = bans.slice(0, 3);
+	var item = bans.map(item => {
 			return `<div class="item">
             <div class="product-item">
                  <div class="tag" style="display: none;">${item.tag}</div>
@@ -189,15 +189,15 @@ function showMacaron(products){
             </div>`
 	});
   var product = item.join('');
-  $('#macaron .container').innerHTML = product;
+  $('#ban .container').innerHTML = product;
 }
 
-function showCheeseCake(products){
-  let chessCake = products.filter((product) => {
+function showghe(products){
+  let ghe = products.filter((product) => {
     return product.category == '2'
   });
-  chessCake = chessCake.slice(0, 3);
-	var item = chessCake.map(item => {
+  ghee = ghe.slice(0, 3);
+	var item = ghe.map(item => {
 			return `<div class="item">
             <div class="product-item">
                  <div class="tag" style="display: none;">${item.tag}</div>
@@ -211,15 +211,15 @@ function showCheeseCake(products){
             </div>`
 	});
   var product = item.join('');
-  $('#cheesecake .container').innerHTML = product;
+  $('#ghe .container').innerHTML = product;
 }
 
-function showPudding(products){
-  let pudding = products.filter((product) => {
+function showsofa(products){
+  let sofa = products.filter((product) => {
     return product.category == '7'
   });
-  pudding = pudding.slice(0, 3);
-	var item = pudding.map(item => {
+  sofa = sofa.slice(0, 3);
+	var item = sofa.map(item => {
 			return `<div class="item">
             <div class="product-item">
                  <div class="tag" style="display: none;">${item.tag}</div>
@@ -233,15 +233,15 @@ function showPudding(products){
             </div>`
 	});
   var product = item.join('');
-  $('#pudding .container').innerHTML = product;
+  $('#sofa .container').innerHTML = product;
 }
 
-function showTiramisu(products){
-  let tiramisu = products.filter((product) => {
+function showgiuong(products){
+  let giuong = products.filter((product) => {
     return product.category == '8'
   });
-  tiramisu = tiramisu.slice(0, 3);
-	var item = tiramisu.map(item => {
+  giuong = giuong.slice(0, 3);
+	var item = giuong.map(item => {
 			return `<div class="item">
             <div class="product-item">
                  <div class="tag" style="display: none;">${item.tag}</div>
@@ -255,7 +255,7 @@ function showTiramisu(products){
             </div>`
 	});
   var product = item.join('');
-  $('#tiramisu .container').innerHTML = product;
+  $('#giuong .container').innerHTML = product;
 }
 
 // ======= FILTER PAGE =========
@@ -283,21 +283,21 @@ function navigateFilter(){
       $('#offer-pro').classList.add('active');
       showOfferFilter();
       break;
-    case '#macaron':
-      $('#macaron').classList.add('active');
-      showMacaronFilter();
+    case '#ban':
+      $('#ban').classList.add('active');
+      showbanFilter();
       break;
-    case '#cheesecake':
-      $('#cheese-cake').classList.add('active');
-      showCheeseCakeFilter();
+    case '#ghe':
+      $('#ghe').classList.add('active');
+      showgheFilter();
       break;
-    case '#pudding':
-      $('#pudding').classList.add('active');
-      showPuddingFilter();
+    case '#sofa':
+      $('#sofa').classList.add('active');
+      showsofaFilter();
       break;
-    case '#tiramisu':
-      $('#tiramisu').classList.add('active');
-      showTiramisuFilter();
+    case '#giuong':
+      $('#giuong').classList.add('active');
+      showgiuongFilter();
       break;
   }
   $('.loading').style.display = 'none';
@@ -390,13 +390,12 @@ async function showPromoFilter(){
   var product = item.join('');
   $('#promotion .container').innerHTML = product;
 }
-
-async function showMacaronFilter(){
+async function showbanFilter(){
   const products = await getProducts();
-  let macarons = products.filter((product) => {
+  let bans = products.filter((product) => {
     return product.category == '6'
   });
-	var item = macarons.map(item => {
+	var item = bans.map(item => {
 			return `<div class="item">
             <div class="product-item">
                  <div class="tag" style="display: none;">${item.tag}</div>
@@ -410,10 +409,10 @@ async function showMacaronFilter(){
             </div>`
 	});
   var product = item.join('');
-  $('#macaron .container').innerHTML = product;
+  $('#ban .container').innerHTML = product;
 }
 
-async function showCheeseCakeFilter(){
+async function showgheFilter(){
   const products = await getProducts();
   let chessCake = products.filter((product) => {
     return product.category == '2'
@@ -432,15 +431,15 @@ async function showCheeseCakeFilter(){
             </div>`
 	});
   var product = item.join('');
-  $('#cheese-cake .container').innerHTML = product;
+  $('#ghe .container').innerHTML = product;
 }
 
-async function showPuddingFilter(){
+async function showsofaFilter(){
   const products = await getProducts();
-  let pudding = products.filter((product) => {
+  let sofa = products.filter((product) => {
     return product.category == '7'
   });
-	var item = pudding.map(item => {
+	var item = sofa.map(item => {
 			return `<div class="item">
             <div class="product-item">
                  <div class="tag" style="display: none;">${item.tag}</div>
@@ -454,15 +453,15 @@ async function showPuddingFilter(){
             </div>`
 	});
   var product = item.join('');
-  $('#pudding .container').innerHTML = product;
+  $('#sofa .container').innerHTML = product;
 }
 
-async function showTiramisuFilter(){
+async function showgiuongFilter(){
   const products = await getProducts();
-  let tiramisu = products.filter((product) => {
+  let giuong = products.filter((product) => {
     return product.category == '8'
   });
-	var item = tiramisu.map(item => {
+	var item = giuong.map(item => {
 			return `<div class="item">
             <div class="product-item">
                  <div class="tag" style="display: none;">${item.tag}</div>
@@ -476,7 +475,7 @@ async function showTiramisuFilter(){
             </div>`
 	});
   var product = item.join('');
-  $('#tiramisu .container').innerHTML = product;
+  $('#giuong .container').innerHTML = product;
 }
 
 // ======= PRODUCT DETAIL PAGE =========
@@ -625,7 +624,7 @@ window.onload = function(){
   else if(urlParams.toString().includes('cart.html')){
     loadFullCart();
   }
-  else if(urlParams.toString().includes('menu.html')){
+  else if(urlParams.toString().includes('category.html')){
     showBestSeller();
     showPromotion();
   }
