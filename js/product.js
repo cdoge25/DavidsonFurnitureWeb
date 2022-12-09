@@ -193,11 +193,11 @@ function showban(products){
 }
 
 function showghe(products){
-  let chessCake = products.filter((product) => {
+  let ghe = products.filter((product) => {
     return product.category == '2'
   });
-  chessCake = chessCake.slice(0, 3);
-	var item = chessCake.map(item => {
+  ghee = ghe.slice(0, 3);
+	var item = ghe.map(item => {
 			return `<div class="item">
             <div class="product-item">
                  <div class="tag" style="display: none;">${item.tag}</div>
@@ -288,7 +288,7 @@ function navigateFilter(){
       showbanFilter();
       break;
     case '#ghe':
-      $('#cheese-cake').classList.add('active');
+      $('#ghe').classList.add('active');
       showgheFilter();
       break;
     case '#sofa':
@@ -390,7 +390,6 @@ async function showPromoFilter(){
   var product = item.join('');
   $('#promotion .container').innerHTML = product;
 }
-
 async function showbanFilter(){
   const products = await getProducts();
   let bans = products.filter((product) => {
@@ -432,7 +431,7 @@ async function showgheFilter(){
             </div>`
 	});
   var product = item.join('');
-  $('#cheese-cake .container').innerHTML = product;
+  $('#ghe .container').innerHTML = product;
 }
 
 async function showsofaFilter(){
