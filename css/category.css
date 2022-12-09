@@ -53,7 +53,7 @@ section{
     display: none;
 }
   
-#banners .slide-wrapper .slider-item:first-child{background-image: url(../images/banners/hero_menu.jpg); display: block;}
+#banners .slide-wrapper .slider-item:first-child{background-image: url(../images/banners/category.png); display: block;}
   
   
 #banners .banner-text{
@@ -318,7 +318,7 @@ header nav .group-icons .cart-box .non-empty .wrapper{
 }
 #offer .content .flavour-content{
     position: relative;
-    left: -26%;
+    left: -20%;
 }
 #new .content .flavour-content .flavour-image{
     width: 100%;
@@ -348,7 +348,7 @@ header nav .group-icons .cart-box .non-empty .wrapper{
 }
 #offer .content .text{
     vertical-align: top;
-    padding-left: 3%;
+    padding-left: 1%;
 }
 
 #offer .content .text .title{
