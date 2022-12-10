@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yams</title>
+    <title>Davidson | Home</title>
     <!-- Mandatory links -->
     <!-- Logo on Tabs -->
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="./images/favicons/site.webmanifest">
     <!-- CSS base source, Header - Footer and Icons for all HTML files -->
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/header-footer.css">
     <!-- Custom file -->
-    <link rel="stylesheet" href="./css/category.css">
-    
+    <link rel="stylesheet" href="./css/cart.css">
 </head>
+
 <body>
     <div class="app">
-        <!-- ================================================Start Header======================================================== -->
+        <!-- =====================================================Start Header============================================================= -->
         <header>
             <nav >
                 <div id="menu-icon"><span class="iconify" data-icon="bx:bx-menu-alt-left"></span></div>
@@ -50,7 +49,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a href="consult.html" class="item">Tư vấn</a></li>
+                    <li><a href="consult.html" class="item" >Tư vấn</a></li>
                     <li><a href="blog.html" class="item">Blog</a></li>
                     <li><a href="aboutus.html" class="item">About us</a></li>
                     <div class="logo-menu"><a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a></div>
@@ -59,12 +58,12 @@
                 <!-- Search, account, cart icons -->
                 <div class="group-icons">
                     <!-- Search icon and input -->
-                    <input type="search" id="search-input" name="cakes" list="cakes" placeholder="Bạn cần tìm gì?...">
-                    <datalist id="cakes">
-                        <option value="ban">
-                        <option value="ghe">
-                        <option value="sofa">
-                        <option value="giuong">
+                    <input type="search" id="search-input" name="furnitures" list="furnitures" placeholder="Bạn cần tìm gì?...">
+                    <datalist id="furnitures">
+                        <option value="Bàn">
+                        <option value="Ghế">
+                        <option value="Gương">
+                        <option value="Đèn">
                     </datalist>
                     <button id="find-btn">Tìm</button>
                     <button id="search-icon"><span class="iconify" data-icon="mdi:magnify"></span></button>
@@ -98,122 +97,47 @@
 
         </header>
 
-        <!-- =====================================================CODE HERE===================================================== -->
-        <!-- ==========Start layout container============= -->
-        <div id="container">
-            <!-- Banner -->
-            <section id="banners">
-                <div class="slide-wrapper">
-                    <div class="slider-item"></div>
-                </div>
-                <div class="banner-text">
-                    <h1 class="font-xxl main-title" style="color: #ff6600;">Danh mục</h1>
-                    <h3 class="description">Đa dạng mẫu mã, hiện đại, tối giản</p>
-                </div>
-            </section>
-            <!-- Start Best Sellers -->
-            <section id="bestseller">
-                <div class="wrapper">
-                    <h2 class="title font-xl">Best sellers</h2>
-                    <a href="filter.html#bestseller" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #ff6600;" data-width="34"></span></a>
-                    <div class="container"></div>
-                </div>
-            </section>
-            <!-- Start new furniture -->
-            <section id="new">
-                <h2 class="title font-xl">Sản phẩm mới</h2> 
-                <div class="content">
-                    <table with="100">
-                        <tr>
-                            <td>
-                                <div class="text">
-                                    <h3 class="name">HIRO</h3>
-                                    <p class="description">Sofa cao cấp làm từ gỗ dầu đỏ sấy và nệm D40 phủ gòn</p>
-                                    <input class="btn btn-second" type="button" value="ĐẶT MUA NGAY">
-                                </div>
-                            </td>
-                            <td>
-                                <div class="furniture-content">
-                                    <img class="furniture-image" src="https://product.hstatic.net/1000280685/product/a091_32__1600x1200__3aef5708a4144778b4ad13c5dbcbd793_master.jpg" alt="">
-                                    <div class="new-furniture">
-                                        <p><span>NEW PRODUCT</span></p>
-                                        <p>HIRO</p>
-                                        <p><b>13.450.000 <u>đ</u></b></p>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </section>
-            <!-- Start Sale -->
-            <section id="sale">
-                <div class="wrapper">
-                    <h2 class="title font-xl">Khuyến mãi</h2>
-                    <a href="filter.html#promotion" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #ff6600;" data-width="34"></span></a>
-                    <div class="container"></div>
-                </div>
-            </section>
-            <!-- Start offer -->
-            <section id="offer">
-                <table class="content" >
-                    <tr>
-                        <td class="left">
-                            <div class="furniture-content">
-                                <img class="furniture-image" src="https://product.hstatic.net/1000280685/product/p2_53ef52f95bf44200bdbd776c57108fc2_master.png" alt="">
-                                <div class="offer-furniture">
-                                    <p><span>WEEKLY OFFER</span></p>
-                                    <p>Giường QUADA</p>
-                                    <p><b>9.500.000 <u>đ</u></b></p>
-                                </div>s
-                            </div>
-                        </td>
-                        <td class="text">
-                            <h2 class="title font-xl">Đề xuất</h2> 
-                            <h3 class="name">Giường QUADA</h3>
-                            <div>
-                                <p class="description">Thiết kế hiện đại, chất liệu làm từ gỗ sồi cao cấp</p>
-                            </div>
-                            <input class="btn btn-second" type="button" value="ĐẶT MUA NGAY">
-                        </td>
-                    </tr>
-                </table>
-            </section>
-            <!-- Start ban -->
-            <section id="ban">
-                <div class="wrapper">
-                    <h2 class="title font-xl">Bàn</h2>
-                    <a href="filter.html#ban" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #ff6600;" data-width="34"></span></a>
-                    <div class="container"></div>
-                </div>
-            </section>
-            <!-- Start ghe -->
-            <section id="ghe">
-                <div class="wrapper">
-                    <h2 class="title font-xl">Ghế</h2>
-                    <a href="filter.html#ghe" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #ff6600;" data-width="34"></span></a>
-                    <div class="container"></div>
-                </div>
-            </section>
-            <!-- Start sofa -->
-            <section id="sofa">
-                <div class="wrapper">
-                    <h2 class="title font-xl">Sofa</h2>
-                    <a href="filter.html#sofa" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #ff6600;" data-width="34"></span></a>
-                    <div class="container"></div>
-                </div>
-            </section>
-            <!-- Start giuong -->
-            <section id="giuong">
-                <div class="wrapper">
-                    <h2 class="title font-xl">Giường</h2>
-                    <a href="filter.html#giuong" id="view-all">Xem tất cả <span class="iconify" data-icon="carbon:next-outline" style="color: #ff6600;" data-width="34"></span></a>
-                    <div class="container"></div>
-                </div>
-            </section>
-        </div>
+        <!-- =========================================================CODE HERE========================================================== -->
+            <div class="container_cart">
+                <section id="banners">
+                    <div class="slide-wrapper">
+                        <div class="slider-item"></div>
+                    </div>
+                    <div class="banner-text">
+                        <h1 class="main-title">Giỏ hàng</h1>
+                        <h3 class="description">"Tối giản - Hiện Đại - Giá cả phải chăng"</h3>
+                    </div>
+                </section>
+            </div>
 
-        <!-- ============================================Start Footer========================================================= -->
+        <section class="content">
+            <table class="cart">
+                <thead>
+                    <tr>
+                        <th class="product-remove">&nbsp;</th>
+                        <th class="product-thumbnail">&nbsp;</th>
+                        <th class="product-name">Sản phẩm</th>
+                        <th class="product-price">Đơn giá</th>
+                        <th class="product-quantity">Số lượng</th>
+                        <th class="product-subtotal">Tổng cộng</th>
+                    </tr>
+                </thead>
+                <tbody class="cart-list"></tbody>
+            </table>
+            <div class="total-session">
+                <div class="sum">
+                    <p>VNĐ</p>
+                    <p class="sum-money"></p>
+                    <h4 class="title-total">Tổng cộng:</h4>
+                </div>
+                <div class="btn-payment">
+                    <a href="order.html" class="btn btn-primary">THANH TOÁN</a>
+<!--Bỏ link order.html vào đây-->
+                </div>
+            </div>
+        </section>
+    
+<!-- =========================================================Start Footer======================================================= -->
         <footer>
             <div class="wrapper">
                 <div class="big-logo">
@@ -255,6 +179,7 @@
                 <p class="copyright">&copy; 2022 Davidson Furniture. Tất cả các quyền được bảo lưu.</p>
             </div>
         </footer>
+        
         <!-- ========== Start scripts ============-->
         <!-- Compulsory -->
         <script src="./js/header-footer.js"></script>

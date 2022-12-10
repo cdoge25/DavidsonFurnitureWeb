@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davidson | Đặt hàng</title>
+    <!-- link icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicons/site.webmanifest">
+    <!-- CSS base source, Header - Footer and Icons for all HTML files -->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="./css/order.css">
+</head>
+<body>
+    <div class="app">
+        <!-- =====================================================Start Header============================================================= -->
+        <header>
+            <nav >
+                <div id="menu-icon"><span class="iconify" data-icon="bx:bx-menu-alt-left"></span></div>
+                <!-- Logo Davidson -->
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a>
+                </div>
+                <!-- Menu -->
+                <ul class="menu">
+                    <li><a href="index.html" class="item">Home</a></li>
+                    <li id="menu"><a href="category.html" class="item">Danh mục</a>
+                        <div class="child-1">
+                            <ul>
+                                <li><a href="filter.html#bestseller" class="sub-item-1">Phổ biến</a></li>
+                                <li><a href="filter.html#new" class="sub-item-1">Sản phẩm mới</a></li>
+                                <li><a href="filter.html#promotion" class="sub-item-1">Khuyến mãi</a></li>
+                                <li><a href="filter.html#offer" class="sub-item-1">Đề xuất</a></li>
+                                <li><a href="filter.html#ban" class="sub-item-1">Phân loại</a>
+                                    <div class="child-2">
+                                        <ul>
+                                            <li><a href="filter.html#ban" class="sub-item-2">Bàn</a></li>
+                                            <li><a href="filter.html#ghe" class="sub-item-2">Ghế</a></li>
+                                            <li><a href="filter.html#sofa" class="sub-item-2">Sofa</a></li>
+                                            <li><a href="filter.html#giuong" class="sub-item-2">Giường</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="consult.html" class="item" >Tư vấn</a></li>
+                    <li><a href="blog.html" class="item">Blog</a></li>
+                    <li><a href="aboutus.html" class="item">About us</a></li>
+                    <div class="logo-menu"><a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a></div>
+                    <div class="close-btn"><span class="iconify" data-icon="ci:close-big"></span></div>
+                </ul>
+                <!-- Search, account, cart icons -->
+                <div class="group-icons">
+                    <!-- Search icon and input -->
+                    <input type="search" id="search-input" name="furnitures" list="furnitures" placeholder="Bạn cần tìm gì?...">
+                    <datalist id="furnitures">
+                        <option value="Bàn">
+                        <option value="Ghế">
+                        <option value="Gương">
+                        <option value="Đèn">
+                    </datalist>
+                    <button id="find-btn">Tìm</button>
+                    <button id="search-icon"><span class="iconify" data-icon="mdi:magnify"></span></button>
+                    <!-- Cart icon and status -->
+                    <div id="cart">
+                        <a class="cart-icon" href="cart.html">
+                            <p class="item-count"></p>
+                            <span class="iconify" data-icon="mdi:cart-outline"></span>
+                        </a>
+                        <div class="cart-box">
+                            <div class="empty-cart">
+                                <img src="https://mydigitech.in/ecommerce/img/Frontend/empty-cart%20%282%29.jpg" alt="empty cart">
+                            </div>
+                            <!-- Cart has items -->
+                            <div class="non-empty">
+                                <header>Sản phẩm mới thêm</header>
+                                <div class="wrapper"></div>
+                                <div class="view-cart"><a href="cart.html" class="btn btn-primary"> Xem tất cả</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Account icon -->
+                    <a href="#" id="account-icon">
+                        <div class="acc-photo">
+                            <img class="user-photo" src="https://" alt="">
+                            <p class="temp-user"><span class="iconify" data-icon="mdi:account-circle-outline"></span></p>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+
+        </header>
+
+        <!-- =========================================================CODE HERE========================================================== -->
+ 
+
+        <div id="container">
+        <section id="logo">
+            <div class="logo">
+                <a class="home" href="index.html" >
+                    <img src="./images/logo/Logo-orangebg-round.png" alt="logo Davidson">
+                </a>
+                <h1 class="font-xl">Davidson Furniture </h1>
+            </div>
+        </section>
+   
+        <section id="subheading">
+            <ul class="breadcrumb">
+                <li class="tab">
+                    <a href="cart.html">Giỏ hàng</a>
+                </li>
+                <li class="tab tab-2 active">
+                    <a href="#">
+                        <span class="iconify" data-icon="akar-icons:chevron-right"></span>Thông tin khách hàng</a>
+                </li>
+                <li class="tab tab-3 inactive">
+                    <a href="#"><span class="iconify" data-icon="akar-icons:chevron-right"></span>Phương thức thanh toán</a>
+                </li>
+            </ul>
+        </section>
+        <div class="content">
+            <div class="content-left">
+                <!-- Getting item methods -->
+                <section id="shipping">
+                    <h3 class="title">Cách thức nhận hàng</h3>
+                    <div class="methods">
+                        <div class="deli">
+                            <label for="deli">
+                                <input type="radio" name="delivery" value="deli" checked id="deli"/>
+                                <span class="sub-title">Giao hàng tận nơi</span>
+                            </label>
+                            <span class="price" >150 000đ</span>
+                        </div>
+                        <div class="pickup">
+                            <label for="pickup">
+                                <input type="radio" id="pickup" name="delivery" value="pick-up" />
+                                <span class="sub-title">Đến nhận tại showroom</span>
+                            </label>
+                            <span class="price">0đ</span>
+                        </div>
+                    </div>
+                </section>
+                <!-- Delivery Information -->
+                <section id="delivery-infor" class="deli-infor active">
+                    <h3 class="title">Thông tin khách hàng</h3>
+                    <form id="form-cus-infor" name="form-infor-delivery">
+                        <div class="name">
+                            <label for="txtname">Họ và tên <i>*</i></label>
+                            <input id="txtname" class="field-input" type="text" name="name" autofocus >
+                        </div>
+                        <div class="email-phone">
+                            <div class="email">
+                                <label for="txtemail">Email <i>*</i></label>
+                                <input id="txtemail" class="field-input" type="email" name="email">
+                            </div>
+                            <div class="phone-number">
+                                <label for="txtphone">Số điện thoại <i>*</i></label>
+                                <input id="txtphone" class="field-input" type="tel" maxlength="15" name="numberphone" >
+                            </div>
+                        </div>
+                        <div class="address">
+                            <div class="address-item">
+                                <label for="city">Tỉnh/Thành phố <i>*</i></label>
+                                <select id="city" name="city" class="field-input" onchange="pickAddress(this.value)">
+                                    <option selected="selected">Chọn tỉnh</option>
+                                    <option value="1">Hồ Chí Minh</option>
+                                    <option value="71">Thái Nguyên</option>
+                                    <option value="78">Hải Phòng</option>
+                                    <option value="81">Bắc Giang</option>
+                                    <option value="84">Vĩnh Phúc</option>
+                                    <option value="90">Thanh Hóa</option>
+                                    <option value="92">Hà Tĩnh</option>
+                                    <option value="97">Quảng Nam</option>
+                                    <option value="100">Phú Yên</option>
+                                    <option value="101">Khánh Hoà</option>
+                                    <option value="104">Gia Lai</option>
+                                    <option value="112">Tây Ninh</option>
+                                    <option value="113">Đồng Nai</option>
+                                    <option value="115">Long An</option>
+                                    <option value="117">An Giang</option>
+                                    <option value="119">Tiền Giang</option>
+                                    <option value="120">Bến Tre</option>
+                                    <option value="121">Vĩnh Long</option>
+                                    <option value="122">Trà Vinh</option>
+                                    <option value="123">Cần Thơ</option>
+                                    <option value="124">Sóc Trăng</option>
+                                    <option value="125">Kiên Giang</option>
+                                    <option value="126">Bạc Liêu</option>
+                                    <option value="127">Cà Mau</option>
+                                    <option value="128">Quảng Bình</option>
+                                    <option value="129">Bắc Ninh</option>
+                                    <option value="130">Bình Dương</option>
+                                    <option value="131">Bình Định</option>
+                                    <option value="132">Đà Nẵng</option>
+                                    <option value="133">Đồng Tháp</option>
+                                    <option value="135">Hưng Yên</option>
+                                    <option value="136">Kon Tum</option>
+                                    <option value="137">Nam Định</option>
+                                    <option value="138">Ninh Bình</option>
+                                    <option value="139">Phú Thọ</option>
+                                    <option value="140">Quảng Ninh</option>
+                                    <option value="141">Thái Bình</option>
+                                    <option value="142">Đắk Lắk</option>
+                                    <option value="143">Hậu Giang</option>
+                                    <option value="144">Hải Dương</option>
+                                    <option value="145">Lạng Sơn</option>
+                                    <option value="146">Lào Cai</option>
+                                    <option value="147">Yên Bái</option>
+                                    <option value="148">Tuyên Quang</option>
+                                    <option value="149">Hà Giang</option>
+                                    <option value="150">Cao Bằng</option>
+                                    <option value="151">Điện Biên</option>
+                                    <option value="152">Sơn La</option>
+                                    <option value="153">Hòa Bình</option>
+                                    <option value="154">Lai Châu</option>
+                                    <option value="155">Hà Nam</option>
+                                    <option value="156">Nghệ An</option>
+                                    <option value="157">Ninh Thuận</option>
+                                    <option value="158">Bình Thuận</option>
+                                    <option value="159">Lâm Đồng</option>
+                                    <option value="160">Đắk Nông</option>
+                                    <option value="161">Quảng Ngãi</option>
+                                    <option value="162">Quảng Trị</option>
+                                    <option value="163">Thừa Thiên - Huế</option>
+                                    <option value="164">Bà Rịa - Vũng Tàu</option>
+                                    <option value="165">Bắc Kạn</option>
+                                    <option value="166">Bình Phước</option>
+                                    <option value="167">Hà Nội</option>
+                                </select>
+                            </div>
+                            <div class="address-item">
+                                <label for="district">Quận/Huyện <i>*</i></label>
+                                <select id="district" name="district" class="field-input">
+                                </select>
+                            </div>
+                            <div class="address-item">
+                                <label for="wards">Phường/ xã <i>*</i></label>
+                                <input type="text" class="field-input" id="wards" name="wards">
+                            </div>
+                        </div>
+                        <div class="detail-address">
+                            <label for="location">Địa chỉ cụ thể (số nhà, đường)<i>*</i></label>
+                            <input id="location" class="field-input" type="text" name="location" value=""  >
+                        </div>   
+                        <div class="note">
+                            <label for="note">Ghi chú</label>
+                            <textarea id="note" class="field-note full-width" cols="30" rows="6"></textarea>
+                        </div>                    
+                    </form>
+                    <div class="footer-content-infor">
+                        <div class="question">
+                            <span>Bạn đã có tài khoản? &nbsp;</span>
+                            <a href="login.html"><u> Đăng nhập</u></a>
+                        </div>
+                        <input type="submit" value="Xác nhận" id="submit-infor" class="btn btn-primary"/>
+                    </div>      
+                </section>
+                
+                <!-- Payment method -->
+                <section id="payment-method" class="payment">
+                    <div class="pay-by">
+                        <h3 class="title">Phương thức thanh toán</h3>
+                        <div class="cod">
+                            <label >
+                                <input class="rad" type="radio" name="radio-button" value=""  />
+                                <span class="sub-title" >Thanh toán khi nhận hàng (COD)</span>
+                            </label>     
+                        </div>
+                        <div class="momo">
+                            <label >
+                                <input class="rad" type="radio" name="radio-button" value=""  />
+                                <span class="sub-title" >Momo</span>
+                            </label>
+                        </div>
+                        <div class="bank">
+                            <label >
+                                <input class="rad" type="radio" name="radio-button" value=""  />
+                                <span class="sub-title" >Chuyển khoản ngân hàng</span>
+                            </label>
+                        </div>
+                    </div>
+                    <a href="order-result.html" class="btn btn-primary complete">Đặt hàng</a>
+                </section>
+            </div>
+            <div class="content-right">
+                <section id="cart_payment">
+                    <div class="wrapper">
+                        <div class="title">
+                            <h3 class="delivery-title">Đơn hàng của bạn</h3>
+                        </div>
+                        <!-- Load items in cart -->
+                        <ul class="list-items product-cart"></ul>
+                        <div class="bottom-cart">
+                            <div class="total-sub">
+                                <span class="total">Tạm tính</span>
+                                <span class="money"></span>
+                            </div>
+                            <div class="fee-delivery">
+                                <span class="txtfee">Phí vận chuyển</span>
+                                <span class="fee"></span>
+                            </div>
+                            
+                        </div>
+                        <div class="sum">
+                            <span class="txtsum">Tổng cộng</span>
+                            <span class="sum-bill"></span>
+                                
+                        </div>
+                    </div>
+                
+                </section> 
+            </div>
+            <div class="clear"></div>
+        </div>
+        </div>
+        <!-- =========================================================Start Footer======================================================= -->
+        <footer>
+            <div class="wrapper">
+                <div class="big-logo">
+                    <a href="index.html" class="logo"><img src="./images/logo/Logo-whitebg-round.png" alt="logo"></a>
+                    <a href="index.html">Davidson <br> Furniture</a>
+                </div>
+                <div class="links">
+                    <div class="aboutus">
+                        <h3>Về chúng tôi</h3>
+                        <a href="aboutus.html" class="item">Về chúng tôi</a>
+                        <a href="policy.html" class="item">Chính sách</a>
+                        <a href="contact.html" class="item">Liên hệ</a>
+                    </div>
+                    <div class="contact">
+                        <h3>Liên Hệ</h3>
+                        <ul>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="carbon:location-filled"></span></div>
+                                <a href="#">Số 669 Quốc lộ 1K, Khu phố 3, Phường Linh Xuân, Thủ Đức, TP. HCM</a></li>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="fluent:mail-48-filled"></span></div>
+                                <a href="mailto:furniture.davidson@gmail.com">furniture.davidson@gmail.com</a></li>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="carbon:phone-voice-filled"></span></div>
+                                <a href="tel:0334109638">(033) 4 109 638</a></li>
+                        </ul>
+                    </div>
+                    <div class="follow">
+                        <h3>Theo dõi chúng tôi</h3>
+                        <div class="media">
+                            <a href="https://www.facebook.com/furniture.davidson"><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
+                            <a href="https://www.instagram.com/davidson_furniture"><span class="iconify" data-icon="ant-design:instagram-filled"></span></a>
+                            <a href="https://www.tiktok.com/@davidson_furniture"><span class="iconify" data-icon="iconoir:tiktok"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <hr>
+                <p class="copyright">&copy; 2022 Davidson Furniture. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </footer>
+    <!-- Script -->
+    <script src="./js/order.js"></script>
+    <script src="./js/product.js"></script>
+</div>
+</body>
+</html>

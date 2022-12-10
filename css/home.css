@@ -168,6 +168,31 @@ section{
 
 /* ======================================================START HIGHTLIGHT========================================================== */
 
+
+header nav .menu li:first-child a{
+    color: var(--primary-color);
+}
+
+#container{
+    width: 100%;
+    background-color: var(--background);
+}
+
+section{
+    width: 100%;
+    position: relative;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(250, 78, 136, 0.2);
+}
+/* ========START HIGHTLIGHT=========== */
+
 #hightlight{height: 780px;}
 
 #hightlight .summary{
@@ -295,7 +320,63 @@ section{
     #hightlight .hl-box .wrapper .image-box{padding: 0;}
 }
 
-/* =====================================================================START OFFER=============================================== */
+/* ========END HIGHTLIGHT=========== */
+/* ========BEST SELLERS============ */
+
+#bestseller .wrapper{
+    width: 84%;
+    height: fit-content;
+    padding: 60px 0;
+    margin: 0 auto;
+}
+
+#bestseller .wrapper .container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bestseller .wrapper .container .item{
+    width: 30%;
+    margin: 20px 0;
+    position: relative;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+#bestseller .wrapper .container .item:hover{
+    transform: translateY(-3px);
+}
+
+#bestseller .wrapper .container .item:first-child .product-item, 
+#bestseller .wrapper .container .item:last-child .product-item{background-color: var(--item-1);}
+
+#bestseller .wrapper .container .item:nth-child(2) .product-item, 
+#bestseller .wrapper .container .item:nth-child(4) .product-item
+{background-color: var(--item-3);}
+
+#bestseller .wrapper .container .item:nth-child(3) .product-item, 
+#bestseller .wrapper .container .item:nth-child(5) .product-item,
+#bestseller .wrapper .container .item:nth-child(7) .product-item
+{background-color: var(--item-4);}
+
+@media (min-width: 429px) and (max-width: 768px){
+    #bestseller .wrapper .container .item{width: 45%;}
+    #bestseller .wrapper .container{margin: 40px 0;}
+}
+
+@media (max-width: 428px){
+    #bestseller .wrapper .container{display: block;position: relative;margin-top: 16px;}
+    #bestseller .wrapper .container .item{
+        width: 100%;
+        position: relative;}
+}
+
+/* =======END BEST SELLERS======== */
+/* =======START OFFER========== */
 #offer{
     padding: 80px 0;
     overflow: hidden;
@@ -347,6 +428,20 @@ section{
     background-image: url(https://product.hstatic.net/1000280685/product/2_b8599b1b2e9b4511aba570437a3b85b8.jpg);
 }
 
+#offer .wrapper .item .left .content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#offer .wrapper .item .left .pad{
+    width: 100%;
+    height: 650px;
+    opacity: 0.9;
+    position: relative;
+    background: linear-gradient(#ff6600, #fff0e5, rgba(255, 255, 255, 0));
+}
+
 #offer .wrapper .item .right{
     background-image: url(https://product.hstatic.net/1000280685/product/khach_1__8d748c916cc640fea86647d074005894.jpg);
 }
@@ -360,9 +455,9 @@ section{
 #offer .wrapper .item .right .pad{
     width: 100%;
     height: 650px;
-    opacity: 0.8;
+    opacity: 0.9;
     position: relative;
-    background: linear-gradient(#ff6600), #ffffff, rgba(255, 255, 255, 0.3);
+    background: linear-gradient(#ff6600, #fff0e5, rgba(255, 255, 255, 0));
 }
 
 @media (max-width:428px){
@@ -373,8 +468,106 @@ section{
     #offer .wrapper .item{padding: 0 10px;}
 }
 
+/* =======END OFFER ======== */
+/* =======START REVIEW ========= */
 
-/* =========================================================START ORDER========================================================= */
+#review{
+    padding: 40px 0;
+}
+
+#review .wrapper{width: 100%; text-align: center;}
+
+#review .wrapper .slider-wrapper{
+    width: 100%;
+    height: 320px;
+    margin: 40px 0;
+    overflow: hidden;
+    position: relative;
+    background-image: url(https://i.ibb.co/rMjHNjY/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    
+}
+
+#review .wrapper .slider-wrapper .slider-post{
+    width: 200%;
+    z-index: 1;
+    padding: 20px 0;
+    display: flex;
+}
+
+#review .wrapper .slider-wrapper .slider-post .post{
+    width: 200px;
+    height: 240px;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 12px;
+    margin: 0 12px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+#review .wrapper .slider-wrapper .slider-post .post .detail{width: 100%; height: 140px;}
+
+#review .wrapper .slider-wrapper .slider-post .post .open-quote,
+#review .wrapper .slider-wrapper .slider-post .post .close-quote{
+    font-size: 1.8rem;
+    line-height: 1.7rem;
+}
+
+#review .wrapper .slider-wrapper .slider-post .post .close-quote{text-align: right;}
+
+#review .wrapper .slider-wrapper .slider-post .post .content{
+    font-size: 1.3rem;
+    margin-left: 12px;
+    text-align: justify;
+}
+
+#review .wrapper .slider-wrapper .slider-post .post .author{
+    width: 100%;
+    height: 100px;
+    padding: 12px 0;
+    border-top: 1px solid var(--inactive);
+}
+
+#review .wrapper .slider-wrapper .slider-post .post .author .photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+#review .wrapper .slider-wrapper .slider-post .post .author .photo img{height: 50px;object-fit: cover;}
+
+#review .wrapper .slider-wrapper .slider-post .post .author .name-star{
+    width: 65%;
+    float: right;
+    padding-left: 12px;
+}
+
+#review .wrapper .slider-wrapper .slider-post .post .author .name{font-size: 1.4rem;}
+
+#review .wrapper .slider-wrapper .slider-post .post .author .star{margin-top: 8px;}
+
+/* Radio navigation */
+#review .wrapper .indicator{position: relative; width: 100px; margin: 0 auto;}
+#review .indicator button{
+    font-size: 2rem;
+    color: white;
+    margin-right: 12px;
+    font-weight: 700;
+    margin-top: -8px;
+    background: none;
+}
+
+#review .indicator button:hover{color: var(--primary-color); cursor: pointer;}
+
+@media (max-width:428px){
+    #review .wrapper .slider-wrapper .slider-post{width: 400%;}
+}
+
+/* =========START ORDER=========== */
 #order{
     padding: 40px 0;
     overflow: hidden;
@@ -449,4 +642,5 @@ section{
     #order .wrapper .center{float: left; width: 18%; padding: 0; margin-top: 20px;}
     #order .wrapper .center .icon{font-size: 4rem;}
     #order .wrapper .right{float: right; width: 80%; margin-top: 20px;}
+    #order .floating-buble{top: 300px;}
 }
