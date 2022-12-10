@@ -1,0 +1,121 @@
+#consul-item{
+    color: var(--primary-color);
+  }
+  
+  #container{
+      width: 100%;
+      background-color: var(--background);
+  }
+  section{
+    width: 100%;
+    position: relative;
+  }
+  
+  @media (min-width: 429px) and (max-width: 768px){
+    .title{
+        font-size: 4.5rem;
+    }
+  
+  }
+  
+  @media (max-width: 428px){
+    .title{
+        font-size: 3rem;
+    }
+  }
+  /* Banner */
+  #banners{
+    height: 60vh;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  #banners .slide-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  #banners .slide-wrapper .slider-item{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    transform-origin:center;
+    display: none;
+  }
+  
+  #banners .slide-wrapper .slider-item:first-child{background-image: url(../images/banners/dalatgrace.png); display: block;}
+  
+  #banners .banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 2px var(--black-4);
+    text-align: center;
+  }
+  #banners .banner-text .main-title{
+    color: var(--background);
+    animation-name: moveInleft;
+    animation-duration: 3s;
+  }
+  
+  #banners .banner-text .description{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    animation-name: moveInRight;
+    animation-duration: 3s;
+    margin-top: 2%;
+  }
+  
+  @media (max-width: 428px){
+    #banners{height: 40vh;}
+    #banners .banner-text .main-title{font-size: 48px; line-height: 40px;}
+    #banners .banner-text .description{font-size: 1.4rem; line-height: 2rem;}
+  }
+  
+  @media (min-width: 429px) and (max-width: 768px){
+    #banners{height: 50vh;}
+  }
+    /* content */
+    #sample-post{
+      width: 100%;
+      background-color: var(--background);
+      margin-top: 50px;  }
+  
+  .post-section{
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      color: var(--text-color);
+      line-height: 1.6;
+  }
+  .post-content{
+    display: flex;
+    font-size: 1.6rem;
+    align-items: center;
+    padding-left: 5px; 
+  }
+  .post-text{
+    text-align: justify;
+    padding: 10px 0px;
+    font-size: 1.6rem;
+  }.sub-title{
+
+    margin-top: 20px;
+    display: flex;
+    font-size: 1.8rem;
+}
+.clear{
+    clear: both;
+}
+  
