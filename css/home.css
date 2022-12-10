@@ -183,39 +183,6 @@ section{
     position: relative;
 }
 
-/* Banner content */
-#banners{
-    height: 100vh;
-    margin: auto;
-    overflow: hidden;
-}
-
-#banners .slide-wrapper{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#banners .slide-wrapper .slider-item{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    transform-origin:center;
-    animation: zoomIn 5s ease-in;
-    opacity: 1;
-    transition: opacity 0.5s ease-in;
-    display: none;
-}
-
-#banners .slide-wrapper .slider-item:first-child{background-image: url(../images/banners/hero_home_03.jpg); display: block;}
-#banners .slide-wrapper .slider-item:nth-child(2){background-image: url(../images/banners/hero_menu.jpg);}
-#banners .slide-wrapper .slider-item:last-child{background-image: url(../images/banners/hero_about_us.jpg);}
-
 .overlay{
     width: 100%;
     height: 100%;
@@ -224,38 +191,6 @@ section{
     left: 0;
     background-color: rgba(250, 78, 136, 0.2);
 }
-
-#banners .content{
-    width: 80%;
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    text-shadow: 1px 1px 2px var(--black-4);
-}
-
-#banners .content .main-title{
-    color: var(--primary-color);
-    -webkit-text-stroke: 0.001px white;
-}
-
-#banners .content .description{
-    color: white;
-    font-size: 2rem;
-    line-height: 2.6rem;
-    letter-spacing: 0.5px;
-    font-weight: 400;
-}
-
-@media (max-width: 428px){
-    #banners{height: 40vh;}
-    #banners .content .main-title{font-size: 48px; line-height: 40px;}
-    #banners .content .description{font-size: 1.4rem; line-height: 2rem;}
-}
-
-@media (min-width: 429px) and (max-width: 768px){
-    #banners{height: 50vh;}
-}
-/* ========END BANNER SESSION========= */
 /* ========START HIGHTLIGHT=========== */
 
 #hightlight{height: 780px;}

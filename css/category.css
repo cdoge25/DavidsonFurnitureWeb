@@ -52,8 +52,11 @@ section{
     transform-origin:center;
     display: none;
 }
-  
-#banners .slide-wrapper .slider-item:first-child{background-image: url(../images/banners/category.png); display: block;}
+
+#banners .slide-wrapper .slider-item:first-child{
+    background-image: url(../images/banners/category.png); display: block;
+    filter: brightness(50%);
+}
   
   
 #banners .banner-text{
