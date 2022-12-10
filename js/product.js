@@ -631,7 +631,6 @@ window.onload = function(){
   }
   else if(urlParams.toString().includes('filter.html')){
     setTimeout(() => {
-      ScrollEvent();
       window.scrollTo(0, 0);
       navigateFilter();
     }, 1000);

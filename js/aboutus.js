@@ -49,18 +49,3 @@ function display(list){
   var html = members.join('')
   $('#founder .container').innerHTML = html
 }
-
-(function ScrollEvent(){
-  ScrollReveal({
-      reset: false,
-      distance: '60px',
-      duration: 2500, 
-      delay:400
-  })
-  ScrollReveal().reveal('.main-title, #hightlight .content-box,#story .title, #story .image-box, #material .hr, #material .content .text, #policy .title, #policy .image-box', { delay: 200, origin:'left' });
-
-  ScrollReveal().reveal('#banners .description, #hightlight .image-box, #story .hr, #story .content .text ,#material .title, #material .image-box,  #policy .hr, #policy .content .text', { delay: 200, origin:'right' });
-
-  ScrollReveal().reveal('#founder .container .item, #material .icon .item', { delay: 100, origin:'bottom', interval: 200});
-
-})()
