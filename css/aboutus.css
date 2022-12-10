@@ -48,7 +48,10 @@ section{
     display: none;
 }
   
-#banners .slide-wrapper .slider-item:first-child{background-image: url(../images/banners/aboutus.jpg); display: block;}
+#banners .slide-wrapper .slider-item{
+    background-image: url(../images/banners/aboutus.jpg); display: block;
+    filter: brightness(50%);
+}
   
 #banners .banner-text{
     position: absolute;

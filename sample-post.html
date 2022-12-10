@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davidson Furniture</title>
+    <!-- Mandatory links -->
+    <!-- Logo on Tabs -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicons/site.webmanifest">
+    <!-- CSS base source, Header - Footer and Icons for all HTML files -->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <!-- Custom file -->
+    <link rel="stylesheet" href="./css/sample-post.css">
+</head>
+<body>
+    <div class="app">
+        <!-- ==========Start Header=========== -->
+        <header>
+            <nav >
+                <div id="menu-icon"><span class="iconify" data-icon="bx:bx-menu-alt-left"></span></div>
+                <!-- Logo Davidson -->
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a>
+                </div>
+                <!-- Menu -->
+                <ul class="menu">
+                    <li><a href="index.html" class="item">Home</a></li>
+                    <li id="menu"><a href="category.html" class="item">Danh mục</a>
+                        <div class="child-1">
+                            <ul>
+                                <li><a href="filter.html#bestseller" class="sub-item-1">Phổ biến</a></li>
+                                <li><a href="filter.html#new" class="sub-item-1">Sản phẩm mới</a></li>
+                                <li><a href="filter.html#promotion" class="sub-item-1">Khuyến mãi</a></li>
+                                <li><a href="filter.html#offer" class="sub-item-1">Đề xuất</a></li>
+                                <li><a href="filter.html#ban" class="sub-item-1">Phân loại</a>
+                                    <div class="child-2">
+                                        <ul>
+                                            <li><a href="filter.html#ban" class="sub-item-2">Bàn</a></li>
+                                            <li><a href="filter.html#ghe" class="sub-item-2">Ghế</a></li>
+                                            <li><a href="filter.html#sofa" class="sub-item-2">Sofa</a></li>
+                                            <li><a href="filter.html#giuong" class="sub-item-2">Giường</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="consult.html" class="item" >Tư vấn</a></li>
+                    <li><a href="blog.html" class="item">Blog</a></li>
+                    <li><a href="aboutus.html" class="item">About us</a></li>
+                    <div class="logo-menu"><a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a></div>
+                    <div class="close-btn"><span class="iconify" data-icon="ci:close-big"></span></div>
+                </ul>
+                <!-- Search, account, cart icons -->
+                <div class="group-icons">
+                    <!-- Search icon and input -->
+                    <input type="search" id="search-input" name="furnitures" list="furnitures" placeholder="Bạn cần tìm gì?...">
+                    <datalist id="furnitures">
+                        <option value="Bàn">
+                        <option value="Ghế">
+                        <option value="Gương">
+                        <option value="Đèn">
+                    </datalist>
+                    <button id="find-btn">Tìm</button>
+                    <button id="search-icon"><span class="iconify" data-icon="mdi:magnify"></span></button>
+                    <!-- Cart icon and status -->
+                    <div id="cart">
+                        <a class="cart-icon" href="cart.html">
+                            <p class="item-count"></p>
+                            <span class="iconify" data-icon="mdi:cart-outline"></span>
+                        </a>
+                        <div class="cart-box">
+                            <div class="empty-cart">
+                                <img src="https://mydigitech.in/ecommerce/img/Frontend/empty-cart%20%282%29.jpg" alt="empty cart">
+                            </div>
+                            <!-- Cart has items -->
+                            <div class="non-empty">
+                                <header>Sản phẩm mới thêm</header>
+                                <div class="wrapper"></div>
+                                <div class="view-cart"><a href="cart.html" class="btn btn-primary"> Xem tất cả</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Account icon -->
+                    <a href="#" id="account-icon">
+                        <div class="acc-photo">
+                            <img class="user-photo" src="https://" alt="">
+                            <p class="temp-user"><span class="iconify" data-icon="mdi:account-circle-outline"></span></p>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+
+        </header>
+
+        <!-- ==========Start layout container============= -->
+        <div id="sample-post">
+            <section class="post-section">
+                <h3 class="post-heading">Những lưu ý khi chọn màu cho nội thất</h3>
+                <img class="post-image" src="./images/blog/sample-blogA.png" alt="" >
+                <hr class="line">
+                <div class="post-content">
+                    <div>
+                        <img class="post-logo" src="./images/logo/Logo-orangebg-round.png" alt="">                
+                    </div>
+                    <div >
+                        <h3>Davidson Furniture</h3>
+                        <span>Nov 25, 2022</span>
+                    </div>
+                    <div  class="share-to">            
+                            <a href="#"><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
+                            <a href="#"><span class="iconify" data-icon="ant-design:instagram-filled"></span></a> </div>
+                    </div> 
+                    <p class="post-description">Nếu bạn đang có nhu cầu mua sắm nội thất, chắc hẳn bạn đã có những tìm hiểu nhất định về những gì bạn muốn mua. Dù sao thì, thứ bạn đang tìm kiếm cũng là một món nội thất hài hòa với phong cách thiết kế hiện tại của bạn, nhưng vẫn đảm bảo sự thời thượng, phong cách mà sẽ không bị lỗi thời chỉ sau một thời gian ngắn.
+                        Bài viết này sẽ đem đến cho bạn một vài điều mà có lẽ bạn sẽ muốn nghĩ tới khi lựa chọn sắc độ cho nội thất và có được sự tự tin khi đưa ra quyết định của mình.
+                    </p>
+                
+                    <!-- Start ROW1 -->
+            <section id="row1">
+                <div class="hl-box">
+                    <div class="wrapper">
+                        <div class="content-box">
+                            <div class="content">
+                                <h3>Sử dụng các màu an toàn</h3>
+                                <p class="description">Màu sắc vô cùng đa dạng, muôn hình muôn vẻ, mỗi màu lại có thể phối hợp một cách hài hòa với một hay nhiều màu sắc khác. Tuy nhiên, có một vài sắc độ được xem là “màu an toàn”. Những màu này có thể kết hợp với rất nhiều kiểu màu cũng như phong cách thiết kế khác nhau, không bị ảnh hưởng bởi các xu hướng mà cực kỳ bền vững với thời gian:
+                                    <br><br>
+                                    Màu đen: Không cần bàn cãi, một màu trung tính mang vẻ hiện đại, lịch lãm mà có thể phối với hầu hết các gam màu.
+                                    <br><br>
+                                    Màu trắng: Sáng sủa, thoáng đãng và trang nhã, màu trắng là lựa chọn hợp lý cho mọi phong cách thiết kế.
+                                    <br><br>
+                                    Màu nâu: Vốn được xem là màu của giới thượng lưu, màu nâu đem lại vẻ sang trọng, giàu sang và cổ điển, mang lại vẻ đẹp vượt thời gian mà không một ai có thể phủ nhận được.
+                                    <br><br>
+                                    Màu xám: Màu sắc đem lại cảm giác hiện đại nhiều nhất, với sự mạnh mẽ nhưng lịch lãm, thông thoáng nhưng rất ấm áp, đưa sự tiên tiến trong lối phối màu vào các thiết kế của bạn.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="image-box">
+                            <img src="./images/blog/sample-blog1.png" alt="">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </section>
+
+                
+            <section id="row2">
+                <div class="content">
+                    <div class="image-box"  >
+                        <img src="./images/blog/sample-blog2.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3 class="name">Lựa chọn màu sắc phù hợp với phong cách</h3>
+                        <p class="description">Màu sắc ảnh hưởng trực tiếp và sâu sắc đến phong cách mà bạn đang theo đuổi, vì mỗi phong cách sẽ mang trong mình những gam màu đặc trưng, tạo nên sự khác biệt với những phong cách khác. Chẳng hạn, nếu bạn là một người yêu thích sự hiện đại, thời thượng, bạn sẽ muốn tìm đến những gam màu lạnh như đen và trắng. Ngược lại, nếu bạn có một lối sống và phong cách cổ điển, màu nâu sẽ là lựa chọn hợp lý. Và nếu bạn có hứng thú với phong cách Bắc Âu, những gam màu trung tính và dịu mắt sẽ là những lựa chọn mà bạn không thể thiếu.
+                            <br><br>
+                            Vì vậy, trước khi quyết định phối màu cho căn phòng, bạn hãy suy nghĩ đến phong cách nội thất mà bạn đang muốn hướng tới. Nội thất cũng giống như âm nhạc vậy, nếu bạn lựa chọn một nhạc cụ phù hợp với bản nhạc, bạn sẽ tạo ra được một tác phẩm nghệ thuật đặc sắc.
+                        </p>           
+                    </div>
+                </div>     
+            </section>
+
+
+            <!-- Row3 -->
+            <section id="row3">
+                <div class="content">
+                    <div class="text">
+                        <h3 class="name">Tạo điểm nhấn với màu nổi bật</h3>
+                        <p class="description">
+                            Tất nhiên, không hề có một quy luật nào ràng buộc bạn với duy nhất một lối thiết kế dựa trên một bảng màu nhất định cả. Không gian sống là của riêng bạn, và bạn hoàn toàn có thể tô điểm nó bằng những màu sắc nổi trội, tạo điểm nhấn cho không gian thêm thú vị và bắt mắt.
+                            <br><br>
+                            Hãy hình dung một căn phòng với lối phối màu hiện đại giữa các tông màu mát, được tô điểm bởi một chiếc ghế với tông màu ấm nội bật. Chắc hẳn căn phòng sẽ trở nên đa dạng hơn, tạo sự khác biệt nhưng vẫn giữ được nét hài hòa vốn có.
+                        </p> 
+                    </div>
+                    <div class="image-box"  >
+                        <img src="./images/blog/sample-blog3.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Row4 -->
+            <section id="row4">
+                <div class="content">
+                    <div class="image-box"  >
+                        <img src="./images/blog/sample-blog4.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3 class="name">
+                            Hài hòa là mấu chốt của vẻ đẹp</h3>
+                        <p class="description">Như đã đề cập trước đó, sự hài hòa luôn là yếu tố được cân nhắc mỗi khi chúng ta cần phối màu hoặc tạo điểm nhấn, bởi nếu như không có sự hòa hợp trong màu sắc, các gam màu sẽ tương phản và đối chọi với nhau, khiến màu sắc chung của căn phòng thiếu đi sự nhất quán và đồng bộ. Ngược lại, một căn phòng sẽ cực kỳ cuốn hút và thẩm mỹ khi chúng mang những âm sắc phù hợp, tạo nên những sự kết hợp đẩy tính thẩm mỹ và sang trọng.
+                        </p>   
+                    </div>
+                </div>          
+                <hr class="line">
+            </section>
+
+
+
+            <section class="trending">
+                <div class="trending-section">
+                    <h3 class="trending-heading">Trending</h3>
+                        <div class="trending-list">
+                            <div class="trending-item">
+                                <a href="#" target="_blank" title="Cơn sốt làm bánh bao hình trái cam"><img src="https://i.ibb.co/sPVnNGh/mae-mu-8-Vh6ul-Kc50o-unsplash.jpg" alt="" class="trending-img"></a>
+                                <div class="trending-content">
+                                    <a href="#" class="trending-title"><h3>Cơn sốt làm bánh bao hình trái cam hot trend</h3></a>
+                                    <p class="trending-desc">Bánh bao tạo hình trái cam, trái quýt đang là hot trend trong mùa dịch.....</p>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <a href="#" target="_blank" title="Công thức bất bại với bánh mousse dâu tây"><img src="https://i.ibb.co/9TGSZqc/20straw-berry-jam-cake.jpg" alt="" class="trending-img"></a>
+                                <div class="trending-content">
+                                    <a href="#" class="trending-title"><h3>Công thức bất bại với bánh mousse dâu tây</h3></a>
+                                    <p class="trending-desc">Mousse dâu tây là một loại bánh có lớp kem mát lạnh mềm mịn, tan trong miệng.....</p>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <a href="#" target="_blank" title="Bánh quẩy Churros - món quà vặt từ xứ sở Tây Ban Nha"><img src="https://i.ibb.co/x2YyBgs/chorus.jpg" alt="" class="trending-img"></a>
+                                <div class="trending-content">
+                                    <a href="#" class="trending-title"><h3>Bánh quẩy Churros - món quà vặt từ xứ sở Tây Ban Nha</h3></a>
+                                    <p class="trending-desc">Thử xem bánh quẩy nước bạn có gì khác với chúng ta nhé!</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </section>
+         </div>
+        
+
+        <!-- ===========Start Footer============ -->
+        <footer>
+            <div class="wrapper">
+                <div class="big-logo">
+                    <a href="index.html" class="logo"><img src="./images/logo/Logo-whitebg-round.png" alt="logo"></a>
+                <a href="index.html">Davidson <br> Furniture</a>
+                </div>
+                <div class="links">
+                    <div class="aboutus">
+                        <h3>Về chúng tôi</h3>
+                        <a href="aboutus.html" class="item">Về chúng tôi</a>
+                        <a href="policy.html" class="item">Chính sách</a>
+                        <a href="contact.html" class="item">Liên hệ</a>
+                    </div>
+                    <div class="contact">
+                        <h3>Liên Hệ</h3>
+                        <ul>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="carbon:location-filled"></span></div>
+                                <a href="#">Số 669 Quốc lộ 1K, Khu phố 3, Phường Linh Xuân, Thủ Đức, TP. HCM</a></li>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="fluent:mail-48-filled"></span></div>
+                                <a href="mailto:furniture.davidson@gmail.com">furniture.davidson@gmail.com</a></li>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="carbon:phone-voice-filled"></span></div>
+                                <a href="tel:0334109638">(033) 4 109 638</a></li>
+                        </ul>
+                    </div>
+                    <div class="follow">
+                        <h3>Theo dõi chúng tôi</h3>
+                        <div class="media">
+                            <a href="https://www.facebook.com/furniture.davidson"><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
+                            <a href="https://www.instagram.com/davidson_furniture"><span class="iconify" data-icon="ant-design:instagram-filled"></span></a>
+                            <a href="https://www.tiktok.com/@davidson_furniture"><span class="iconify" data-icon="iconoir:tiktok"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <hr>
+                <p class="copyright">&copy; 2022 Davidson Furniture. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </footer>
+        <!-- ========== Start scripts ============-->
+        <!-- Compulsory -->
+        <script src="/js/header-footer.js"></script>
+        <!-- Customize your script here -->
+    </div>
+</body>
+</html>

@@ -52,8 +52,11 @@ section{
     transform-origin:center;
     display: none;
 }
-  
-#banners .slide-wrapper .slider-item:first-child{background-image: url(../images/banners/hero_menu.jpg); display: block;}
+
+#banners .slide-wrapper .slider-item:first-child{
+    background-image: url(../images/banners/category.png); display: block;
+    filter: brightness(50%);
+}
   
   
 #banners .banner-text{
@@ -174,7 +177,7 @@ header nav .group-icons .cart-box .non-empty .wrapper{
 }
 
 
-/* new flavour */
+/* new furniture */
 #new{
     margin-top: 5%;
     height: fit-content;
@@ -204,35 +207,35 @@ header nav .group-icons .cart-box .non-empty .wrapper{
     line-height: 40px;
 }
 
-#new .content .flavour-content{
+#new .content .furniture-content{
     position: relative;
     right: -24%;
     top: 0;
 }
-#new .content .flavour-content .flavour-image{
+#new .content .furniture-content .furniture-image{
     
     margin: 0;
 }
-#new .content .flavour-content .new-flavour{
+#new .content .furniture-content .new-furniture{
     position: absolute;
     top: 4%;
     right: 10%;
     text-align: right;
     line-height: 40px;
 }
-#new .content .flavour-content .new-flavour span{
+#new .content .furniture-content .new-furniture span{
     background-color: var(--primary-color);
     padding: 6px;
     color: white;
 }
 
-#new .content .flavour-content .new-flavour p:nth-child(2){
+#new .content .furniture-content .new-furniture p:nth-child(2){
     
     width: 60%;
     margin: 20px 0 10px auto;
 }
 
-#new .content .flavour-content .new-flavour p:last-child{
+#new .content .furniture-content .new-furniture p:last-child{
     color: var(--primary-color);
 }
 
@@ -246,7 +249,7 @@ header nav .group-icons .cart-box .non-empty .wrapper{
         line-height: 2.8rem;
         font-size: 1.7rem;
     }
-    #new .content .flavour-content p{
+    #new .content .furniture-content p{
         padding: 2px;
         line-height: 1.7rem;
         font-size: 1.7rem;
@@ -269,12 +272,12 @@ header nav .group-icons .cart-box .non-empty .wrapper{
     #new .content input{
         font-size: 0.8rem;
     }
-    #new .content .flavour-content p{
+    #new .content .furniture-content p{
         padding: 1px;
         line-height: 1rem;
         font-size: 1rem;
     }
-    #new .content .flavour-content .new-flavour p:last-child{
+    #new .content .furniture-content .new-furniture p:last-child{
         color: var(--background);
     }
 }
@@ -316,39 +319,39 @@ header nav .group-icons .cart-box .non-empty .wrapper{
     padding: 60px 0;
     margin: 0 auto;
 }
-#offer .content .flavour-content{
+#offer .content .furniture-content{
     position: relative;
-    left: -26%;
+    left: -20%;
 }
-#new .content .flavour-content .flavour-image{
+#new .content .furniture-content .furniture-image{
     width: 100%;
     margin: 0;
 }
-#offer .content .flavour-content .offer-flavour{
+#offer .content .furniture-content .offer-furniture{
     position: absolute;
     top: 4%;
     left: 10%;
     text-align: left;
     line-height: 40px;
 }
-#offer .content .flavour-content .offer-flavour span{
+#offer .content .furniture-content .offer-furniture span{
     background-color: var(--primary-color);
     padding: 6px;
     color: white;
 }
 
-#offer .content .flavour-content .offer-flavour p:nth-child(2){
+#offer .content .furniture-content .offer-furniture p:nth-child(2){
     
     width: 60%;
     margin: 20px auto 10px 0;
 }
 
-#offer .content .flavour-content .offer-flavour p:last-child{
+#offer .content .furniture-content .offer-furniture p:last-child{
     color: var(--primary-color);  
 }
 #offer .content .text{
     vertical-align: top;
-    padding-left: 3%;
+    padding-left: 1%;
 }
 
 #offer .content .text .title{
@@ -380,7 +383,7 @@ header nav .group-icons .cart-box .non-empty .wrapper{
         font-size: 3.2rem;
         line-height: 3.2rem;
     }
-    #offer .content  .flavour-content p{
+    #offer .content  .furniture-content p{
         line-height: 2rem;
         font-size: 1.7rem;
     }
@@ -400,7 +403,7 @@ header nav .group-icons .cart-box .non-empty .wrapper{
         font-size: 2rem;
         line-height: 2rem;
     }
-    #offer .content  .flavour-content p{
+    #offer .content  .furniture-content p{
         line-height: 1.2rem;
         font-size: 1rem;
     }

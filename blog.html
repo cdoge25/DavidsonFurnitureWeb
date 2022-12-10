@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davidson Furniture | Blog</title>
+    <!-- Mandatory links -->
+    <!-- Logo on Tabs -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicons/site.webmanifest">
+    <!-- CSS base source, Header - Footer and Icons for all HTML files -->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <!-- Custom file -->
+    <link rel="stylesheet" href="./css/blog.css">
+</head>
+<body>
+    <div class="app">
+        <!-- ==========Start Header=========== -->
+        <header>
+            <nav >
+                <div id="menu-icon"><span class="iconify" data-icon="bx:bx-menu-alt-left"></span></div>
+                <!-- Logo Davidson -->
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a>
+                </div>
+                <!-- Menu -->
+                <ul class="menu">
+                    <li><a href="index.html" class="item">Home</a></li>
+                    <li id="menu"><a href="category.html" class="item">Danh mục</a>
+                        <div class="child-1">
+                            <ul>
+                                <li><a href="filter.html#bestseller" class="sub-item-1">Phổ biến</a></li>
+                                <li><a href="filter.html#new" class="sub-item-1">Sản phẩm mới</a></li>
+                                <li><a href="filter.html#promotion" class="sub-item-1">Khuyến mãi</a></li>
+                                <li><a href="filter.html#offer" class="sub-item-1">Đề xuất</a></li>
+                                <li><a href="filter.html#ban" class="sub-item-1">Phân loại</a>
+                                    <div class="child-2">
+                                        <ul>
+                                            <li><a href="filter.html#ban" class="sub-item-2">Bàn</a></li>
+                                            <li><a href="filter.html#ghe" class="sub-item-2">Ghế</a></li>
+                                            <li><a href="filter.html#sofa" class="sub-item-2">Sofa</a></li>
+                                            <li><a href="filter.html#giuong" class="sub-item-2">Giường</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="consult.html" class="item" >Tư vấn</a></li>
+                    <li><a href="blog.html" class="item">Blog</a></li>
+                    <li><a href="aboutus.html" class="item">About us</a></li>
+                    <div class="logo-menu"><a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a></div>
+                    <div class="close-btn"><span class="iconify" data-icon="ci:close-big"></span></div>
+                </ul>
+                <!-- Search, account, cart icons -->
+                <div class="group-icons">
+                    <!-- Search icon and input -->
+                    <input type="search" id="search-input" name="furnitures" list="furnitures" placeholder="Bạn cần tìm gì?...">
+                    <datalist id="furnitures">
+                        <option value="Bàn">
+                        <option value="Ghế">
+                        <option value="Gương">
+                        <option value="Đèn">
+                    </datalist>
+                    <button id="find-btn">Tìm</button>
+                    <button id="search-icon"><span class="iconify" data-icon="mdi:magnify"></span></button>
+                    <!-- Cart icon and status -->
+                    <div id="cart">
+                        <a class="cart-icon" href="cart.html">
+                            <p class="item-count"></p>
+                            <span class="iconify" data-icon="mdi:cart-outline"></span>
+                        </a>
+                        <div class="cart-box">
+                            <div class="empty-cart">
+                                <img src="https://mydigitech.in/ecommerce/img/Frontend/empty-cart%20%282%29.jpg" alt="empty cart">
+                            </div>
+                            <!-- Cart has items -->
+                            <div class="non-empty">
+                                <header>Sản phẩm mới thêm</header>
+                                <div class="wrapper"></div>
+                                <div class="view-cart"><a href="cart.html" class="btn btn-primary"> Xem tất cả</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Account icon -->
+                    <a href="#" id="account-icon">
+                        <div class="acc-photo">
+                            <img class="user-photo" src="https://" alt="">
+                            <p class="temp-user"><span class="iconify" data-icon="mdi:account-circle-outline"></span></p>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+
+        </header>
+
+        <!-- ==========Start layout container============= -->
+        <div id="container">
+            <!-- Banner -->
+            <section id="banners">
+                <div class="slide-wrapper">
+                    <div class="slider-item"></div>
+                </div>
+                <div class="banner-text">
+                    <h1 class="font-xxl main-title">Blog</h1>
+                </div>
+            </section>
+            <!-- content -->
+            <div class="blog-content-holder">
+                <section class="blog-content">
+                    <article class="post-item">
+                        <div class="port">
+                            <div class="article-content-holder">
+                                <div class="article-media">
+                                    <div class="media-box">
+                                        <a href="sample-post.html">
+                                            <img src="./images/blog/sample-blogA.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="article-headline">
+                                    <header>
+                                        <h3>
+                                            <a href="#" class="author">DAVIDSON FURNITURE</a>
+                                            <span><del>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</del></span>
+                                            <a href="#" class="time">20/11/2022</a>
+                                            <div class="headline-content">
+                                                <a href="sample-post.html" target="_self" title="Những lưu ý khi chọn màu cho nội thất ">Những lưu ý khi chọn màu cho nội thất</a>
+                                            </div>
+                                        </h3>
+                                    </header>
+                                </div>
+                                <div class="article-content">
+                                    <p>
+                                        Nếu bạn đang có nhu cầu mua sắm nội thất, chắc hẳn bạn đã có những tìm hiểu nhất định về những gì bạn muốn mua. Dù sao thì, thứ bạn đang tìm kiếm cũng là một món nội thất hài hòa với phong cách thiết kế hiện tại của bạn, nhưng vẫn đảm bảo sự thời thượng, phong cách mà sẽ không bị lỗi thời chỉ sau một thời gian ngắn.
+                                    </p>
+                                </div>
+                                <div class="read-more">
+                                    <a href="sample-post.html"target="_self" class="read-more-link" title="Xem thêm">Xem thêm <span class="iconify" data-icon="carbon:next-outline"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="post-item">
+                        <div class="port">
+                            <div class="article-content-holder">
+                                <div class="article-media">
+                                    <div class="media-box">
+                                        <a href="#">
+                                            <img src="./images/blog/sample-blogB.png">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="article-headline">
+                                    <header>
+                                        <h3>
+                                            <a href="#" class="author">DAVIDSON FURNITURE</a>
+                                            <span><del>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</del></span>
+                                            <a href="#" class="time">22/11/2021</a>
+                                            <div class="headline-content">
+                                                <a href="sample-post.html" target="_self" title="5 ý tưởng lắp đầy khoảng trống cho căn phòng của bạn">5 ý tưởng lắp đầy khoảng trống cho căn phòng của bạn </a>
+                                            </div>
+                                        </h3>
+                                    </header>
+                                </div>
+                                <div class="article-content">
+                                    <p>
+                                        Đã bao giờ bạn cảm thấy không gian phòng của bạn vẫn còn trống trải và muốn sắm thêm nội thất? Đã bao giờ bạn muốn lấp đầy những gian tường nhà nhưng lại không biết bắt đầu từ đâu? Vậy thì đây chắc chắn sẽ là bài viết dành cho bạn. Qua bài viết lần này, bạn sẽ được trang bị thêm cho bản thân với những ý tưởng thú vị, giúp bạn nâng cấp gian phòng của mình lên một tầng cao mới, thể hiện cá tính và bản chất riêng của bạn.
+                                    </p>
+                                </div>
+                                <div class="read-more">
+                                    <a href="sample-post.html"target="_self" class="read-more-link" title="Xem thêm">Xem thêm <span class="iconify" data-icon="carbon:next-outline"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="post-item">
+                        <div class="port">
+                            <div class="article-content-holder">
+                                <div class="article-media">
+                                    <div class="media-box">
+                                        <a href="sample-post.html">
+                                            <img src="./images/blog/sample-blogC.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="article-headline">
+                                    <header>
+                                        <h3>
+                                            <a href="sample-post.html" class="author">DAVIDSON FURNITURE</a>
+                                            <span><del>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</del></span>
+                                            <a href="#" class="time">24/11/2021</a>
+                                            <div class="headline-content">
+                                                <a href="sample-post.html" target="_self" title="Tiết kiệm không gian căn hộ chung cư một cách thông minh">Tiết kiệm không gian căn hộ chung cư một cách thông minh</a>
+                                            </div>
+                                        </h3>
+                                    </header>
+                                </div>
+
+                                <div class="article-content">
+                                    <p>
+                                        Với những căn hộ chung cư, diện tích không gian sẽ khá hạn chế để có thể tối ưu hóa không gian hơn. Việc tìm hiểu và thiết kế sao cho căn hộ vừa thoáng mát, thoải mái, vừa đa dụng và sành điệu đang là nhu cầu được rất nhiều người quan tâm đến. Hãy cùng Nhà Xinh đem lại cho bạn một vài ý tưởng thú vị đưa căn hộ của bạn lên một tầm cao mới, vừa xinh đẹp lại vừa hiện tại, tinh tế nhé.
+                                    </p>
+                                </div>
+                                <div class="read-more">
+                                    <a href="sample-post.html" target="_self" class="read-more-link" title="Xem thêm">Xem thêm <span class="iconify" data-icon="carbon:next-outline"></span></a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    <div class="read-more-post">
+                        <a href="#" class="read-more-link" title="Xem bài viết cũ hơn">Xem bài viết cũ hơn <span class="iconify" data-icon="carbon:next-outline"></span></a>
+                    </div>
+                </section>
+                <!-- end post item -->
+                <!-- blog sidebar -->
+                <div class="blog-sidebar">
+                    <section class="popular-wraper">
+                        <h3 class="popular-heading">Phổ biến</h3>
+                        <ul class="list-items">
+                            <li class="popular-item">
+                                <div class="popular-info">
+                                    <a href="#" class="popular-title" title="Mẹo vệ sinh ghế sofa tại nhà Hiệu Quả - Nhanh Gọn">Mẹo vệ sinh ghế sofa tại nhà Hiệu Quả - Nhanh Gọn
+                                        <div class="popular-time">                                                
+                                            <p class="time">Nov 7, 2022</p>
+                                        </div>
+                                    </a>
+                                </div>                                    
+                                <div class="more-icon">
+                                    <a href="#" title="Mẹo vệ sinh ghế sofa tại nhà Hiệu quả - Nhanh gọn"><span class="iconify" data-icon="bi:arrow-right-short"></span></a>
+                                </div>
+                            </li>
+                            <li class="popular-item">
+                                <div class="popular-info">
+                                    <a href="#" class="popular-title" title="Mẹo trang trí phòng ngủ với không gian nhỏ">Mẹo trang trí phòng ngủ với không gian nhỏ
+                                        <div class="popular-time">                                                
+                                            <p class="time">Nov 9, 2022</p>
+                                        </div>
+                                    </a>
+                                </div>                                    
+                                <div class="more-icon">
+                                    <a href="#" title="Mẹo trang trí phòng ngủ với không gian nhỏ"><span class="iconify" data-icon="bi:arrow-right-short"></span></a>
+                                </div>
+                            </li>
+                            <li class="popular-item">
+                                <div class="popular-info">
+                                    <a href="#" class="popular-title" title="Cách chọn màu sắc đồ nội thất theo phong thuỷ">Cách chọn màu sắc đồ nội thất theo phong thuỷ
+                                        <div class="popular-time">                                                
+                                            <p class="time">Nov 15, 2022</p>
+                                        </div>
+                                    </a>
+                                </div>                                    
+                                <div class="more-icon">
+                                    <a href="#" title="Cách chọn màu sắc đồ nội thất theo phong thuỷ"><span class="iconify" data-icon="bi:arrow-right-short"></span></a>
+                                </div>
+                            </li>
+                            <li class="popular-item">
+                                <div class="popular-info">
+                                    <a href="#" class="popular-title" title="7 thủ thuật đánh lừa thị giác biến phòng nhỏ trở nên rộng rãi hơn">7 thủ thuật đánh lừa thị giác biến phòng nhỏ trở nên rộng rãi hơn
+                                        <div class="popular-time">                                                
+                                            <p class="time">Oct 11, 2021</p>
+                                        </div>
+                                    </a>
+                                </div>                                    
+                                <div class="more-icon">
+                                    <a href="#" title="7 thủ thuật đánh lừa thị giác biến phòng nhỏ trở nên rộng rãi hơn"><span class="iconify" data-icon="bi:arrow-right-short"></span></a>
+                                </div>
+                            </li>
+                            <li class="popular-item">
+                                <div class="popular-info">
+                                    <a href="#" class="popular-title" title="Mách bạn cách trang trí nội thất phòng ngủ đơn giản và đẹp">Mách bạn cách trang trí nội thất phòng ngủ đơn giản và đẹp
+                                        <div class="popular-time">                                                
+                                            <p class="time">Sep 10, 2021</p>
+                                        </div>
+                                    </a>
+                                </div>                                    
+                                <div class="more-icon">
+                                    <a href="#" title="Mách bạn cách trang trí nội thất phòng ngủ đơn giản và đẹp"><span class="iconify" data-icon="bi:arrow-right-short"></span></a>
+                                </div>
+                            </li>
+                        </ul> 
+                    </section>
+                    <section id="highlight">
+                        <!-- Highlight box -->
+                        <div class="hl-box">
+                            <div class="wrapper">
+                                <div class="image-box">
+                                    <img src="./images/blog/sample-blogD.png" alt="">
+                                </div>
+                                <div class="content-box">
+                                    <div class="logo">
+                                        <div class="image"><img src="./images/logo/Logo-orangebg-round.png" alt="logo"></div>
+                                    </div>
+                                    <div class="content">
+                                        <p class="description">Davidson Furniture "Khởi đầu của mọi hạnh phúc" tự hào là công ty nội thất số 1 Thành phố Hồ Chí Minh.
+                                            <br><br>
+                                            Đến với Davidson Furniture, bạn sẽ được thoả sức lựa chọn về kiểu dáng, màu sắc, kích thước với giá cả cực kỳ ưu đãi và sản phẩm cực kỳ chất lượng.</p>
+                                        <a href="aboutus.html" class="more"><b>Xem thêm</b><span class="iconify" data-icon="akar-icons:chevron-right"></span></a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </section>
+                  </div>
+                <!-- end post sidebar -->
+                <div class="clear"></div>
+            </div>
+   
+        <!-- ===========Start Footer============ -->
+        <footer>
+            <div class="wrapper">
+                <div class="big-logo">
+                    <a href="index.html" class="logo"><img src="./images/logo/Logo-whitebg-round.png" alt="logo"></a>
+<a href="index.html">Davidson <br> Furniture</a>
+                </div>
+                <div class="links">
+                    <div class="aboutus">
+                        <h3>Về chúng tôi</h3>
+                        <a href="aboutus.html" class="item">Về chúng tôi</a>
+                        <a href="policy.html" class="item">Chính sách</a>
+                        <a href="contact.html" class="item">Liên hệ</a>
+                    </div>
+                    <div class="contact">
+                        <h3>Liên Hệ</h3>
+                        <ul>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="carbon:location-filled"></span></div>
+                                <a href="#">Số 669 Quốc lộ 1K, Khu phố 3, Phường Linh Xuân, Thủ Đức, TP. HCM</a></li>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="fluent:mail-48-filled"></span></div>
+                                <a href="mailto:furniture.davidson@gmail.com">furniture.davidson@gmail.com</a></li>
+                            <li>
+                                <div class="icon"><span class="iconify" data-icon="carbon:phone-voice-filled"></span></div>
+                                <a href="tel:0334109638">(033) 4 109 638</a></li>
+                        </ul>
+                    </div>
+                    <div class="follow">
+                        <h3>Theo dõi chúng tôi</h3>
+                        <div class="media">
+                            <a href="https://www.facebook.com/furniture.davidson"><span class="iconify" data-icon="ant-design:facebook-filled"></span></a>
+                            <a href="https://www.instagram.com/davidson_furniture"><span class="iconify" data-icon="ant-design:instagram-filled"></span></a>
+                            <a href="https://www.tiktok.com/@davidson_furniture"><span class="iconify" data-icon="iconoir:tiktok"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <hr>
+                <p class="copyright">&copy; 2022 Davidson Furniture. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </footer>
+        <!-- ========== Start scripts ============-->
+        <!-- Compulsory -->
+        <script src="/js/header-footer.js"></script>
+        <!-- Customize your script here -->
+    </div>
+</body>
+</html>

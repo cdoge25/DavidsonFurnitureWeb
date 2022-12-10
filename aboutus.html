@@ -21,84 +21,83 @@
 <body>
     <div class="app">
 <!-- =====================================================Start Header============================================================= -->
-        <header>
-            <nav >
-                <div id="menu-icon"><span class="iconify" data-icon="bx:bx-menu-alt-left"></span></div>
-                <!-- Logo Davidson -->
-                <div class="logo">
-                    <a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson Furniture logo"></a>
+<header>
+    <nav >
+        <div id="menu-icon"><span class="iconify" data-icon="bx:bx-menu-alt-left"></span></div>
+        <!-- Davidson Logo -->
+        <div class="logo">
+            <a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a>
+        </div>
+        <!-- Menu -->
+        <ul class="menu">
+            <li><a href="index.html" class="item">Home</a></li>
+            <li id="menu"><a href="category.html" class="item">Danh mục</a>
+                <div class="child-1">
+                    <ul>
+                        <li><a href="filter.html#bestseller" class="sub-item-1">Phổ biến</a></li>
+                        <li><a href="filter.html#new" class="sub-item-1">Sản phẩm mới</a></li>
+                        <li><a href="filter.html#promotion" class="sub-item-1">Khuyến mãi</a></li>
+                        <li><a href="filter.html#offer" class="sub-item-1">Đề xuất</a></li>
+                        <li><a href="filter.html#ban" class="sub-item-1">Phân loại</a>
+                            <div class="child-2">
+                                <ul>
+                                    <li><a href="filter.html#ban" class="sub-item-2">Bàn</a></li>
+                                    <li><a href="filter.html#ghe" class="sub-item-2">Ghế</a></li>
+                                    <li><a href="filter.html#sofa" class="sub-item-2">Sofa</a></li>
+                                    <li><a href="filter.html#giuong" class="sub-item-2">Giường</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <!-- Menu -->
-                <ul class="menu">
-                    <li><a href="index.html" class="item">Home</a></li>
-                    <li id="menu"><a href="category.html" class="item">Danh mục</a>
-                        <div class="child-1">
-                            <ul>
-                                <li><a href="filter.html#bestseller" class="sub-item-1">Phổ biến</a></li>
-                                <li><a href="filter.html#new" class="sub-item-1">Sản phẩm mới</a></li>
-                                <li><a href="filter.html#table" class="sub-item-1">Phân loại</a>
-                                    <div class="child-2">
-                                        <ul>
-                                            <li><a href="filter.html#table" class="sub-item-2">Bàn</a></li>
-                                            <li><a href="filter.html#chair" class="sub-item-2">Ghế</a></li>
-                                            <li><a href="filter.html#sofa" class="sub-item-2">Sofa</a></li>
-                                            <li><a href="filter.html#mirror" class="sub-item-2">Gương</a></li>
-                                            <li><a href="filter.html#lamp" class="sub-item-2">Đèn</a></li>
-                                            <li><a href="filter.html#bed" class="sub-item-2">Giường</a></li>
-                                            <li><a href="filter.html#wardrobe" class="sub-item-2">Kệ, tủ</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="consult.html" class="item" >Tư vấn</a></li>
-                    <li><a href="blog.html" class="item">Blog</a></li>
-                    <li><a href="aboutus.html" class="item">About us</a></li>
-                    <div class="logo-menu"><a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a></div>
-                    <div class="close-btn"><span class="iconify" data-icon="ci:close-big"></span></div>
-                </ul>
-                <!-- Search, account, cart icons -->
-                <div class="group-icons">
-                    <!-- Search icon and input -->
-                    <input type="search" id="search-input" name="furnitures" list="furnitures" placeholder="Bạn cần tìm gì?...">
-                    <datalist id="furnitures">
-                        <option value="Bàn">
-                        <option value="Ghế">
-                        <option value="Gương">
-                        <option value="Đèn">
-                    </datalist>
-                    <button id="find-btn">Tìm</button>
-                    <button id="search-icon"><span class="iconify" data-icon="mdi:magnify"></span></button>
-                    <!-- Cart icon and status -->
-                    <div id="cart">
-                        <a class="cart-icon" href="cart.html">
-                            <p class="item-count"></p>
-                            <span class="iconify" data-icon="mdi:cart-outline"></span>
-                        </a>
-                        <div class="cart-box">
-                            <div class="empty-cart">
-                                <img src="https://mydigitech.in/ecommerce/img/Frontend/empty-cart%20%282%29.jpg" alt="empty cart">
-                            </div>
-                            <!-- Cart has items -->
-                            <div class="non-empty">
-                                <header>Sản phẩm mới thêm</header>
-                                <div class="wrapper"></div>
-                                <div class="view-cart"><a href="cart.html" class="btn btn-primary"> Xem tất cả</a></div>
-                            </div>
-                        </div>
+            </li>
+            <li><a href="consult.html" class="item" >Tư vấn</a></li>
+            <li><a href="blog.html" class="item">Blog</a></li>
+            <li><a href="aboutus.html" class="item">About us</a></li>
+            <div class="logo-menu"><a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a></div>
+            <div class="close-btn"><span class="iconify" data-icon="ci:close-big"></span></div>
+        </ul>
+        <!-- Search, account, cart icons -->
+        <div class="group-icons">
+            <!-- Search icon and input -->
+            <input type="search" id="search-input" name="furnitures" list="furnitures" placeholder="Bạn cần tìm gì?...">
+            <datalist id="furnitures">
+                <option value="ban">
+                <option value="ghe">
+                <option value="sofa">
+                <option value="giuong">
+            </datalist>
+            <button id="find-btn">Tìm</button>
+            <button id="search-icon"><span class="iconify" data-icon="mdi:magnify"></span></button>
+            <!-- Cart icon and status -->
+            <div id="cart">
+                <a class="cart-icon" href="cart.html">
+                    <p class="item-count"></p>
+                    <span class="iconify" data-icon="mdi:cart-outline"></span>
+                </a>
+                <div class="cart-box">
+                    <div class="empty-cart">
+                        <img src="https://mydigitech.in/ecommerce/img/Frontend/empty-cart%20%282%29.jpg" alt="empty cart">
                     </div>
-                    <!-- Account icon -->
-                    <a href="#" id="account-icon">
-                        <div class="acc-photo">
-                            <img class="user-photo" src="https://" alt="">
-                            <p class="temp-user"><span class="iconify" data-icon="mdi:account-circle-outline"></span></p>
-                        </div>
-                    </a>
+                    <!-- Cart has items -->
+                    <div class="non-empty">
+                        <header>Sản phẩm mới thêm</header>
+                        <div class="wrapper"></div>
+                        <div class="view-cart"><a href="cart.html" class="btn btn-primary"> Xem tất cả</a></div>
+                    </div>
                 </div>
-            </nav>
+            </div>
+            <!-- Account icon -->
+            <a href="#" id="account-icon">
+                <div class="acc-photo">
+                    <img class="user-photo" src="https://" alt="">
+                    <p class="temp-user"><span class="iconify" data-icon="mdi:account-circle-outline"></span></p>
+                </div>
+            </a>
+        </div>
+    </nav>
 
-        </header>
+</header>
 
 <!-- =========================================================CODE HERE========================================================== -->
 
@@ -111,8 +110,6 @@
                 </div>
                 <div class="banner-text">
                     <h1 class="font-xxl main-title">About Us</h1>
-                    <br>
-                    <h3 class="description">“Davidson - Khởi đầu của mọi hạnh phúc”</h3>
                 </div>
             </section>
     
@@ -167,10 +164,6 @@
                         </p>           
                     </div>
                 </div>
-                            
-                <div class="floating-buble">
-                    <img src="https://i.ibb.co/Z8MGHvB/floating-image-01.png" alt="">
-                </div>
             
             </section>
             <!-- Material -->
@@ -217,56 +210,13 @@
                         </p>   
                         <a href="policy.html" class="more"><b>Xem tất cả</b><span class="iconify" data-icon="akar-icons:chevron-right"></span></a>
                     </div>
-                </div>      
-                    <div class="floating-buble">
-                        <img src="https://i.ibb.co/MS4B3cW/floating-image-07.png" alt="">
-                    </div>
+                </div>     
                 
             </section>
             
-            <!-- founder -->
-
-            <section id="founder">
-                <div class="wrapper">
-                    <h2 class="title font-xl">Đội ngũ nhân viên</h2>
-                    <div class="container"></div>
-                </div>
-            </section>
         </div>
     </div>
     <!-- ===========End Container=========== -->
-    <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "104829868153851");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v12.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-        
-      
 <!-- =========================================================Start Footer======================================================= -->
         <footer>
             <div class="wrapper">
@@ -311,12 +261,9 @@
         </footer>
         <!-- ========== Start scripts ============-->
         <!-- Compulsory -->
-        <script src="https://unpkg.com/scrollreveal"></script>
         <script src="/js/header-footer.js"></script>
         <!-- Customize your script here -->
-        <!-- Customize your script here -->
         <script src="./js/aboutus.js"></script>
-        <script src="./js/product.js"></script>
     </div>
 </body>
 </html>
