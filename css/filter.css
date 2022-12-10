@@ -229,15 +229,6 @@ header nav .menu > li:nth-child(2) > a{
 .all-product .wrapper .container .item:nth-child(11) .product-item,
 .all-product .wrapper .container .item:last-child .product-item{background-color: var(--item-4);}
 
-.all-product .floating-buble{
-    position: absolute;
-    top: 7%;
-    margin-left: -7%;
-}
-
-.all-product .floating-buble img{transform: rotate(10deg);}
-
-
 @media (min-width: 429px) and (max-width: 768px){
     .all-product .wrapper .container .item{width: 45%;}
     .all-product .wrapper .container{margin: 40px 0;}
@@ -366,7 +357,7 @@ header nav .menu > li:nth-child(2) > a{
 
 /* offer */
 #offer-weekend{
-    margin-top: 15%;
+    margin-top: 5%;
     height: fit-content;
 }
 
@@ -378,7 +369,7 @@ header nav .menu > li:nth-child(2) > a{
 }
 #offer-weekend .content .furniture-content{
     position: relative;
-    left: -26%;
+    left: -20%;
 }
 #new .content .furniture-content .furniture-image{
     width: 100%;
@@ -387,20 +378,20 @@ header nav .menu > li:nth-child(2) > a{
 #offer-weekend .content .furniture-content .offer-furniture{
     position: absolute;
     top: 4%;
-    left: 10%;
+    left: 5%;
     text-align: left;
     line-height: 40px;
 }
 #offer-weekend .content .furniture-content .offer-furniture span{
     background-color: var(--primary-color);
-    padding: 6px;
+    padding: 1px;
     color: white;
 }
 
 #offer-weekend .content .furniture-content .offer-furniture p:nth-child(2){
     
     width: 60%;
-    margin: 20px auto 10px 0;
+    margin: 10px auto 5px 0;
 }
 
 #offer-weekend .content .furniture-content .offer-furniture p:last-child{
@@ -408,7 +399,7 @@ header nav .menu > li:nth-child(2) > a{
 }
 #offer-weekend .content .text{
     vertical-align: top;
-    padding-left: 3%;
+    padding-left: 0%;
 }
 
 #offer-weekend .content .text .title{
