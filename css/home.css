@@ -362,7 +362,7 @@ section{
     height: 650px;
     opacity: 0.8;
     position: relative;
-    background: linear-gradient(#ff6600), #ffffff), rgba(255, 255, 255, 0.3));
+    background: linear-gradient(#ff6600), #ffffff, rgba(255, 255, 255, 0.3);
 }
 
 @media (max-width:428px){
