@@ -49,7 +49,10 @@
     display: none;
   }
   
-  #banners .slide-wrapper .slider-item:first-child{background-image: url(../images/banners/dalatgrace.png); display: block;}
+  #banners .slide-wrapper .slider-item:first-child{
+    background-image: url(../images/banners/dalatgrace.png); display: block;
+    filter: brightness(50%);
+  }
   
   #banners .banner-text{
     position: absolute;
