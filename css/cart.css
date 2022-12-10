@@ -69,12 +69,11 @@ section{
 
   #banners .banner-text .main-title{
 
-    color: #ff6600;
+      color: #fff;
     /* text-align: center; */
   }
   
   .banner-text .description{
-    font-style: italic;
     color: #ffffff;
     font-size: 3rem;
     line-height: 2.6rem;
