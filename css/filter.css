@@ -87,28 +87,28 @@ header nav .menu > li:nth-child(2) > a{
     display: block;
 }
 .banners .slide-wrapper .best-seller{
-    background-image: url(https://i.ibb.co/ctJVjrf/bestseller.jpg);
+    background-image: url(https://file.hstatic.net/1000280685/file/06_delux_1x2_61fb796c47ba48d18eb16316304fb9c5_master.png);
 }
 .banners .slide-wrapper .new{
-    background-image: url(https://i.ibb.co/BsK7yjH/new.png);
+    background-image: url(https://file.hstatic.net/1000280685/file/mc_1_dbc42a3e68f14cb78fa0a027ca1da71f_master.jpg);
 }
 .banners .slide-wrapper .sale{
-    background-image: url(https://i.ibb.co/G5Wwywh/sale.jpg);
+    background-image: url(https://file.hstatic.net/1000280685/file/1_19e8c610e394459a90f371d66d3ac7b7.jpg);
 }
 .banners .slide-wrapper .offer{
-    background-image: url(https://i.ibb.co/2Myf0WF/offer.png);
+    background-image: url(https://file.hstatic.net/1000280685/file/cover_d911a2600d9b4a77876347876509cece_1024x1024.jpg);
 }
 .banners .slide-wrapper .ban{
-    background-image: url(https://i.ibb.co/1d0hT3j/macaron.png);
+    background-image: url(https://file.hstatic.net/1000280685/file/6_30f2e58293f749e9ad497c28c8eebfe3_2048x2048.png);
 }
 .banners .slide-wrapper .ghe{
-    background-image: url(https://i.ibb.co/hZp9s31/White-chocolate-cheesecake.jpg);
+    background-image: url(https://file.hstatic.net/1000280685/file/mat_cat_pr2_ef5c658c813048c9905b7264009e5029.jpg);
 }
 .banners .slide-wrapper .sofa{
-    background-image: url(https://i.ibb.co/2Fh3Mvf/pudidng.png);
+    background-image: url(https://file.hstatic.net/1000280685/file/mc_khach_2_8c944e919f86425cb98132207399b6b9_1024x1024.jpg);
 }
 .banners .slide-wrapper .giuong{
-    background-image: url(https://i.ibb.co/BZZrHGB/Fruit-tiramisu.jpg);
+    background-image: url(https://file.hstatic.net/1000280685/file/1_ab4299d2db5b4cc0a2d85093d3ca61d8_master.png);
 }
   
 .banners .banner-text{
@@ -249,7 +249,7 @@ header nav .menu > li:nth-child(2) > a{
         position: relative;}
 }
 
-/* new flavour */
+/* new furniture */
 #new{
     height: fit-content;
     overflow: hidden;
@@ -279,35 +279,35 @@ header nav .menu > li:nth-child(2) > a{
     line-height: 40px;
 }
 
-#new .content .flavour-content{
+#new .content .furniture-content{
     position: relative;
     right: -24%;
     top: 0;
 }
-#new .content .flavour-content .flavour-image{
+#new .content .furniture-content .furniture-image{
     
     margin: 0;
 }
-#new .content .flavour-content .new-flavour{
+#new .content .furniture-content .new-furniture{
     position: absolute;
     top: 4%;
     right: 10%;
     text-align: right;
     line-height: 40px;
 }
-#new .content .flavour-content .new-flavour span{
+#new .content .furniture-content .new-furniture span{
     background-color: var(--primary-color);
     padding: 6px;
     color: white;
 }
 
-#new .content .flavour-content .new-flavour p:nth-child(2){
+#new .content .furniture-content .new-furniture p:nth-child(2){
     
     width: 60%;
     margin: 20px 0 10px auto;
 }
 
-#new .content .flavour-content .new-flavour p:last-child{
+#new .content .furniture-content .new-furniture p:last-child{
     color: var(--primary-color);
 }
 
@@ -321,7 +321,7 @@ header nav .menu > li:nth-child(2) > a{
         line-height: 2.8rem;
         font-size: 1.7rem;
     }
-    #new .content .flavour-content p{
+    #new .content .furniture-content p{
         padding: 2px;
         line-height: 1.7rem;
         font-size: 1.7rem;
@@ -344,12 +344,12 @@ header nav .menu > li:nth-child(2) > a{
     #new .content input{
         font-size: 0.8rem;
     }
-    #new .content .flavour-content p{
+    #new .content .furniture-content p{
         padding: 1px;
         line-height: 1rem;
         font-size: 1rem;
     }
-    #new .content .flavour-content .new-flavour p:last-child{
+    #new .content .furniture-content .new-furniture p:last-child{
         color: var(--background);
     }
 }
@@ -375,34 +375,34 @@ header nav .menu > li:nth-child(2) > a{
     height: fit-content;
     margin: 0 auto;
 }
-#offer-weekend .content .flavour-content{
+#offer-weekend .content .furniture-content{
     position: relative;
     left: -26%;
 }
-#new .content .flavour-content .flavour-image{
+#new .content .furniture-content .furniture-image{
     width: 100%;
     margin: 0;
 }
-#offer-weekend .content .flavour-content .offer-flavour{
+#offer-weekend .content .furniture-content .offer-furniture{
     position: absolute;
     top: 4%;
     left: 10%;
     text-align: left;
     line-height: 40px;
 }
-#offer-weekend .content .flavour-content .offer-flavour span{
+#offer-weekend .content .furniture-content .offer-furniture span{
     background-color: var(--primary-color);
     padding: 6px;
     color: white;
 }
 
-#offer-weekend .content .flavour-content .offer-flavour p:nth-child(2){
+#offer-weekend .content .furniture-content .offer-furniture p:nth-child(2){
     
     width: 60%;
     margin: 20px auto 10px 0;
 }
 
-#offer-weekend .content .flavour-content .offer-flavour p:last-child{
+#offer-weekend .content .furniture-content .offer-furniture p:last-child{
     color: var(--primary-color);  
 }
 #offer-weekend .content .text{
@@ -440,7 +440,7 @@ header nav .menu > li:nth-child(2) > a{
         font-size: 3.2rem;
         line-height: 3.2rem;
     }
-    #offer-weekend .content  .flavour-content p{
+    #offer-weekend .content  .furniture-content p{
         line-height: 2rem;
         font-size: 1.7rem;
     }
@@ -460,7 +460,7 @@ header nav .menu > li:nth-child(2) > a{
         font-size: 2rem;
         line-height: 2rem;
     }
-    #offer-weekend .content  .flavour-content p{
+    #offer-weekend .content  .furniture-content p{
         line-height: 1.2rem;
         font-size: 1rem;
     }
@@ -530,11 +530,11 @@ header nav .menu > li:nth-child(2) > a{
 }
 #combo .wrapper .item .left{
     margin-top: 20px;
-    background-image: url(https://eatsy.bold-themes.com/cupcakes/wp-content/uploads/sites/3/2021/03/home_image_5.jpg);
+    background-image: url(https://file.hstatic.net/1000280685/file/doc_lap_moodboard_2b606d0e96f24e7bbecad00b4aa0f153_master.jpg);
 }
 
 #combo .wrapper .item .right{
-    background-image: url(https://eatsy.bold-themes.com/burger/wp-content/uploads/sites/2/2021/02/donut_gallery_03.jpg);
+    background-image: url(https://file.hstatic.net/1000280685/file/dalat-grace-moodboard--cua-hien_4be9632405f646379ba019849a130525.jpg);
 }
 
 #combo .wrapper .item .right .content{
