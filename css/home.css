@@ -460,15 +460,6 @@ section{
     background: linear-gradient(#ff6600, #fff0e5, rgba(255, 255, 255, 0));
 }
 
-#offer .floating-buble{
-    position: absolute;
-    top: 240px;
-    right: -80px;
-    margin-right: -100px;
-}
-
-#offer .floating-buble img{transform: rotate(30deg);}
-
 @media (max-width:428px){
     #offer .wrapper .item{width: 100%; margin-bottom: 20px;}
 }
