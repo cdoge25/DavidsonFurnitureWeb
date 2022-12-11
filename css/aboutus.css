@@ -230,13 +230,6 @@ section{
     margin: 20px 0;
     text-align: justify;
 }
-#story .floating-buble{
-    position: absolute;
-    top: 400px;
-    margin-left: -180px;
-}
-
-#story .floating-buble img{transform: rotate(10deg);}
 
 
 @media  (max-width: 1366px){
@@ -354,14 +347,6 @@ section{
     margin: 0;
     text-align: justify;
 }
-#material .floating-buble {
-    position: absolute;
-    top: 400px;
-    right: -80px;
-}
-
-#material .floating-buble img{transform: rotate(120deg);}
-
         
 /* icon */
 
