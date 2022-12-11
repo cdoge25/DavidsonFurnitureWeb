@@ -199,7 +199,7 @@ section{
     justify-content: space-between;
 }
  #story .content .text{
-    width: 65%;
+    width: 100%;
     padding-left: 10vh;
 } 
  #story .image-box img{
