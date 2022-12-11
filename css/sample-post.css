@@ -67,139 +67,6 @@ header nav .menu > li:nth-child(4) a{
     text-align: justify;
 }
 
-
-.trending{
-    padding-bottom: 16px;
-}
-.trending-section{
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    color: var(--text-color);
-    line-height: 1.6;
-    background-color: white;
-    padding: 16px;
-}
-.trending-heading{
-    padding: 8px;
-    font-size: 1.6rem; 
-}
-.trending-list{
-    background-color: white;
-}
-.trending-item{
-    display: flex;
-    width: 33.333%;
-    float: left;
-    padding: 0px 8px;
-    align-items: center;  
-}
-.trending-img{
-    width: 100px;
-    height: 100px;
-    float: left;
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    margin-right: 8px;
-    margin-top: 8px;  
-} 
-.trending-content{
-    justify-content: space-between;
-}
-.trending-title{
-   font-size: 1.4rem;
-}
-.trending-desc{
-    font-size: 1.2rem;
-    color: var(--text-color);
-}
-/* Responsive */
-/* iPad */
-@media (min-width: 429px) and (max-width: 768px){
-    .post-heading{
-        font-size: 2.4rem;
-    }
-    #sample-post .post-section .post-image{
-        width: 70%;
-        height: 70%;
-    }
-    .trending-section{
-        padding: 4px;
-    }
-    .trending-heading{
-        font-size: 2rem;
-    }
-    .trending-img{
-        width: 70px;
-        height: 70px;
-    }
-    .trending-title{
-        font-size: 1.2rem;
-    }
-    .trending-title{
-        font-size: 1.2rem;
-    }
-    .trending-desc{
-        font-size: 1rem;
-    }
-   }
-   /* Phone */
-   @media (max-width: 428px){
-    .post-heading{
-        font-size: 2.4rem;
-    }
-    #sample-post .post-section .post-image{
-        width: 70%;
-        height: 70%;
-    }
-    .post-text{
-        font-size: 1.2rem;
-    }
-    .sub-title{
-        font-size: 1.4rem;
-    }
-    .ingredients >li{
-        font-size: 1.2rem;
-    }
-    ul.item > li{
-        font-size: 1rem;
-    }
-    #sample-post .post-section .steps{
-        font-size: 1rem;
-        text-align: justify;
-    }
-    .ending{
-        font-size: 1rem;
-    }
-    .trending-section{
-        padding: 4px;
-    }
-    .trending-item{
-        width: 100%;
-        display: block;
-        float: left;
-        margin-top: 10px;
-    }
-    .trending-img{
-        width: 70px;
-        height: 70px;
-    }
-    .trending-title{
-        font-size: 1.2rem;
-    }
-    .trending-title{
-        font-size: 1.2rem;
-    }
-    .trending-desc{
-        font-size: 1rem;
-    }
-   }
-
-
-   header nav .menu > li:nth-child(5) a{
-    color: var(--primary-color);
-}
 body{
     background-color: var(--background);
 }
@@ -207,9 +74,7 @@ section{
     width: 100%;
     position: relative;
 }
-.app .menu .aboutus a {
-    color: var(--primary-color);
-}
+
 .overlay{
     width: 100%;
     height: 600px;
@@ -217,6 +82,7 @@ section{
     top: 0;
     left: 0;
     background-color: rgba(129, 96, 71, 0.281);
+
 }
 /* ========START ROW1=========== */
 
@@ -303,7 +169,6 @@ section{
     z-index: 1;
 }
 
-/*1 ben hinh 1 ben chu*/
 #row2 .content{
     width: 100%;
     display: flex;
@@ -612,8 +477,9 @@ section{
     
 }
     
+/* END ROW3 */
 
-/* ========row4========= */
+/* ROW4 */
 
 #row4{
     width: 88%;
@@ -723,5 +589,121 @@ section{
     }
     #row4 .content{ flex-direction: column-reverse; }
 }
+
+/*----Phổ biến-----*/
+.popular{
+    padding-bottom: 16px;
+}
+.popular-section{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: white;
+    padding: 16px;
+}
+.popular-heading{
+    padding: 8px;
+    font-size: 1.6rem; 
+}
+.popular-list{
+    background-color: white;
+}
+.popular-item{
+    display: flex;
+    width: 33.333%;
+    float: left;
+    padding: 0px 8px;
+    align-items: center;  
+}
+.popular-img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    margin-top: 8px;  
+} 
+.popular-content{
+    justify-content: space-between;
+}
+.popular-title{
+   font-size: 1.4rem;
+}
+.popular-desc{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+/* Responsive */
+/* iPad */
+@media (min-width: 429px) and (max-width: 768px){
+    .post-heading{
+        font-size: 2.4rem;
+    }
+    #sample-post .post-section .post-image{
+        width: 70%;
+        height: 70%;
+    }
+    .popular-section{
+        padding: 4px;
+    }
+    .popular-heading{
+        font-size: 2rem;
+    }
+    .popular-img{
+        width: 70px;
+        height: 70px;
+    }
+    .popular-title{
+        font-size: 1.2rem;
+    }
+    .popular-title{
+        font-size: 1.2rem;
+    }
+    .popular-desc{
+        font-size: 1rem;
+    }
+   }
+   /* Phone */
+   @media (max-width: 428px){
+    .post-heading{
+        font-size: 2.4rem;
+    }
+    #sample-post .post-section .post-image{
+        width: 70%;
+        height: 70%;
+    }
+    .post-text{
+        font-size: 1.2rem;
+    }
+    .sub-title{
+        font-size: 1.4rem;
+    }
+    .popular-section{
+        padding: 4px;
+    }
+    .popular-item{
+        width: 100%;
+        display: block;
+        float: left;
+        margin-top: 10px;
+    }
+    .popular-img{
+        width: 70px;
+        height: 70px;
+    }
+    .popular-title{
+        font-size: 1.2rem;
+    }
+    .popular-title{
+        font-size: 1.2rem;
+    }
+    .popular-desc{
+        font-size: 1rem;
+    }
+   }
 
  
