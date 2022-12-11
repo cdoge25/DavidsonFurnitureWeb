@@ -7,7 +7,7 @@ xhttp.onreadystatechange = function () {
     display(memberList);
   }
 };
-xhttp.open("GET", "../data/members.xml", true);
+xhttp.open("GET", "./data/members.xml", true);
 xhttp.send();
 
 // Push data to member list array
