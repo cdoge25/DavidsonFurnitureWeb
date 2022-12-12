@@ -50,8 +50,7 @@
   }
   
   #banners .slide-wrapper .slider-item:first-child{
-    background-image: url(https://i.ibb.co/37hv3Kq/dalatgrace.png) 
-  ; display: block;
+    background-image: url(https://i.ibb.co/37hv3Kq/dalatgrace.png); display: block;
     filter: brightness(50%);
   }
   
