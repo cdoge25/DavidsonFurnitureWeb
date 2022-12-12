@@ -52,19 +52,32 @@ var openFragment= function(manual) {
             fragments[3].classList.add('active');
             break;
         case 5:
-            fragments[3].classList.add('active');
-            break;
-        case 6:
             fragments[4].classList.add('active');
             break;
-        case 7:
+        case 6:
             fragments[5].classList.add('active');
+            break;    
+
+        case 7:
+            fragments[6].classList.add('active');
             break;
         case 8:
-            fragments[6].classList.add('active');
+            fragments[7].classList.add('active');
             break;
         case 9:
             fragments[7].classList.add('active');
+            break;
+        case 10:
+            fragments[8].classList.add('active');
+            break;
+        case 11:
+            fragments[9].classList.add('active');
+            break;
+        case 12:
+            fragments[10].classList.add('active');
+            break;
+        case 13:
+            fragments[11].classList.add('active');
             break;
     }
 }
