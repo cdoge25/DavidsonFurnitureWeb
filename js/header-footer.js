@@ -57,6 +57,15 @@ function onRegister() {
 }
 
 function onLogin() {
+    if ($('#email').value === "trungpht20411@st.uel.edu.vn" && $('#password').value === "123456"
+    || $('#email').value === "haindt20411@st.uel.edu.vn" && $('#password').value === "123456"
+    || $('#email').value === "yendh20411@st.uel.edu.vn" && $('#password').value === "123456"
+    || $('#email').value === "baodg20411@st.uel.edu.vn" && $('#password').value === "123456"
+    || $('#email').value === "anhntt20411@st.uel.edu.vn" && $('#password').value === "123456"){
+        alert("Đăng nhập với tư cách người quản lý");
+        window.location = "admin.html";
+        return true;
+    }
     let users = JSON.parse(localStorage.getItem('users'));
     if(users == null){
         alert("Tài khoản chưa được đăng ký");
@@ -72,37 +81,26 @@ function onLogin() {
     user.password = $('#password').value;
     // Check if user is match
     let checkUser = users.find(item => item.email === user.email);
-    if (user.email === "trungpht20411@st.uel.edu.vn" && user.password === "123456"
-    || user.email === "haindt20411@st.uel.edu.vn" && user.password === "123456"
-    || user.email === "yendh20411@st.uel.edu.vn" && user.password === "123456"
-    || user.email === "baodg20411@st.uel.edu.vn" && user.password === "123456"
-    || user.email === "anhntt20411@st.uel.edu.vn" && user.password === "123456"){
-        alert("Đăng nhập với tư cách người quản lý");
-        window.location = "admin.html";
-        return true;
-    }
-    else{
-        if (checkUser) {
-            if (checkUser.password === user.password) {
-                alert("Đăng nhập thành công");
-                localStorage.setItem('is_logged', true);
-                window.location = "index.html";
-                return true;
-            } else {
-                alert("Sai mật khẩu, xin thử lại");
-                // focus & clear confirm input
-                $('#password').focus();
-                $('#password').value = "";
-                return false;
-            }
+    if (checkUser) {
+        if (checkUser.password === user.password) {
+            alert("Đăng nhập thành công");
+            localStorage.setItem('is_logged', true);
+            window.location = "index.html";
+            return true;
         } else {
-            alert("Email chưa được đăng ký");
+            alert("Sai mật khẩu, xin thử lại");
             // focus & clear confirm input
-            $('#email').focus();
-            $('#email').value = "";
+            $('#password').focus();
             $('#password').value = "";
             return false;
         }
+    } else {
+        alert("Email chưa được đăng ký");
+        // focus & clear confirm input
+        $('#email').focus();
+        $('#email').value = "";
+        $('#password').value = "";
+        return false;
     }
 }
 
