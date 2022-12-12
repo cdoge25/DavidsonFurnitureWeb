@@ -54,7 +54,7 @@ section{
 }
 
 #banners .slide-wrapper .slider-item:first-child{
-    background-image: url(../images/banners/category.png); display: block;
+    background-image: url(https://file.hstatic.net/1000280685/file/web_c03c93a6e532462b819bfa87e89d2461_master.png); display: block;
     filter: brightness(50%);
 }
   
