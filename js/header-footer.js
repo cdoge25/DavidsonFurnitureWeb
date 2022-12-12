@@ -57,6 +57,15 @@ function onRegister() {
 }
 
 function onLogin() {
+    if ($('#email').value === "trungpht20411@st.uel.edu.vn" && $('#password').value === "123456"
+    || $('#email').value === "haindt20411@st.uel.edu.vn" && $('#password').value === "123456"
+    || $('#email').value === "yendh20411@st.uel.edu.vn" && $('#password').value === "123456"
+    || $('#email').value === "baodg20411@st.uel.edu.vn" && $('#password').value === "123456"
+    || $('#email').value === "anhntt20411@st.uel.edu.vn" && $('#password').value === "123456"){
+        alert("Đăng nhập với tư cách người quản lý");
+        window.location = "admin.html";
+        return true;
+    }
     let users = JSON.parse(localStorage.getItem('users'));
     if(users == null){
         alert("Tài khoản chưa được đăng ký");
