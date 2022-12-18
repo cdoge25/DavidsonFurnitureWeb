@@ -3,12 +3,12 @@ const $$= document.querySelectorAll.bind(document)
 
 var users = JSON.parse(localStorage.getItem('users')) || [];
 var urlParams = window.location.href;
-if(urlParams.toString().includes('login.html')){
+if(urlParams.toString().includes('dangnhap.html')){
     $('#submit').onclick = function(){
         onLogin();
     }
 }
-else if(urlParams.toString().includes('sign-up.html')){
+else if(urlParams.toString().includes('dangky.html')){
     $('#submit').onclick = function() {
         onRegister();
     }
@@ -42,14 +42,14 @@ function onRegister() {
         }
     
         if (users.find(item => item.email === user.email)) {
-            alert("Email existed!");
+            alert("Email đã tồn tại");
             return false;
         }
         users.push(user); 
         localStorage.setItem('users', JSON.stringify(users));
         alert('Đăng ký thành công');
         
-        window.location = "login.html";
+        window.location = "dangnhap.html";
     }
     else{
         alert('Vui lòng điền đầy đủ thông tin');
@@ -69,7 +69,7 @@ function onLogin() {
     let users = JSON.parse(localStorage.getItem('users'));
     if(users == null){
         alert("Tài khoản chưa được đăng ký");
-        window.location = 'sign-up.html';
+        window.location = 'dangky.html';
     }
     let user = {
         email: '',
@@ -148,7 +148,7 @@ function configHeader(){
         $('#account-icon .user-photo').classList.add('active')
         $('#account-icon .temp-user').style.display = 'none'
         $('#account-icon').onclick = () =>{
-            window.location = 'customer-account.html'
+            window.location = 'khachhang.html'
         }
     }
     else{
@@ -156,7 +156,7 @@ function configHeader(){
             $('#account-icon .user-photo').classList.remove('active')
         $('#account-icon .temp-user').style.display = 'block'
         $('#account-icon').onclick = () =>{
-            window.location = 'login.html'
+            window.location = 'dangnhap.html'
         }
     }
 }

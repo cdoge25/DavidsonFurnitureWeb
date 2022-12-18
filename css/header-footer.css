@@ -487,7 +487,7 @@ footer .wrapper .links{
     float: left;
 }
 
-footer .wrapper .links .aboutus h3,
+footer .wrapper .links .vechungtoi h3,
 footer .wrapper .links .contact h3,
 footer .wrapper .links .follow h3{
     color: white;
@@ -497,14 +497,14 @@ footer .wrapper .links .follow h3{
     line-height: 2rem;
 }
 
-footer .wrapper .links .aboutus{
+footer .wrapper .links .vechungtoi{
     width: 25%;
     display: flex;
     flex-direction: column;
     float: left;
 }
 
-footer .wrapper .links .aboutus .item{
+footer .wrapper .links .vechungtoi .item{
     font-size: 1.4rem;
     margin-bottom: 14px;
 }
@@ -576,12 +576,12 @@ footer .copyright{
     footer, footer .wrapper{height: fit-content;}
     footer .wrapper .big-logo{margin-top: 20px;}
     footer .wrapper .big-logo, footer .wrapper .links,
-    footer .wrapper .links .aboutus,
+    footer .wrapper .links .vechungtoi,
     footer .wrapper .links .contact,
     footer .wrapper .links .follow{
         float: none;
         width: 100%;}
-    footer .wrapper .links .aboutus h3,
+    footer .wrapper .links .vechungtoi h3,
     footer .wrapper .links .contact h3{text-align: center;
     margin: 20px 0;}
     footer .wrapper .clear{display: none;}
