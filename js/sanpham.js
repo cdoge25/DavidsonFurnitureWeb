@@ -26,7 +26,7 @@ function loadFullCart(){
             <a href="#"><img class="image-item"src="${item.product.image}" ></a>
         </td>
         <td class="product-name" data-title="Product">
-            <a class="name" href="product-detail.html?id=${item.product.id}">${item.product.name}</a>
+            <a class="name" href="chitietsp.html?id=${item.product.id}">${item.product.name}</a>
         </td>
         <td class="product-price" data-title="Price">
             <p class="price">${item.product.price} VND</p>
@@ -129,9 +129,9 @@ async function showBestSeller(){
                  <div class="tag">${item.tag}</div>
                  <div class="thumb"><img src="${item.image}" alt=""></div>
                  <div class='detail'>
-                     <a href="product-detail.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
                      <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
-                     <a href="product-detail.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
                  </div>
                 </div>
             </div>`
@@ -155,9 +155,9 @@ async function showPromotion(){
                  <div class="tag">${item.tag}</div>
                  <div class="thumb"><img src="${item.image}" alt=""></div>
                  <div class='detail'>
-                     <a href="product-detail.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
                      <p class="price"><span class="iconify" data-icon="ion:pricetag"></span><del>${item.price}</del> ${item.currentPrice} <u>đ</u></p>
-                     <a href="product-detail.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
                  </div>
                 </div>
             </div>`
@@ -181,9 +181,9 @@ function showBan(products){
                  <div class="tag" style="display: none;">${item.tag}</div>
                  <div class="thumb"><img src="${item.image}" alt=""></div>
                  <div class='detail'>
-                     <a href="product-detail.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
                      <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
-                     <a href="product-detail.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
                  </div>
                 </div>
             </div>`
@@ -203,9 +203,9 @@ function showGhe(products){
                  <div class="tag" style="display: none;">${item.tag}</div>
                  <div class="thumb"><img src="${item.image}" alt=""></div>
                  <div class='detail'>
-                     <a href="product-detail.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
                      <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
-                     <a href="product-detail.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
                  </div>
                 </div>
             </div>`
@@ -225,9 +225,9 @@ function showSofa(products){
                  <div class="tag" style="display: none;">${item.tag}</div>
                  <div class="thumb"><img src="${item.image}" alt=""></div>
                  <div class='detail'>
-                     <a href="product-detail.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
                      <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
-                     <a href="product-detail.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
                  </div>
                 </div>
             </div>`
@@ -247,9 +247,9 @@ function showGiuong(products){
                  <div class="tag" style="display: none;">${item.tag}</div>
                  <div class="thumb"><img src="${item.image}" alt=""></div>
                  <div class='detail'>
-                     <a href="product-detail.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
                      <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
-                     <a href="product-detail.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
                  </div>
                 </div>
             </div>`
@@ -314,9 +314,9 @@ async function showBestSellerFilter(){
                  <div class="tag">${item.tag}</div>
                  <div class="thumb"><img src="${item.image}" alt=""></div>
                  <div class='detail'>
-                     <a href="product-detail.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
                      <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
-                     <a href="product-detail.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
                  </div>
                 </div>
             </div>`
@@ -336,9 +336,9 @@ async function showNewFilter(){
                  <div class="tag">${item.tag}</div>
                  <div class="thumb"><img src="${item.image}" alt=""></div>
                  <div class='detail'>
-                     <a href="product-detail.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
                      <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
-                     <a href="product-detail.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
                  </div>
                 </div>
             </div>`
@@ -358,9 +358,9 @@ async function showOfferFilter(){
                  <div class="tag" style="display: none;">${item.tag}</div>
                  <div class="thumb"><img src="${item.image}" alt=""></div>
                  <div class='detail'>
-                     <a href="product-detail.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
                      <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
-                     <a href="product-detail.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
                  </div>
                 </div>
             </div>`
@@ -380,9 +380,9 @@ async function showPromoFilter(){
                  <div class="tag" style="font-size: 1.2rem;">${item.tag}</div>
                  <div class="thumb"><img src="${item.image}" alt=""></div>
                  <div class='detail'>
-                     <a href="product-detail.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
                      <p class="price"><span class="iconify" data-icon="ion:pricetag"></span><del>${item.price}</del> ${item.currentPrice} <u>đ</u></p>
-                     <a href="product-detail.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
                  </div>
                 </div>
             </div>`
@@ -402,9 +402,9 @@ async function showBanFilter(){
                  <div class="tag" style="display: none;">${item.tag}</div>
                  <div class="thumb"><img src="${item.image}" alt=""></div>
                  <div class='detail'>
-                     <a href="product-detail.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
                      <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
-                     <a href="product-detail.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
                  </div>
                 </div>
             </div>`
@@ -424,9 +424,9 @@ async function showGheFilter(){
                  <div class="tag" style="display: none;">${item.tag}</div>
                  <div class="thumb"><img src="${item.image}" alt=""></div>
                  <div class='detail'>
-                     <a href="product-detail.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
                      <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
-                     <a href="product-detail.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
                  </div>
                 </div>
             </div>`
@@ -446,9 +446,9 @@ async function showSofaFilter(){
                  <div class="tag" style="display: none;">${item.tag}</div>
                  <div class="thumb"><img src="${item.image}" alt=""></div>
                  <div class='detail'>
-                     <a href="product-detail.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
                      <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
-                     <a href="product-detail.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
                  </div>
                 </div>
             </div>`
@@ -468,9 +468,9 @@ async function showGiuongFilter(){
                  <div class="tag" style="display: none;">${item.tag}</div>
                  <div class="thumb"><img src="${item.image}" alt=""></div>
                  <div class='detail'>
-                     <a href="product-detail.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
                      <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
-                     <a href="product-detail.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
                  </div>
                 </div>
             </div>`
@@ -572,9 +572,9 @@ function loadSuggestion(products, tag){
                  <div class="tag">${item.tag}</div>
                  <div class="thumb"><img src="${item.image}" alt=""></div>
                  <div class='detail'>
-                     <a href="product-detail.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
                      <p class="price"><span class="iconify" data-icon="ion:pricetag"></span><del>${item.price}</del> ${item.currentPrice} <u>đ</u></p>
-                     <a href="product-detail.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
                  </div>
                 </div>
             </div>`
@@ -619,23 +619,23 @@ window.onload = function(){
   if(urlParams.toString().includes('index.html')){
     // showBestSeller();
   }
-  else if(urlParams.toString().includes('product-detail.html')){
+  else if(urlParams.toString().includes('chitietsp.html')){
     showProductDetail()
   }
-  else if(urlParams.toString().includes('cart.html')){
+  else if(urlParams.toString().includes('giohang.html')){
     loadFullCart();
   }
-  else if(urlParams.toString().includes('category.html')){
+  else if(urlParams.toString().includes('phanloai.html')){
     showBestSeller();
     showPromotion();
   }
-  else if(urlParams.toString().includes('filter.html')){
+  else if(urlParams.toString().includes('locsp.html')){
     setTimeout(() => {
       window.scrollTo(0, 0);
       navigateFilter();
     }, 1000);
   }
-  else if(urlParams.toString().includes('order.html')){
+  else if(urlParams.toString().includes('dathang.html')){
     loadPurchasingList()
   }
   loadCartTotal();

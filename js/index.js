@@ -41,9 +41,9 @@
                        <div class="tag">${item.tag}</div>
                        <div class="thumb"><img src="${item.image}" alt=""></div>
                        <div class='detail'>
-                           <a href="product-detail.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                           <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
                            <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
-                           <a href="product-detail.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                           <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
                        </div>
                       </div>
                   </div>`

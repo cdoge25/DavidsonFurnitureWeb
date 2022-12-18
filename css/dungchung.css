@@ -5,7 +5,6 @@ font-family: 'Montserrat', cursive;
 font-family: 'Mulish', sans-serif;
 font-family: 'Nunito', sans-serif;
 */
-/* Base.css use for managing: THEME, RESET CSS, COMMON ELEMENTS, KEYFRAMES */
 :root{
     --primary-color: #FF6600;
     --secondary: #FFE8D9;
