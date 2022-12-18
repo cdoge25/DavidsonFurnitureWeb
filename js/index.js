@@ -1,33 +1,4 @@
 (function(){
-    
-    function ShowPost(){
-        const slide= $('#review .slider-post')
-        const posts= $$('#review .slider-post .post')
-        const prevBtn= $('#review .indicator .prev')
-        const nextBtn= $('#review .indicator .next')
-        var counter= 0
-        const size= posts[0].clientWidth
-        
-        slide.style.transform= 'translateX('+ 0 +'px)';
-
-        // Button listener
-        nextBtn.addEventListener('click', () =>{
-            if(counter >= posts.length -1) counter =-1;
-            slide.style.transition = "transform 0.4s ease-in"
-            counter++
-            slide.style.transform= 'translateX('+ (-size * counter) +'px)';
-            posts[posts.length-1].style.opacity= '1'
-        })
-
-        prevBtn.addEventListener('click', () =>{
-            if(counter <= 0) return;
-            slide.style.transition = "transform 0.4s ease-in-out"
-            counter--
-            slide.style.transform= 'translateX('+ (-size * counter) +'px)';
-        })
-
-    }
-    ShowPost();
     showBestSeller()
     async function showBestSeller(){
         const products = await getProducts();

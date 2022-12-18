@@ -1,3 +1,7 @@
+header nav .menu > li:nth-child(3) > a{
+  color: var(--primary-color);
+}
+
 #consul-item{
     color: var(--primary-color);
   }

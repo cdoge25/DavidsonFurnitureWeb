@@ -4,15 +4,7 @@ body{
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
 }
-/* .container_cart{
-  background-color: var(--background);
-  background: url("../images/banners/cart.png");
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height:350px;
-  position: relative;
-} */
+
 .banner-text{
     position: absolute;
     text-align: center;
