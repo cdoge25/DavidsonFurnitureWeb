@@ -3,7 +3,7 @@
     background-color: var(--background);
    
 } 
-.content{
+.info{
     position: relative;
     z-index: 1;
     display: flex;
@@ -82,7 +82,7 @@ h5{
 } 
 /* reponsive */
 @media (max-width: 428px){
-    #container .content{
+    #container .info{
         display: block;
         width: 100%;
     }
@@ -126,7 +126,7 @@ h5{
   
   @media (min-width: 429px) and (max-width: 768px){
 
-    #container .content{
+    #container .info{
         /* display: block; */
         width: 100%;
     }

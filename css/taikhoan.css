@@ -73,7 +73,7 @@
 .container .nav-panel .menu .item:hover a,
 .container .nav-panel .menu .item.active,
 .container .nav-panel .menu .item.active .iconify{
-    background-color: var(--item-2);
+    background-color: var(--item);
     color: var(--primary-color);
 }
 
