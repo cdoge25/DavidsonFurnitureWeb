@@ -4,10 +4,9 @@
 
 :root{
     --light : #f8f9fa;
-    --secondary: #212121;
     --dark: #212121;
     --primary-color: #ff6600;
-    --secondary-color: #ff6600;
+    --dark-color: #ff6600;
     --border : #e9ecef;
 }
 
@@ -31,7 +30,7 @@ a{
 }
 
 .text-secondary{
-    color: var(--secondary);
+    color: var(--dark);
 }
 
 .text-dark{
@@ -103,7 +102,7 @@ a{
 
 .btn-primary{
     border-radius: 4px;
-    background-color: var(--secondary-color);
+    background-color: var(--dark-color);
 }
 
 .object-fit{
