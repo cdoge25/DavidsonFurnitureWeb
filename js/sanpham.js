@@ -168,6 +168,10 @@ async function showPromotion(){
   showGhe(products);
   showSofa(products);
   showGiuong(products);
+  showDen(products);
+  showKetu(products);
+  showGuong(products);
+  showChangagoi(products);
 }
 
 function showBan(products){
@@ -258,6 +262,94 @@ function showGiuong(products){
   $('#giuong .container').innerHTML = product;
 }
 
+function showDen(products){
+  let den = products.filter((product) => {
+    return product.category == '4'
+  });
+  den = den.slice(0, 3);
+	var item = den.map(item => {
+			return `<div class="item">
+            <div class="product-item">
+                 <div class="tag" style="display: none;">${item.tag}</div>
+                 <div class="thumb"><img src="${item.image}" alt=""></div>
+                 <div class='detail'>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                 </div>
+                </div>
+            </div>`
+	});
+  var product = item.join('');
+  $('#den .container').innerHTML = product;
+}
+
+function showKetu(products){
+  let ketu = products.filter((product) => {
+    return product.category == '5'
+  });
+  ketu = ketu.slice(0, 3);
+	var item = ketu.map(item => {
+			return `<div class="item">
+            <div class="product-item">
+                 <div class="tag" style="display: none;">${item.tag}</div>
+                 <div class="thumb"><img src="${item.image}" alt=""></div>
+                 <div class='detail'>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                 </div>
+                </div>
+            </div>`
+	});
+  var product = item.join('');
+  $('#ketu .container').innerHTML = product;
+}
+
+function showGuong(products){
+  let guong = products.filter((product) => {
+    return product.category == '1'
+  });
+  guong = guong.slice(0, 3);
+	var item = guong.map(item => {
+			return `<div class="item">
+            <div class="product-item">
+                 <div class="tag" style="display: none;">${item.tag}</div>
+                 <div class="thumb"><img src="${item.image}" alt=""></div>
+                 <div class='detail'>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                 </div>
+                </div>
+            </div>`
+	});
+  var product = item.join('');
+  $('#guong .container').innerHTML = product;
+}
+
+function showChangagoi(products){
+  let changagoi = products.filter((product) => {
+    return product.category == '3'
+  });
+  changagoi = changagoi.slice(0, 3);
+	var item = changagoi.map(item => {
+			return `<div class="item">
+            <div class="product-item">
+                 <div class="tag" style="display: none;">${item.tag}</div>
+                 <div class="thumb"><img src="${item.image}" alt=""></div>
+                 <div class='detail'>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                 </div>
+                </div>
+            </div>`
+	});
+  var product = item.join('');
+  $('#changagoi .container').innerHTML = product;
+}
+
 // ======= FILTER PAGE =========
 
 function navigateFilter(){
@@ -299,6 +391,23 @@ function navigateFilter(){
       $('#giuong').classList.add('active');
       showGiuongFilter();
       break;
+
+    case '#den':
+      $('#den').classList.add('active');
+      showDenFilter();
+      break;
+    case '#ketu':
+      $('#ketu').classList.add('active');
+      showKetuFilter();
+      break;
+    case '#guong':
+      $('#guong').classList.add('active');
+      showGuongFilter();
+      break;
+    case '#changagoi':
+      $('#changagoi').classList.add('active');
+      showChangagoiFilter();
+      break;  
   }
   $('.loading').style.display = 'none';
 }
@@ -477,6 +586,94 @@ async function showGiuongFilter(){
 	});
   var product = item.join('');
   $('#giuong .container').innerHTML = product;
+}
+
+async function showDenFilter(){
+  const products = await getProducts();
+  let den = products.filter((product) => {
+    return product.category == '4'
+  });
+    var item = den.map(item => {
+            return `<div class="item">
+            <div class="product-item">
+                 <div class="tag" style="display: none;">${item.tag}</div>
+                 <div class="thumb"><img src="${item.image}" alt=""></div>
+                 <div class='detail'>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                 </div>
+                </div>
+            </div>`
+    });
+  var product = item.join('');
+  $('#den .container').innerHTML = product;
+}
+
+async function showKetuFilter(){
+  const products = await getProducts();
+  let ketu = products.filter((product) => {
+    return product.category == '5'
+  });
+    var item = ketu.map(item => {
+            return `<div class="item">
+            <div class="product-item">
+                 <div class="tag" style="display: none;">${item.tag}</div>
+                 <div class="thumb"><img src="${item.image}" alt=""></div>
+                 <div class='detail'>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                 </div>
+                </div>
+            </div>`
+    });
+  var product = item.join('');
+  $('#ketu .container').innerHTML = product;
+}
+
+async function showGuongFilter(){
+  const products = await getProducts();
+  let guong = products.filter((product) => {
+    return product.category == '1'
+  });
+    var item = guong.map(item => {
+            return `<div class="item">
+            <div class="product-item">
+                 <div class="tag" style="display: none;">${item.tag}</div>
+                 <div class="thumb"><img src="${item.image}" alt=""></div>
+                 <div class='detail'>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                 </div>
+                </div>
+            </div>`
+    });
+  var product = item.join('');
+  $('#guong .container').innerHTML = product;
+}
+
+async function showChangagoiFilter(){
+  const products = await getProducts();
+  let changagoi = products.filter((product) => {
+    return product.category == '3'
+  });
+    var item = changagoi.map(item => {
+            return `<div class="item">
+            <div class="product-item">
+                 <div class="tag" style="display: none;">${item.tag}</div>
+                 <div class="thumb"><img src="${item.image}" alt=""></div>
+                 <div class='detail'>
+                     <a href="chitietsp.html?id=${item.id}" class="name" data-id="${item.id}">${item.name}</a>
+                     <p class="price"><span class="iconify" data-icon="ion:pricetag"></span>${item.currentPrice} <u>đ</u></p>
+                     <a href="chitietsp.html?id=${item.id}" class="add" data-id="${item.id}"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                 </div>
+                </div>
+            </div>`
+    });
+  var product = item.join('');
+  $('#changagoi .container').innerHTML = product;
 }
 
 // ======= PRODUCT DETAIL PAGE =========

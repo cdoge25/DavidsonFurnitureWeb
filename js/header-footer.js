@@ -108,30 +108,20 @@ function configHeader(){
     // =======Search area===========
     const searchIcon= $('#search-icon')
     const searchInput= $('#search-input')
-    const findBtn= $('#find-btn')
+    
     if(screen.width < 500){
-        findBtn.style.display= 'none'
-        searchIcon.style.display = 'none'
+        searchInput.style.display = 'none'
     }
     else{
-        searchIcon.onclick = function(){
-            searchInput.style.transform = 'scaleX(1)'
-            searchIcon.style.display = 'none'
-            findBtn.style.display = 'inline-block'
-        }
-        
-        searchInput.onblur = function(){
-            searchInput.style.transform = 'scaleX(0)'
-            findBtn.style.display= 'none'
-            searchIcon.style.display = 'inline-block'
-        }
-        
-        findBtn.onclick= function(){
-            searchInput.style.transform = 'scaleX(0)'
-            findBtn.style.display= 'none'
-            searchIcon.style.display = 'inline-block'
+        searchInput.style.transform = 'scaleX(1)'
+        searchIcon.onclick = () => {
+            if (searchInput.value ===""){
+                return false;
+            }
+            window.location = 'locsp.html'+'#'+ searchInput.value ;
         }
     }
+    
     // Drawer menu
     var menu= $('header nav .menu')
     var menuBtn= $('#menu-icon')
