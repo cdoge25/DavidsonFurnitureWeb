@@ -12,36 +12,51 @@
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <link rel="stylesheet" href="./css/dungchung.css">
     <link rel="stylesheet" href="./css/header-footer.css">
-    
     <link rel="stylesheet" href="./css/admin.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div id="menu-icon"><span class="iconify" data-icon="bx:bx-menu-alt-left"></span></div>
+            
+            <div class="logo">
+                <a href="index.html"><img src="./images/logo/Logo-orangebg-round.png" alt="Davidson logo"></a>
+            </div>
+
+            <div class="group-icons">
+                <input type="search" id="search-input" name="furnitures" list="furnitures" placeholder="Bạn cần tìm gì?...">
+                    <button id="search-icon"><span class="iconify" data-icon="mdi:magnify"></span></button>
+
+                <a href="#" class="notify">
+                    <span class="iconify" data-icon="clarity:bell-line"></span>
+                    <span class="iconify inactive" data-icon="clarity:bell-outline-badged"></span>
+                </a>
+    
+                <a href="dangnhap.html" class="logout">
+                    <span class="iconify" data-icon="ion:log-out"></span>
+                </a>
+                <div class="log-out">Đăng xuất</div>
+            </div>
+        </nav>
+    </header>
+
+
     <div id="container">
-        <!-- Top Right, Admin photo and notification -->
-        <div class="admin">
-            <a href="#" class="notify">
-                <span class="iconify" data-icon="clarity:bell-line"></span>
-                <span class="iconify inactive" data-icon="clarity:bell-outline-badged"></span>
-            </a>
-            <a href="dangnhap.html" class="admin-photo">
-                <img src="./images/logo/Logo_orangebg_01.png" alt="">
-            </a>
-            <div class="log-out">Đăng xuất</div>
-        </div>
-        <!-- Navigation Panel -->
+        <!-- Navigation bar -->
         <div class="nav">
-            <!-- logo -->
-            <a href="index.html" class="logo"><img src="./images/logo/Logo with text.png" alt=""></a>
+            <!-- top logo with text -->
+            <!-- <a href="index.html" class="logo"><img src="./images/logo/Logo with text.png" alt=""></a>
+            <a href="index.html" class="logo1"><img src="./images/logo/Logo-orangebg-round.png" alt=""></a> -->
             <!-- Navigation -->
             <ul>
                 <li><a href="#" class="item active">
-                    <span class="iconify icon" data-icon="ic:baseline-center-focus-weak"></span>
-                    <span class="title">Tổng quan</span></a>
+                    <span class="iconify icon" data-icon="icon-park-solid:overall-reduction"></span>
+                    <span class="title">Overview</span></a>
                 </li>
                 <li><a href="#" class="item expand">
-                        <span class="iconify icon" data-icon="la:file-invoice-dollar"></span>
+                        <span class="iconify icon" data-icon="material-symbols:order-play"></span>
                         <span class="title">Đơn hàng</span>
-                        <span class="iconify down" data-icon="akar-icons:chevron-down"></span>
+                        <span class="iconify down" data-icon="material-symbols:arrow-drop-down-circle"></span>
                     </a>
                     <ul class="child">
                         <li><a href="#" class="item">Tất cả đơn hàng</a></li>
@@ -53,9 +68,9 @@
                     </ul>
                 </li>
                 <li><a href="#" class="item expand">
-                        <span class="iconify icon" data-icon="icon-park-outline:ad-product"></span>
+                        <span class="iconify icon" data-icon="eos-icons:product-subscriptions"></span>
                         <span class="title">Sản phẩm</span>
-                        <span class="iconify down" data-icon="akar-icons:chevron-down"></span>
+                        <span class="iconify down" data-icon="material-symbols:arrow-drop-down-circle"></span>
                     </a>
                     <ul class="child">
                         <li><a href="#" class="item">Tất cả sản phẩm</a></li>
@@ -63,19 +78,19 @@
                     </ul>
                 </li>
                 <li><a href="#" class="item">
-                    <span class="iconify icon" data-icon="carbon:delivery"></span>
+                    <span class="iconify icon" data-icon="mdi:truck-delivery"></span>
                     <span class="title">Vận chuyển</span></a>
                 </li>
                 <li><a href="#" class="item">
-                    <span class="iconify icon" data-icon="bi:people"></span>
+                    <span class="iconify icon" data-icon="material-symbols:settings-account-box"></span>
                     <span class="title">Khách hàng</span></a>
                 </li>
                 <li><a href="#" class="item">
-                    <span class="iconify icon" data-icon="carbon:blog"></span>
+                    <span class="iconify icon" data-icon="fluent:news-16-filled"></span>
                     <span class="title">Blog</span></a>
                 </li>
             </ul>
-            <!-- Toggle button -->
+            <!-- Expand button -->
             <button class="toggle"><span class="iconify" data-icon="bi:arrow-right-short"></span></button>
         </div>
 
@@ -83,55 +98,26 @@
         <div class="infor-wrapper">
             <!-- Start Overview Section -->
             <section class="fragment overview active">
-                <h3 class="title">Tổng quan</h3>
+                <h1 class="title">OVERVIEW</h1>
                 <div class="top-left panel">
                     <div class="filter">
                         <select name="time" id="time" class="btn btn-fourth">
                             <option value="today">Hôm nay</option>
                             <option value="thisweek">Tuần này</option>
                             <option value="thismonth">Tháng này</option>
-                            <option value="quarter">Qúy này</option>
+                            <option value="quarter">Quý này</option>
                         </select>
                         <select name="channel" id="channel" class="btn btn-fourth">
                             <option value="all">Tất cả kênh bán hàng</option>
                             <option value="website">Website</option>
                             <option value="app">App</option>
                         </select>
-                        <button class="refresh btn btn-fourth"><span class="iconify" data-icon="eva:sync-fill"></span></button>
+                        <button class="refresh btn btn-fourth"><span class="iconify" data-icon="ion:reload-circle-sharp"></span></button>
                     </div>
-                    <ul class="lv-overview">
-                        <li>
-                            <p>DOANH THU THUẦN - TẤT CẢ KÊNH BÁN HÀNG</p>
-                            <p class="rev"><b>425,000,000đ</b></p>
-                        </li>
-                        <li>
-                            <p>TỔNG ĐƠN HÀNG</p>
-                            <p class="order"><b>20</b></p>
-                        </li>
-                        <li>
-                            <p>SỐ LƯỢNG HÀNG ĐÃ BÁN</p>
-                            <p class="products"><b>25</b></p>
-                        </li>
-                        <li>
-                            <p>SẢN PHẨM BÁN CHẠY</p>
-                            <div class="best-sell">
-                                <div class="item">
-                                    <div class="thumb"><img src="https://i.ibb.co/LdBHF19/den-densan-LOGLY.webp" alt=""></div>
-                                    <div class="detail">
-                                        <p>Đèn sàn LOGLY</p>
-                                        <p>990,000đ</p>
-                                    </div>
-                                    <div class="quantity">
-                                        <p class="number"><b>05</b><span><b> Sản phẩm</b></span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="more">
-                        <a href="#">Xem chi tiết <span class="iconify" data-icon="bi:arrow-right-short"></span></a>
-                    </div>
+
+                    <a><img src="./images/banners/chart.png" alt="chart"></a>
                 </div>
+
                 <div class="top-right panel">
                     <h3 class="heading-text">Hoạt động</h3>
                     <div class="wrapper">
@@ -142,7 +128,7 @@
                                 </div>
                                 <p><b>08/12/2022</b></p>
                             </div>
-                            <!-- 1 Activity -->
+                            
                             <div class="item">
                                 <div class="progress">
                                     <div class="dot"></div>
@@ -153,7 +139,7 @@
                                     <p>Phạm Hồ Tiến Trung đã tạo một sản phẩm mới trong phân loại Gương toàn thân <u>LEAVAL 1</u></p>
                                 </div>
                             </div>
-                            <!-- 1 Activity -->
+                            
                             <div class="item">
                                 <div class="progress">
                                     <div class="dot"></div>
@@ -163,7 +149,7 @@
                                     <p><b>Đoàn Hồng Yến - 3:15 pm</b></p>
                                     <p>Đoàn Hồng Yến đã thay đổi trạng thái đơn hàng DF122435 <u>Hoàn tất</u></p></div>
                             </div>
-                            <!-- 1 Activity -->
+                            
                             <div class="item">
                                 <div class="progress">
                                     <div class="dot"></div>
@@ -173,7 +159,7 @@
                                     <p><b>Nguyễn Đức Thiện Hải - 11:55 am</b></p>
                                     <p>Nguyễn Đức Thiện Hải đã xác nhận một đơn hàng <u>DF123404</u></p></div>
                             </div>
-                            <!-- 1 Activity -->
+                            
                             <div class="item">
                                 <div class="progress">
                                     <div class="dot"></div>
@@ -183,7 +169,7 @@
                                     <p><b>Đoàn Gia Bảo - 8:45 am</b></p>
                                     <p>Đoàn Gia Bảo đã đăng tải một Blog mới <u>#012</u></p></div>
                             </div>
-                            <!-- 1 Activity -->
+                            
                             <div class="item">
                                 <div class="progress first">
                                     <div class="clock"><span class="iconify" data-icon="eva:clock-outline"></span></div>
@@ -191,7 +177,7 @@
                                 </div>
                                 <p><b>07/12/2021</b></p>
                             </div>
-                             <!-- 1 Activity -->
+                             
                              <div class="item">
                                 <div class="progress">
                                     <div class="dot"></div>
@@ -202,7 +188,7 @@
                                     <p>Nguyễn Thị Tâm Anh đã thêm một khách hàng mới <u>@anhntt20411@st.uel.edu.vn</u></p>
                                 </div>
                             </div>
-                            <!-- 1 Activity -->
+                           
                             <div class="item">
                                 <div class="progress">
                                     <div class="dot"></div>
@@ -283,26 +269,33 @@
 
             <!-- Start Order/ All orders -->
             <section class="fragment order all-order inactive">
-                <h3 class="title">Đơn hàng | Tất cả đơn hàng</h3>
+                <h1 class="title">TẤT CẢ ĐƠN HÀNG</h1>
                 <div class="panel">
                     <!-- Navigation Tabs -->
                     <div class="tabs">
                         <div class="tab-item active">
-                            Tất cả đơn hàng
+                            TẤT CẢ ĐƠN
                         </div>
                         <div class="tab-item">
-                            Đơn hàng mới
+                            ĐƠN CHỜ XÁC NHẬN
                         </div>
                         <div class="tab-item">
-                            Chưa giao hàng
+                            ĐƠN CHỜ ĐÓNG GÓI
                         </div>
                         <div class="tab-item">
-                            Bị hủy
+                            ĐƠN CHỜ GIAO 
+                        </div>
+                        <div class="tab-item">
+                            ĐƠN BỊ HỦY
                         </div>
                         <div class="line"></div>
                     </div>
                     <!-- Filter and search -->
                     <div class="task">
+                        <a class="date">Từ ngày: <input type="date" id="Date"></a>
+                        <a class="date">Đến ngày: <input type="date" id="Date"></a>
+                        <button onclick="findOrderInTime()" class="btn btn-fourth"><span class="iconify" data-icon="bxs:file-find"></span> Tìm</button>
+
                         <button class="btn btn-fourth"><span class="iconify" data-icon="bi:filter"></span> Thêm điều kiện lọc</button>
                         <button class="btn btn-fourth"><span class="iconify" data-icon="fe:list-task"></span> Tác vụ</button>
                         <div class="search"><input type="search" name="search" placeholder="Tìm kiếm"></div>
@@ -314,14 +307,14 @@
                             <th>Mã</th>
                             <th>Ngày tạo</th>
                             <th>Khách hàng</th>
-                            <th>Thanh toán</th>
+                            <th>Phương thức thanh toán</th>
                             <th>Trạng thái</th>
                             <th>Tổng tiền</th>
                             <th>Kênh</th>
                         </tr>
                         <tr>
                             <td class="expand"><span class="iconify" data-icon="ant-design:caret-down-outlined"></span></td>
-                            <td><input type="checkbox"> DF122340</td>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> DF122340</td>
                             <td>05/12/2022</td>
                             <td>Alice Nguyễn</td>
                             <td>COD</td>
@@ -331,7 +324,7 @@
                         </tr>
                         <tr>
                             <td class="expand"><span class="iconify" data-icon="ant-design:caret-down-outlined"></span></td>
-                            <td><input type="checkbox"> DF122341</td>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> DF122341</td>
                             <td>06/12/2022</td>
                             <td>Ngọc Diệp</td>
                             <td>Internet-Banking: BIDV</td>
@@ -341,7 +334,7 @@
                         </tr>
                         <tr>
                             <td class="expand"><span class="iconify" data-icon="ant-design:caret-down-outlined"></span></td>
-                            <td><input type="checkbox"> DF122342</td>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span>> DF122342</td>
                             <td>07/12/2022</td>
                             <td>Trần Xuân Quỳnh</td>
                             <td>COD</td>
@@ -351,7 +344,7 @@
                         </tr>
                         <tr>
                             <td class="expand"><span class="iconify" data-icon="ant-design:caret-down-outlined"></span></td>
-                            <td><input type="checkbox"> DF122343</td>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> DF122343</td>
                             <td>08/12/2022</td>
                             <td>Bảo Gia</td>
                             <td>Internet-Banking: Agribank</td>
@@ -361,7 +354,7 @@
                         </tr>
                         <tr>
                             <td class="expand"><span class="iconify" data-icon="ant-design:caret-down-outlined"></span></td>
-                            <td><input type="checkbox"> DF122344</td>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> DF122344</td>
                             <td>09/12/2022</td>
                             <td>Thu Lê</td>
                             <td>Zalo Pay</td>
@@ -371,7 +364,7 @@
                         </tr>
                         <tr>
                             <td class="expand"><span class="iconify" data-icon="ant-design:caret-down-outlined"></span></td>
-                            <td><input type="checkbox"> DF122345</td>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> DF122345</td>
                             <td>13/12/2022</td>
                             <td>Minh Thương</td>
                             <td>Internet-Banking: Vietcombank</td>
@@ -385,14 +378,14 @@
                             <option value="5">Hiển thị 5</option>
                             <option value="10">Hiển thị 10</option>
                         </select>
-                        <p><b>Trang 1/1</b></p>
+                        <p><b>Trang 1/2</b></p>
                     </div>
                 </div>
             </section>
         <!-- ================================================================= -->    
             <!-- Order/ Pending -->
             <section class="fragment order pending inactive">
-                <h3 class="title">Đơn hàng | Chờ xác nhận</h3>
+                <h1 class="title">ĐƠN CHỜ XÁC NHẬN</h1>
                 <button class="btn btn-primary">
                     <span class="iconify" data-icon="akar-icons:circle-check"></span> Xác nhận đơn hàng</button>
                 <div class="panel">
@@ -409,14 +402,14 @@
                             <th>Mã</th>
                             <th>Ngày tạo</th>
                             <th>Khách hàng</th>
-                            <th>Thanh toán</th>
+                            <th>Phương thức thanh toán</th>
                             <th>Trạng thái</th>
                             <th>Tổng tiền</th>
                             <th>Kênh</th>
                         </tr>
                         <tr>
                             <td class="expand"><span class="iconify" data-icon="ant-design:caret-down-outlined"></span></td>
-                            <td><input type="checkbox"> DF122341</td>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> DF122341</td>
                             <td>06/12/2022</td>
                             <td>Ngọc Diệp</td>
                             <td>Internet-Banking: BIDV</td>
@@ -426,7 +419,7 @@
                         </tr>
                         <tr>
                             <td class="expand"><span class="iconify" data-icon="ant-design:caret-down-outlined"></span></td>
-                            <td><input type="checkbox"> DF122345</td>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> DF122345</td>
                             <td>13/12/2022</td>
                             <td>Minh Thương</td>
                             <td>Internet-Banking: Vietcombank</td>
@@ -440,7 +433,7 @@
                             <option value="5">Hiển thị 5</option>
                             <option value="10">Hiển thị  10</option>
                         </select>
-                        <p><b>Trang 1/1</b></p>
+                        <p><b>Trang 1/2</b></p>
                     </div>
                 </div>
             </section>
@@ -448,7 +441,7 @@
             <!-- ================================================================= -->    
             <!-- Order/ Preparing -->
             <section class="fragment order preparing inactive">
-                <h3 class="title">Đơn hàng | Đang chuẩn bị</h3>
+                <h1 class="title">ĐƠN ĐANG CHUẨN BỊ</h1>
                 <button class="btn btn-primary">
                     <span class="iconify" data-icon="akar-icons:circle-check"></span> Chuẩn bị hàng hoàn tất</button>
                 <div class="panel">
@@ -465,14 +458,14 @@
                             <th>Mã</th>
                             <th>Ngày tạo</th>
                             <th>Khách hàng</th>
-                            <th>Thanh toán</th>
+                            <th>Phương thức thanh toán</th>
                             <th>Trạng thái</th>
                             <th>Tổng tiền</th>
                             <th>Kênh</th>
                         </tr>
                         <tr>
                             <td class="expand"><span class="iconify" data-icon="ant-design:caret-down-outlined"></span></td>
-                            <td><input type="checkbox"> DF122342</td>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> DF122342</td>
                             <td>07/12/2022</td>
                             <td>Trần Xuân Quỳnh</td>
                             <td>COD</td>
@@ -493,7 +486,7 @@
         <!-- ================================================================= -->    
             <!-- Order/ Delivering -->
             <section class="fragment order delivering inactive">
-                <h3 class="title">Đơn hàng | Đang giao</h3>
+                <h1 class="title">ĐƠN ĐANG GIAO</h1>
                 <button class="btn btn-primary">
                     <span class="iconify" data-icon="akar-icons:circle-check"></span> Giao hàng thành công</button>
                 <div class="panel">
@@ -510,14 +503,14 @@
                             <th>Mã</th>
                             <th>Ngày tạo</th>
                             <th>Khách hàng</th>
-                            <th>Thanh toán</th>
+                            <th>Phương thức thanh toán</th>
                             <th>Trạng thái</th>
                             <th>Tổng tiền</th>
                             <th>Kênh</th>
                         </tr>
                         <tr>
                             <td class="expand"><span class="iconify" data-icon="ant-design:caret-down-outlined"></span></td>
-                            <td><input type="checkbox"> DF122340</td>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> DF122340</td>
                             <td>05/12/2022</td>
                             <td>Alice Nguyễn</td>
                             <td>COD</td>
@@ -539,7 +532,7 @@
             <!-- ================================================================= -->    
             <!-- Order/ Completed -->
             <section class="fragment order completed inactive">
-                <h3 class="title">Đơn hàng | Hoàn tất</h3>
+                <h1 class="title">ĐƠN ĐÃ HOÀN TẤT</h1>
                 <button class="btn btn-primary">
                     <span class="iconify" data-icon="akar-icons:circle-check"></span> Xem đánh giá</button>
                 <div class="panel">
@@ -556,14 +549,14 @@
                             <th>Mã</th>
                             <th>Ngày tạo</th>
                             <th>Khách hàng</th>
-                            <th>Thanh toán</th>
+                            <th>Phương thức thanh toán</th>
                             <th>Trạng thái</th>
                             <th>Tổng tiền</th>
                             <th>Kênh</th>
                         </tr>
                         <tr>
                             <td class="expand"><span class="iconify" data-icon="ant-design:caret-down-outlined"></span></td>
-                            <td><input type="checkbox"> DF122343</td>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> DF122343</td>
                             <td>08/12/2022</td>
                             <td>Bảo Gia</td>
                             <td>Internet-Banking: Agribank</td>
@@ -573,7 +566,7 @@
                         </tr>
                         <tr>
                             <td class="expand"><span class="iconify" data-icon="ant-design:caret-down-outlined"></span></td>
-                            <td><input type="checkbox"> DF122344</td>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> DF122344</td>
                             <td>09/12/2022</td>
                             <td>Thu Lê</td>
                             <td>Zalo Pay</td>
@@ -595,7 +588,7 @@
             <!-- ================================================================= -->    
             <!-- Order/ Deleted -->
             <section class="fragment order deleted inactive">
-                <h3 class="title">Đơn hàng | Bị hủy</h3>
+                <h1 class="title">ĐƠN BỊ HỦY</h1>
                 <button class="btn btn-primary">
                     <span class="iconify" data-icon="akar-icons:circle-check"></span> Thống kê lý do hủy đơn</button>
                 <div class="panel">
@@ -612,7 +605,7 @@
                             <th>Mã</th>
                             <th>Ngày tạo</th>
                             <th>Khách hàng</th>
-                            <th>Thanh toán</th>
+                            <th>Phương thức thanh toán</th>
                             <th>Trạng thái</th>
                             <th>Tổng tiền</th>
                             <th>Kênh</th>
@@ -620,7 +613,7 @@
                         </tr>
                         <tr>
                             <td class="expand"><span class="iconify" data-icon="ant-design:caret-down-outlined"></span></td>
-                            <td><input type="checkbox"> DF122340</td>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> DF122340</td>
                             <td>05/12/2022</td>
                             <td>Alice Nguyễn</td>
                             <td>COD</td>
@@ -635,7 +628,7 @@
                             <option value="5">Hiển thị 5</option>
                             <option value="10">Hiển thị  10</option>
                         </select>
-                        <p><b>Trang 1/1</b></p>
+                        <p><b>Trang 1/5</b></p>
                     </div>
                 </div>
             </section>
@@ -644,7 +637,7 @@
 
             <!-- Start Product/ All products-->
             <section class="fragment product all-product inactive">
-                <h3 class="title">Sản phẩm | Tất cả sản phẩm</h3>
+                <h1 class="title">TẤT CẢ SẢN PHẨM</h1>
                 <button class="btn btn-primary">
                     <span class="iconify" data-icon="carbon:add-alt"></span> Tạo sản phẩm</button>
                 <div class="panel">
@@ -658,14 +651,14 @@
                     </div>
                     <table>
                         <tr>
-                            <th><input type="checkbox"> Tên sản phẩm</th>
+                            <th> Tên sản phẩm</th>
                             <th>Tồn kho</th>
                             <th>Loại</th>
                             <th>Nhà cung cấp</th>
                         </tr>
                         <tr>
                             <td>
-                                <input type="checkbox">
+                                <span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span>
                                 <div class="photo">
                                     <img src="https://i.ibb.co/LdBHF19/den-densan-LOGLY.webp" alt="">
                                 </div>
@@ -677,7 +670,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="checkbox">
+                                <span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span>
                                 <div class="photo">
                                     <img src="https://i.ibb.co/0Jt0Tnh/ghe-ghebanh-MOANA.webp" alt="">
                                 </div>
@@ -689,7 +682,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="checkbox">
+                                <span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span>
                                 <div class="photo">
                                     <img src="https://i.ibb.co/dP4KgbH/ketu-ketutv-DALATGRACE.webp" alt="">
                                 </div>
@@ -701,7 +694,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="checkbox">
+                                <span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span>
                                 <div class="photo">
                                     <img src="https://i.ibb.co/WtGxJx9/sofa-sofabang-ANASTASIA.webp" alt="">
                                 </div>
@@ -717,28 +710,33 @@
                             <option value="5">Hiển thị 5</option>
                             <option value="10">Hiển thị  10</option>
                         </select>
-                        <p><b>Trang 1/1</b></p>
+                        <p><b>Trang 1/3</b></p>
                     </div>
                 </div>
             </section>
 
             <!-- Start Product/ Stock -->
             <section class="fragment product stock inactive">
-                <h3 class="title">Sản phẩm | Tồn kho</h3>
+                <h1 class="title">SẢN PHẨM TỒN KHO</h1>
                 <div class="bottom">
-                    <h3 class="heading-text">Tất cả</h3>
                     <button class="btn btn-primary">
                         <span class="iconify" data-icon="bx:bx-export"></span> Xuất dữ liệu
                     </button>
                 </div>
                 <div class="panel">
-                    <button class="btn btn-fourth">
-                        <span class="iconify" data-icon="bi:filter"></span> Thêm điều kiện lọc
-                    </button>
+                    <h3 class="heading-text">Hàng tồn kho</h3>
+                    <!-- Filter and search -->
+                    <div class="task">
+                        <button class="btn btn-fourth">
+                            <span class="iconify" data-icon="bi:filter"></span> Thêm điều kiện lọc
+                        </button>
+                        <div class="search"><input type="search" name="search" placeholder="Tìm kiếm"></div>
+                    </div>
                     <table>
                         <tr>
                             <th>Sản phẩm/Biến thể</th>
-                            <th>SKU/Barcode</th>
+                            <th>SKU</th>
+                            <th>Barcode</th>
                             <th>Tồn kho</th>
                             <th>Cập nhật tồn kho</th>
                         </tr>
@@ -749,10 +747,8 @@
                                 </div>
                                 <p>Đèn sàn LOGLY</p>
                             </td>
-                            <td>
-                                <p>D101</p>
-                                <p>123456789</p>
-                            </td>
+                            <td>D101</td>
+                            <td>123456789</td>
                             <td>10</td>
                             <td>
                                 <button class="minus">-</button>
@@ -768,10 +764,8 @@
                                 </div>
                                 <p>Ghế bành MOANA</p>
                             </td>
-                            <td>
-                                <p>D102</p>
-                                <p>123456788</p>
-                            </td>
+                            <td>D102</td>
+                            <td>123456788</td>
                             <td>8</td>
                             <td>
                                 <button class="minus">-</button>
@@ -787,10 +781,8 @@
                                 </div>
                                 <p>Kệ tủ TV DALAT GRACE</p>
                             </td>
-                            <td>
-                                <p>D103</p>
-                                <p>123456787</p>
-                            </td>
+                            <td>D103</td>
+                            <td>123456787</td>
                             <td>5</td>
                             <td>
                                 <button class="minus">-</button>
@@ -805,54 +797,91 @@
                             <option value="5">Hiển thị 5</option>
                             <option value="10">Hiển thị  10</option>
                         </select>
-                        <p><b>Trang 1/1</b></p>
+                        <p><b>Trang 1/3</b></p>
                     </div>
                 </div>
             </section>
-
-
+            
+<!-- ============================================================================== -->
             <!-- Start Delivery -->
             <section class="fragment delivery inactive">
-                <h3 class="title">Vận chuyển</h3>
-                <select name="date" id="date" class="btn btn-fourth">
-                    <option value="today">Hôm nay</option>
-                    <option value="thisweek">Tuần này</option>
-                    <option value="thismonth">Tháng này</option>
-                    <option value="thisquarter">Qúy này</option>
-                </select>
-                <h3 class="title">Vận chuyển</h3>
-                <div class="panels">
-                    <div class="panel">
-                        <p>Chưa vận chuyển</p>
-                        <p><b>09 đơn</b></p>
+                <h1 class="title">VẬN CHUYỂN</h1>
+                <div class="panel">
+                    <!-- Navigation Tabs -->
+                    <div class="tabs">
+                        <div class="tab-item active">
+                            TẤT CẢ ĐƠN
+                        </div>
+                        <div class="tab-item">
+                            CHƯA VẬN CHUYỂN
+                        </div>
+                        <div class="tab-item">
+                            ĐANG VẬN CHUYỂN
+                        </div>
+                        <div class="tab-item">
+                            HOÀN TẤT VẬN CHUYỂN
+                        </div>
+                        <div class="tab-item">
+                            ĐƠN CHỜ HOÀN
+                        </div>
+                        <div class="line"></div>
                     </div>
-                    <div class="panel">
-                        <p>Không giao được</p>
-                        <p><b>01 đơn</b></p>
+                    <!-- Filter and search -->
+                    <div class="task">
+                        <a class="date">Từ ngày: <input type="date" id="Date"></a>
+                        <a class="date">Đến ngày: <input type="date" id="Date"></a>
+                        <button onclick="findOrderInTime()" class="btn btn-fourth"><span class="iconify" data-icon="bxs:file-find"></span> Tìm</button>
+ 
+                        <button class="btn btn-fourth"><span class="iconify" data-icon="bi:filter"></span> Thêm điều kiện lọc</button>
+                        <button class="btn btn-fourth"><span class="iconify" data-icon="fe:list-task"></span> Tác vụ</button>
+                        <div class="search"><input type="search" name="search" placeholder="Tìm kiếm"></div>
                     </div>
-                    <div class="panel">
-                        <p>Chờ chuyển hoàn</p>
-                        <p><b>02 đơn</b></p>
-                    </div>
-                </div>
-                <h3 class="title">Thu hộ</h3>
-                <div class="panels">
-                    <div class="panel">
-                        <p>Đã giao, chưa nhận</p>
-                        <p><b>0<u>đ</u></b></p>
-                    </div>
-                    <div class="panel">
-                        <p>Đã đối soát, chưa nhận</p>
-                        <p><b>0<u>đ</u></b></p>
+                    <!-- Data table: 4 rows, 5 columns -->
+                    <table>
+                        <tr>
+                            <th>Mã</th>
+                            <th>Ngày tạo</th>
+                            <th>Đơn vị vận chuyển</th>
+                            <th>Trạng thái</th>
+                            <th>Phí vận chuyển</th>
+                        </tr>
+                        <tr>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> DF122340</td>
+                            <td>05/12/2022</td>
+                            <td>Viettel Post</td>
+                            <td>Chờ vận chuyển</td>
+                            <td>150000 <u>đ</u></td>
+                        </tr>
+                        <tr>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> DF122341</td>
+                            <td>09/12/2022</td>
+                            <td>J&T</td>
+                            <td>Đang vận chuyển</td>
+                            <td>90000 <u>đ</u></td>
+                        </tr>
+                        <tr>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> DF122342</td>
+                            <td>12/12/2022</td>
+                            <td>Giaohangnhanh</td>
+                            <td>Hoàn tất vận chuyển</td>
+                            <td>120000 <u>đ</u></td>
+                        </tr>
+                    </table>
+                    <div class="bottom">
+                        <select name="display" id="display" class="btn btn-fourth">
+                            <option value="5">Hiển thị 5</option>
+                            <option value="10">Hiển thị 10</option>
+                        </select>
+                        <p><b>Trang 1/2</b></p>
                     </div>
                 </div>
             </section>
 
             <!-- Start Customer-->
             <section class="fragment customer inactive">
-                <h3 class="title">Khách hàng</h3>
+                <h1 class="title">KHÁCH HÀNG</h1>
                 <button class="btn btn-primary">
-                    <span class="iconify" data-icon="carbon:add-alt"></span> Thêm khách hàng mới</button>
+                    <span class="iconify" data-icon="material-symbols:add-comment-rounded"></span> Thêm khách hàng mới</button>
                 <div class="panel">
                     <h3 class="heading-text">Tất cả khách hàng</h3>
                     <!-- Filter and search -->
@@ -864,47 +893,45 @@
                     </div>
                     <table>
                         <tr>
-                            <th><input type="checkbox"> Khách hàng</th>
+                            <th>   Tên tài khoản</th>
                             <th>Địa chỉ</th>
-                            <th>Tổng đơn hàng</th>
+                            <th>Số điện thoại</th>
                             <th>Đơn hàng gần nhất</th>
-                            <th>Tổng thu</th>
+                            <th>Tổng đơn hàng</th>
+                            <th>Hạng</th>
                         </tr>
 
                         <tr>
-                            <td><input type="checkbox"> Alice Nguyễn</td>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> Alice Nguyễn</td>
                             <td>Thủ Đức, HCM</td>
-                            <td>01</td>
+                            <td>0812456783</td>
                             <td>DF122340</td>
-                            <td>990000<u>đ</u></td>
+                            <td>01</td>
+                            <td><i>Chưa phân hạng</i></td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox"> Ngọc Diệp</td>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> Ngoc Diep</td>
                             <td>Bình Chánh, HCM</td>
-                            <td>01</td>
+                            <td>0912456783</td>
                             <td>DF122341</td>
-                            <td>5450000<u>đ</u></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox"> Trần Ngọc</td>
-                            <td>Dĩ An, Bình Dương</td>
-                            <td>03</td>
-                            <td>DF102340</td>
-                            <td>3500000<u>đ</u></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox"> Huỳnh Hy</td>
-                            <td>Quận 9, HCM</td>
-                            <td>02</td>
-                            <td>DF112340</td>
-                            <td>4500000<u>đ</u></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox"> Nhi Trần Thị Yến</td>
-                            <td>Quận 1, HCM</td>
                             <td>05</td>
-                            <td>DF122340</td>
-                            <td>9350000<u>đ</u></td>
+                            <td>Bạc</td>
+                        </tr>
+                        <tr>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> Ngoc Diep</td>
+                            <td>Dĩ An, Bình Dương</td>
+                            <td>0912236783</td>
+                            <td>DF122349</td>
+                            <td>12</td>
+                            <td><b>Kim Cương</b></td>
+                        </tr>
+                        <tr>
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span> Ngoc Diep</td>
+                            <td>Quận 9, HCM</td>
+                            <td>0782236783</td>
+                            <td>DF122349</td>
+                            <td>10</td>
+                            <td>Vàng</td>
                         </tr>
                     </table>
                     <div class="bottom">
@@ -912,16 +939,16 @@
                             <option value="5">Hiển thị 5</option>
                             <option value="10">Hiển thị  10</option>
                         </select>
-                        <p><b>Trang 1/1</b></p>
+                        <p><b>Trang 1/3</b></p>
                     </div>
                 </div>
             </section>
 
             <!-- Start Blog-->
             <section class="fragment blog inactive">
-                <h3 class="title">Blog</h3>
+                <h1 class="title">BLOG</h1>
                 <button class="btn btn-primary">
-                    <span class="iconify" data-icon="carbon:add-alt"></span> Tạo bài viết</button>
+                    <span class="iconify" data-icon="material-symbols:add-comment-rounded"></span> Tạo bài viết</button>
                 <div class="panel">
                     <h3 class="heading-text">Tất cả bài viết</h3>
                     <!-- Filter and search -->
@@ -933,14 +960,14 @@
                     </div>
                     <table>
                         <tr>
-                            <th><input type="checkbox"> Tiêu đề</th>
+                            <th>Tiêu đề</th>
                             <th>Ngày tạo</th>
                             <th>Danh mục</th>
                             <th>Nhãn</th>
                             <th>Người đăng</th>
                         </tr>
                         <tr>
-                            <td><input type="checkbox">
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span>
                                 <div class="photo">
                                     <img src="https://i.ibb.co/MC4Lppx/blog1.jpg" alt="">
                                 </div>
@@ -955,7 +982,7 @@
                             <td>Phạm Hồ Tiến Trung</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox">
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span>
                                 <div class="photo">
                                     <img src="https://i.ibb.co/QNFMB5Y/blog2.jpg" alt="">
                                 </div>
@@ -970,7 +997,7 @@
                             <td>Đoàn Hồng Yến</td>
                         </tr>
                         <tr>
-                            <td><input type="checkbox">
+                            <td><span class="iconify" data-icon="material-symbols:drive-file-rename-outline-rounded"></span>
                                 <div class="photo">
                                     <img src="https://i.ibb.co/SwrZDgS/blog3.jpg" alt="">
                                 </div>
@@ -990,13 +1017,14 @@
                             <option value="5">Hiển thị 5</option>
                             <option value="10">Hiển thị  10</option>
                         </select>
-                        <p><b>Trang 1/1</b></p>
+                        <p><b>Trang 1/4</b></p>
                     </div>
                 </div>
             </section>
         </div>
     </div>
     
-    <script src="./js/admin.js"></script>   
+    <script src="./js/admin.js"></script>
+    <script src="./js/header-footer.js"></script>
 </body>
 </html>
