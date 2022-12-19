@@ -110,12 +110,14 @@ function configHeader(){
     const searchInput= $('#search-input')
     
     if(screen.width < 500){
-        searchIcon.style.display = 'none'
         searchInput.style.display = 'none'
     }
     else{
         searchInput.style.transform = 'scaleX(1)'
         searchIcon.onclick = () => {
+            if (searchInput.value ===""){
+                return false;
+            }
             window.location = 'locsp.html'+'#'+ searchInput.value ;
         }
     }
