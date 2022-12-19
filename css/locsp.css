@@ -111,6 +111,19 @@ header nav .menu > li:nth-child(2) > a{
 .banners .slide-wrapper .giuong{
     background-image: url(https://file.hstatic.net/1000280685/file/1_ab4299d2db5b4cc0a2d85093d3ca61d8_master.png);
 }
+
+.banners .slide-wrapper .den{
+    background-image: url(https://file.hstatic.net/1000280685/file/6_30f2e58293f749e9ad497c28c8eebfe3_2048x2048.png);
+}
+.banners .slide-wrapper .ketu{
+    background-image: url(https://file.hstatic.net/1000280685/file/mat_cat_pr2_ef5c658c813048c9905b7264009e5029.jpg);
+}
+.banners .slide-wrapper .guong{
+    background-image: url(https://file.hstatic.net/1000280685/file/mc_khach_2_8c944e919f86425cb98132207399b6b9_1024x1024.jpg);
+}
+.banners .slide-wrapper .changagoi{
+    background-image: url(https://file.hstatic.net/1000280685/file/1_ab4299d2db5b4cc0a2d85093d3ca61d8_master.png);
+}
   
 .banners .banner-text{
     position: absolute;
