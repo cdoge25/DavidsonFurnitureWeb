@@ -8,6 +8,7 @@ font-family: 'Nunito', sans-serif;
 :root{
     --primary-color: #FF6600;
     --secondary: #FFE8D9;
+    --tertiary: #FeF6F1;
     --background: #F5F5F5;
     --text-color: #212121;
     --inactive: #ECECEC;

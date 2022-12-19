@@ -1,7 +1,7 @@
 #container{
-    width: 100vw;
+    width: 100%;
     position: relative;
-    height: 100vh;
+    height: 100%;
     display: flex;
     overflow: hidden;
 }
@@ -10,53 +10,7 @@ a, p{
     font-size: 1.4rem;
 }
 
-/* =========Top right fixed admin panel========== */
-
-#container .admin{
-    position: fixed;
-    top: 0;
-    right: 12px;
-    display: flex;
-    height: 40px;
-    align-items: center;
-    z-index: 1;
-    pointer-events: all;
-}
-
-#container .admin .notify{
-    color: var(--primary-color);
-    font-size: 2.4rem;
-}
-
-#container .admin .admin-photo{
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-left: 8px;
-}
-
-#container .admin .admin-photo:hover ~ .log-out{display: block;}
-
-#container .admin .log-out{
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 6px;
-    font-size: 1.6rem;
-    background-color: white;
-    text-align: center;
-    border-radius: 4px;
-    box-shadow: 0 1px 4px #ccc;
-    position: absolute;
-    top: 38px;
-    right: 0;
-    display: none;
-}
-
-
-/* ==========NAVIGATION PANEL========== */
+/* ==========NAVIGATION BAR========== */
 
 #container .nav{
     width: 5.5%;
@@ -77,7 +31,16 @@ a, p{
     display: none;
 }
 
+#container .nav .logo1{
+    width: 50px;
+    height: 50px;
+    margin: 40px auto;
+    display: block;
+}
+
 #container .nav .logo.active{display: block;}
+
+#container .nav .logo1.inactive{display: none;}
 
 /* Nav menu */
 
@@ -130,12 +93,12 @@ a, p{
     margin-left: 8px;
 }
 
-/* Toggle button */
+/* Expand button */
 #container .nav .toggle{
     position: absolute;
     width: 40px;
     height: 40px;
-    bottom: 10px;
+    bottom: 40px;
     left: 20px;
     background: #f5f5f5;
     cursor: pointer;
@@ -156,7 +119,7 @@ a, p{
     transform: rotate(180deg);
 }
 
-/* ============INFORMATION PANEL=========== */
+/* ============ALL BOARD=========== */
 
 .infor-wrapper{
     position: relative;
@@ -171,14 +134,17 @@ a, p{
 }
 
 .infor-wrapper section .title{
-    font-size: 2.2rem;
-    margin-bottom: 16px;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .infor-wrapper .panel{
-    border-radius: 8px;
-    border: 1px solid var(--primary-color);
-    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--tertiary);
+    padding: 20px;
 }
 
 .infor-wrapper select option{
@@ -190,7 +156,6 @@ a, p{
     text-transform: uppercase; 
     color: var(--primary-color);
     font-size: 2.2rem;
-    text-decoration: underline;
 }
 
 .infor-wrapper .bottom{
@@ -207,8 +172,33 @@ a, p{
     margin: 16px 0;
 }
 
+.infor-wrapper .task .date{
+    background-color: var(--background);
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 5px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    margin: 8px;
+    text-align: center;
+}
+
+.infor-wrapper .task .date #Date{
+    background-color: var(--background);
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    max-width: 115px;
+    text-align: center;
+    padding: auto;
+}
+
 .infor-wrapper .task .search{
-    width: 50%;
+    width: 30%;
+    text-align: left;
 }
 
 .infor-wrapper .task .search input{
@@ -217,6 +207,7 @@ a, p{
     margin-top: 9px;
     border: 1px solid var(--primary-color);
     border-radius: 4px;
+    margin-right: 0px;
 }
 
 /* Data table */
@@ -232,6 +223,7 @@ a, p{
     border-top: 1px solid var(--inactive);
     border-bottom: 1px solid var(--inactive);
 }
+
 
 /* ========= OVERVIEW FRAGMENT =========== */
 
@@ -249,11 +241,11 @@ a, p{
     font-size: 2.2rem;
 } 
 
-/* TOP LEFT PANEL */
+/* TOP LEFT BOARD */
 
 .infor-wrapper .overview .top-left{
-    width: 60%;
-    max-height: 383px;
+    width: 49%;
+    max-height: 450px;
     float: left;
 }
 
@@ -264,7 +256,7 @@ a, p{
 }
 
 .infor-wrapper .overview .top-left .filter .refresh .iconify{
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     vertical-align: baseline;
 }
 
@@ -303,18 +295,23 @@ a, p{
     line-height: 2.2rem;
 }
 
-/* TOP RIGHT PANEL */
+/* TOP RIGHT BOARD */
 
 .infor-wrapper .overview .top-right{
-    width: 38%;
-    max-height: 383px;
+    width: 50%;
+    max-height: 450px;
     float: right;
+}
+
+.infor-wrapper .overview .top-right .heading-text{
+    text-align: center;
+    margin: 15px 0px 10px 20px;
 }
 
 .infor-wrapper .overview .top-right .wrapper{
     border-top: 1px solid var(--inactive);
     padding: 12px 0;
-    height: 280px;
+    height: 330px;
     width: 100%;
     margin-top: 12px;
     overflow: auto;
@@ -332,7 +329,7 @@ a, p{
 .infor-wrapper .overview .top-right .wrapper .item .progress .line{
     width: 50%;
     height: 60px;
-    border-right: 1px solid var(--inactive);
+    border-right: 1px solid var(--secondary);
 }
 
 .infor-wrapper .overview .top-right .wrapper .item .first .line{
@@ -342,7 +339,7 @@ a, p{
 .infor-wrapper .overview .top-right .wrapper .item .progress .clock{
     font-size: 2.2rem;
     line-height: 0;
-    color: var(--inactive);
+    color: var(--primary-color);
 }
 
 .infor-wrapper .overview .top-right .wrapper .item .progress .dot{
@@ -350,14 +347,14 @@ a, p{
     height: 8px;
     margin: 0 auto;
     border-radius: 4px;
-    background-color: var(--inactive);
+    background-color: var(--primary-color);
 }
 
 .infor-wrapper .overview .top-right .wrapper .item .content{
     width: 90%;
 }
 
-/* BOTTOM PANEL */
+/* BOTTOM BOARD */
 
 .infor-wrapper .overview .bottom-part{
     width: 100%;
@@ -365,7 +362,10 @@ a, p{
     margin: 16px 0;
 }
 
-.infor-wrapper .overview .bottom-part .heading-text{float: left;}
+.infor-wrapper .overview .bottom-part .heading-text{
+    float: left;
+    margin: 10px 0px 10px 0px;
+}
 
 .infor-wrapper .overview .bottom-part #status{float: right; margin: 0 0 8px;}
 
@@ -376,6 +376,7 @@ a, p{
 .infor-wrapper .overview .bottom-part table .more{
     margin: 8px 0;
 }
+
 
 /* ============== ORDER FRAGMENTS ================ */
 /* All order */
@@ -495,38 +496,44 @@ a, p{
 
 /* ======== DELIVERY =========== */
 
-.infor-wrapper .delivery .title:not(:first-child){
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    margin: 28px 0;
-}
-
-.infor-wrapper .delivery .panels{
+.delivery .tabs {
     display: flex;
+    position: relative;
+}
+.delivery .tabs .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--primary-color);
+    transition: all 0.2s ease;
+}
+.delivery .tab-item {
+    min-width: 80px;
+    padding: 8px 14px 2px;
+    font-size: 1.8rem;
     text-align: center;
-    width: 100%;
-    justify-content: space-around;
+    color: var(--text-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.delivery .tab-item:hover {
+    opacity: 1;
+    background-color: var(--background);
+    border-color: var(--background);
+}
+.delivery .tab-item.active {
+    opacity: 1;
+    color: var(--primary-color);
 }
 
-.infor-wrapper .delivery .panel{
-    width: 280px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.infor-wrapper .delivery .panel p:first-child{
-    text-transform: uppercase;
-    margin-bottom: 12px;
-    font-size: 1.8rem;
-}
-
-.infor-wrapper .delivery .panel p:last-child{
-    font-size: 1.8rem;
-}
-
-/* BLOG */
+/* ======== BLOG =========== */
 .infor-wrapper .blog table tr{
     height: 50px;
 }
