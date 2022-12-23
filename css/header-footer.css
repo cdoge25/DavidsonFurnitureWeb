@@ -153,22 +153,6 @@ header nav .group-icons{
     background: none;
 }
 
-.log-out{
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 6px;
-    font-size: 1.6rem;
-    background-color: white;
-    text-align: center;
-    border-radius: 4px;
-    box-shadow: 0 1px 4px #ccc;
-    position: absolute;
-    top: 38px;
-    right: 0;
-    display: none;
-}
-
 .logout:hover ~ .log-out{display: block;}
 
 #search-icon:hover{cursor: pointer; color: var(--primary-color);}
@@ -176,7 +160,7 @@ header nav .group-icons{
 header nav .group-icons a:hover{
     color: var(--primary-color);
 }
-n
+
 .acc-photo{
     width: 2.8rem;
     height: 2.8rem;
